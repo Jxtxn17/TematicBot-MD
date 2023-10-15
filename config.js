@@ -20,17 +20,17 @@ global.prems = []
 
 global.packname = '× Stickers V2\ngithub.com/CuriosityBot-MD\n\n× Script:\ngithub.com/AzamiJs/CuriosityBot-MD'
 global.author = ' C\n U\n R\n  I\n O\n S\n  I\n T\n Y'
-global.wm = '© CuriosityBot-MD'
-global.wm2 = '𝗖𝗎𝗋𝗂𝗈𝗌𝗂𝗍𝗒 : 𝗕𝗈𝗍'
-global.azami = 'Azami'
-global.cb = 'CuriosityBot-MD'
+global.wm = '𓆩𝐓𝐮𝐫𝐛𝐨𝐁𝐨𝐭-𝐌𝐃𓆪'
+global.wm2 = '✦𝗧𝘂𝗿𝗯𝗼-𝗯𝗼𝘁-𝗠𝗗✦'
+global.jxtxn = 'Jxtxn'
+global.cb = '⏤͟͟͞͞ＴｕｒｂｏＢｏｔ-ＭＤ''
 
 global.vs = '1.0.2'
 global.library = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = '5217294888993'
+global.dev = '51929972576'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => { unwatchFile(file)
