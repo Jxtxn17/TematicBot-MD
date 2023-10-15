@@ -18,12 +18,12 @@ let texto = `
   │> termux-setup-storage
   │> apt-get update -y && apt-get upgrade -y
   │> pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
-  │> git clone https://github.com/Undefined17/CuriosityBot-MD && cd CuriosityBot-MD && yarn install && npm install 
+  │> git clone https://github.com/Jxtxn17/TurboBot-MD && cd TurboBot-MD && yarn install && npm install 
   │> ls 
   │> npm start 
   ╰────────────┈⊷` 
 let aa = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: `${texto}`.trim(), contextInfo: { externalAdReply: { title: 'Azami ©', body: null, thumbnail: imagen2, sourceUrl: 'https://github.com/Undefined17/CuriosityBot-MD' }, mentionedJid: [m.sender] }}}, aa)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: `${texto}`.trim(), contextInfo: { externalAdReply: { title: 'Jxtxn17 ©', body: null, thumbnail: imagen2, sourceUrl: 'https://github.com/Jxtxn17/TurboBot-MD' }, mentionedJid: [m.sender] }}}, aa)
 conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })  
 }
 handler.tags = ['main']
