@@ -27,7 +27,7 @@ colors: ['blueBright']
 })
 console.log(` 
  Turbo Bot V2
- Author: Azami
+ Author: Jxtxn
  WA    : +994 
  Base  : BochilTeam
  `)
