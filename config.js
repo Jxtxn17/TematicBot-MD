@@ -1,4 +1,3 @@
-
 import { watchFile, unwatchFile } from 'fs' 
  import chalk from 'chalk' 
  import fs from 'fs' 
