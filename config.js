@@ -19,7 +19,7 @@ global.mods = []
 global.prems = []
 
 global.packname = '× Stickers V2\ngithub.com/TurboBot-MD\n\n× Script:\ngithub.com/Jxtxn17/TurboBot-MD'
-global.author = ' C\n U\n R\n  I\n O\n S\n  I\n T\n Y'
+global.author = ' \n U\n R\n  B\n O\n '
 global.wm = '𓆩𝐓𝐮𝐫𝐛𝐨𝐁𝐨𝐭-𝐌𝐃𓆪'
 global.wm2 = '✦𝗧𝘂𝗿𝗯𝗼-𝗯𝗼𝘁-𝗠𝗗✦'
 global.jxtxn = 'Jxtxn'
