@@ -13,7 +13,7 @@ import { watchFile, unwatchFile } from 'fs'
   
  global.owner = [['51929972576', 'Creador', true], ['595975740803', 'Colaborador', true], ['593968585383'], ['51992004117'], ['5492266613038'], ['573106040746'], ['50576390682'], ['5217294888993'], ['50558124470']] 
   
- global.animxscans = ['400359205'] 
+ global.animxscans = ['51929972576'] 
  global.suittag = ['994400359205'] 
  global.mods = [] 
  global.prems = []
