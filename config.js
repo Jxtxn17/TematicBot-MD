@@ -22,7 +22,7 @@ global.author = ' T\n U\n R\n  B\n O\n '
 global.wm = '𓆩𝐓𝐮𝐫𝐛𝐨𝐁𝐨𝐭-𝐌𝐃𓆪'
 global.wm2 = '✦𝗧𝘂𝗿𝗯𝗼-𝗯𝗼𝘁-𝗠𝗗✦'
 global.jxtxn = 'Jxtxn'
-global.cb = '⏤͟͟͞͞ＴｕｒｂｏＢｏｔ-ＭＤ''
+global.cb = '⏤͟͟͞͞ＴｕｒｂｏＢｏｔ-ＭＤ'
 
 global.vs = '1.0.2'
 global.library = 'Baileys'
