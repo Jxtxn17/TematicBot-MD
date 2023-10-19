@@ -11,8 +11,7 @@ let bang = m.key.id
 let name = await conn.getName(m.sender)
 if (chat.antiTraba && m.text.length > 5000) { //Cantidad máxima de caracteres aceptados en un mensaje//
 if (isAdmin) return conn.sendMessage(m.chat, { text: `El administrador @${m.sender.split("@")[0]} acaba de enviar un texto que contiene muchos caracteres -.-!`, mentions: [m.sender] }, { quoted: fakemek })
-await conn.sendMessage(m.chat, `*[ 🍓 ] 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙏𝙄𝙀𝙉𝙀 𝙈𝙐𝘾𝙃𝙊𝙎 𝘾𝘼𝙍𝘼𝘾𝙏𝙀𝙍𝙀𝙎️*\n`, `${isBotAdmin ?'
-[ 🍥 ]𝙉𝙊 𝙎𝙊𝙔 𝘼𝘿𝙈𝙄𝙉 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙃𝘼𝘾𝙀𝙍𝙈𝙀 𝘾𝘼𝙍𝙂𝙊/'}`, m);
+await conn.sendMessage(m.chat, `*[ 🍓 ] 𝙀𝙎𝙏𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙏𝙄𝙀𝙉𝙀 𝙈𝙐𝘾𝙃𝙊𝙎 𝘾𝘼𝙍𝘼𝘾𝙏𝙀𝙍𝙀𝙎️*\n`, `${isBotAdmin ?'[ 🍥 ]𝙉𝙊 𝙎𝙊𝙔 𝘼𝘿𝙈𝙄𝙉 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙃𝘼𝘾𝙀𝙍𝙈𝙀 𝘾𝘼𝙍𝙂𝙊/'}`, m);
 if (isBotAdmin && bot.restrict) {
 conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 setTimeout(() => { 
