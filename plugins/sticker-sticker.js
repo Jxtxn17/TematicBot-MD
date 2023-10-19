@@ -8,8 +8,8 @@ let stiker = false
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*⚠️ 𝙔 𝙇𝘼 𝙄𝙈𝘼𝙂𝙀𝙉?, 𝙉𝙊 𝙎𝙊𝙔 𝘼𝘿𝙄𝙑𝙄𝙉𝙊{usedPrefix + command}*`)
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*⚠️ 𝙀𝙇 𝙑𝙄́𝘿𝙀𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 7 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎*')
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[ 🍧 ] 𝙔 𝙇𝘼 𝙄𝙈𝘼𝙂𝙀𝙉?, 𝙉𝙊 𝙎𝙊𝙔 𝘼𝘿𝙄𝙑𝙄𝙉𝙊{usedPrefix + command}*`)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*[ 🍇 ] 𝙀𝙇 𝙑𝙄́𝘿𝙀𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 7 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎*')
 
 if (/webp|image|video/g.test(mime)) {
 let img = await q.download?.()
