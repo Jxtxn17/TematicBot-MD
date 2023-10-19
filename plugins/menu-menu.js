@@ -88,7 +88,7 @@
 ║├⫹⫺ 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 : 𝐉𝐱𝐭𝐱𝐧 𝐓𝐁
 ║├⫹⫺ 𝙽𝚄𝙼𝙴𝚁𝙾: wa.me/51929972576
 ║├⫹⫺ 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}
-║├⫹⫺ 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾𝚂 : ${rtotalreg} 𝐝𝐞 ${totalreg}𝐮𝐬𝐮𝐚𝐫𝐢𝐨𝐬:
+║├⫹⫺ 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾𝚂 : ${rtotalreg} 𝐝𝐞 ${totalreg} 𝐮𝐬𝐮𝐚𝐫𝐢𝐨𝐬 :
 ║╰────────────── 
 ╚══════════════════⋆
 
