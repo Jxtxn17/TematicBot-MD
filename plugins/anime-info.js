@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
   
 var handler = async (m, { conn, text }) => {
  
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗][❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝘼𝙇𝙂𝙐́𝙉 𝘼𝙉𝙄𝙈𝙀*`
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝘼𝙇𝙂𝙐́𝙉 𝘼𝙉𝙄𝙈𝙀*`
 let res = await fetch('https://api.jikan.moe/v4/manga?q=' + text)
 if (!res.ok) throw '*⚠️ 𝙀𝙍𝙍𝙊𝙍*'
 let json = await res.json()
