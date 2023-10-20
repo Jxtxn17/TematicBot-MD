@@ -4,8 +4,8 @@ let handler = async (m, { conn, isROwner, text }) => {
     let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
     let anu = groups.map(v => v.id)
     var pesan = m.quoted && m.quoted.text ? m.quoted.text : text
-    if(!pesan) throw '*⚠️ INGRESE EL TEXTO QUE QUIERE QUE TRÁMITE*'
-   // m.reply(`*📑 MENSAJE ENVIADO A ${anu.length} GRUPO/S*\n\n*🔔 NOTA: ES POSIBLE QUE NO SE ENVIE A TODOS LOS CHATS`)
+    if(!pesan) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙏𝙀𝙓𝙏𝙊 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝙏𝙍𝘼́𝙉𝙎𝙈𝙄𝙏𝙄𝙍*'
+   // m.reply(`*📑 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙀𝙉𝙑𝙄𝘼𝘿𝙊 𝘼 ${anu.length} 𝙂𝙍𝙐𝙋𝙊/𝙎*\n\n*🔔 𝙉𝙊𝙏𝘼: 𝙀𝙎 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙀𝙉𝙑𝙄𝙀 𝘼 𝙏𝙊𝘿𝙊𝙎 𝙇𝙊𝙎 CHATS`)
     for (let i of anu) {
     await delay(500)
     conn.relayMessage(i, 
@@ -14,13 +14,14 @@ let handler = async (m, { conn, isROwner, text }) => {
   degreesLongitude: 139.75270667105852,
   accuracyInMeters: 0,
 degreesClockwiseFromMagneticNorth: 2,
-caption: '––––––『 *BROADCAST* 』––––––\n\n' + pesan + '\n\n*💌 ESTO ES UN COMUNICADO OFICIAL*',
+caption: '––––––『 *BROADCAST* 』––––––\n\n' + pesan + '\n\n*💌 𝙀𝙎𝙏𝙊 𝙀𝙎 𝙐𝙉 𝘾𝙊𝙈𝙐𝙉𝙄𝘾𝘼𝘿𝙊 𝙊𝙁𝙄𝘾𝙄𝘼𝙇*',
 sequenceNumber: 2,
 timeOffset: 3,
 contextInfo: m,
 }}, {}).catch(_ => _)
     }
-  m.reply(`*📑 MENSAJE ENVIADO A ${anu.length} GRUPO/S*\n\n*🔔 NOTA: ES POSIBLE QUE NO SE ENVIE A TODOS LOS CHATS*`)
+  m.reply(`*📑 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙀𝙉𝙑𝙄𝘼𝘿𝙊 A ${anu.length}  /S*\n\n*🔔 𝙉𝙊𝙏𝘼: 𝙀𝙎 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙀𝙉𝙑𝙄𝙀 𝘼 𝙏𝙊𝘿𝙊𝙎 𝙇𝙊𝙎
+ CHATS*`)
 }
 handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
