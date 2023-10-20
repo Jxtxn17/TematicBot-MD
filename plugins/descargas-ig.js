@@ -6,8 +6,8 @@ import {instagramdl} from '@bochilteam/scraper'
  
 var handler = async (m, {conn, args, command, usedPrefix}) => {
  
-if (!args[0]) throw `*⚠️ INGRESE UN ENLACE DE INSTAGRAM*\n\n❕ EJEMPLO:\n*${usedPrefix + command}* https://www.instagram.com/reel/CuqAzGRAbZa/?igshid=MzRlODBiNWFlZA==`
-conn.reply(m.chat, `*🧃 DESCARGANDO SU PEDIDO, POR FAVOR SEA PACIENTE*`, fkontak, m)
+if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊:\n*${usedPrefix + command}* https://www.instagram.com/reel/CuqAzGRAbZa/?igshid=MzRlODBiNWFlZA==`
+conn.reply(m.chat, `*🧃 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙋𝙀𝘿𝙄𝘿𝙊, 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙎𝙀𝘼 𝙋𝘼𝘾𝙄𝙀𝙉𝙏𝙀*`, fkontak, m)
 try {
 const apiUrll = `https://api.betabotz.org/api/download/igdowloader?url=${encodeURIComponent(args[0])}&apikey=bot-secx3`
 const responsel = await axios.get(apiUrll)
@@ -48,7 +48,7 @@ const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${a
 const txt1 = `🍧 *Url:* ${shortUrl1}`.trim()
 await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m)
 } catch {
-throw `*⚠️ OCURRIÓ UN FALLO, VUELVE A INTENTAR*`
+throw `*⚠️ 𝙊𝘾𝙐𝙍𝙍𝙄𝙊 𝙐𝙉 𝙁𝘼𝙇𝙇𝙊, 𝙑𝙐𝙀𝙇𝙑𝙀 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍𝙇𝙊*`
 }}}}} 
 
 }
