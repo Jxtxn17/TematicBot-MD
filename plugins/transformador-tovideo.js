@@ -3,9 +3,9 @@ import { ffmpeg } from '../lib/converter.js'
 
 var handler = async (m, { conn, usedPrefix, command }) => {
 
-if (!m.quoted) throw `*⚠️ RESPONDE CON ${usedPrefix + command} AL AUDIO QUE DESEEA CONVERTIR EN VIDEO*`
+if (!m.quoted) throw `*⚠️ 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘾𝙊𝙉 ${usedPrefix + command} 𝘼𝙇 𝘼𝙐𝘿𝙄𝙊 𝙌𝙐𝙀 𝘿𝙀𝙎𝙀𝘼 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙄𝙍 𝙀𝙉 𝙑𝙄𝘿𝙀𝙊*`
 let mime = m.quoted.mimetype || ''
-if (!/webp|audio/.test(mime)) throw `*⚠️ RESPONDE CON ${usedPrefix + command} AL AUDIO QUE DESEEA CONVERTIR EN VIDEO*`
+if (!/webp|audio/.test(mime)) throw `*⚠️ RESPONDE CON ${usedPrefix + command} 𝘼𝙇 𝘼𝙐𝘿𝙄𝙊 𝙌𝙐𝙀 𝘿𝙀𝙎𝙀𝘼 𝘾𝙊𝙉𝙑𝙀𝙍𝙏𝙄𝙍 𝙀𝙉 𝙑𝙄𝘿𝙀𝙊*`
 let media = await m.quoted.download()
 let out = Buffer.alloc(0)
 if (/webp/.test(mime)) {
@@ -20,7 +20,7 @@ out = await ffmpeg(media, [
 ], 'mp3', 'mp4')
 
 }
-await conn.sendFile(m.chat, out, 'error.mp4', '*🧃 AQUI ESTA TU VIDEO*', fkontak, m, 0, { thumbnail: out })
+await conn.sendFile(m.chat, out, 'error.mp4', '*🧃 𝘼𝙌𝙐𝙄 𝙀𝙎𝙏𝘼 𝙏𝙐 𝙑𝙄𝘿𝙀𝙊*', fkontak, m, 0, { thumbnail: out })
 
 }
 handler.help = ['tovideo']
