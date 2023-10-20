@@ -12,8 +12,8 @@ user.warn += 1
 if (!(user.warn >= 6))
 await m.reply(
 `${
-user.warn == 1 ? `NOO 😠 *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`
-}, decir la palabra (${isToxic}) está prohibido *${user.warn}/6* Advertencia(s)`,
+user.warn == 1 ? `𝙉𝙊𝙊 😠 *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`
+}, 𝙙𝙚𝙘𝙞𝙧 𝙡𝙖 𝙥𝙖𝙡𝙖𝙗𝙧𝙖 (${isToxic}) 𝙚𝙨𝙩𝙖 prohibido *${user.warn}/6* 𝘼𝙙𝙫𝙚𝙧𝙩𝙚𝙣𝙘𝙞𝙖(s)`,
 false,
 {mentions: [m.sender]}
 )
@@ -21,7 +21,7 @@ false,
 
 if (user.warn >= 6) {
 user.warn = 0;
-await m.reply(`⚠️ Te lo dije *@${m.sender.split`@`[0]}*, Superaste las 6 advertencias por lo tanto serás eliminado de este grupo`, false, {
+await m.reply(`⚠️ Te lo dije *@${m.sender.split`@`[0]}*, 𝙎𝙪𝙥𝙚𝙧𝙖𝙨𝙩𝙚 𝙡𝙖𝙨 6 𝙖𝙙𝙫𝙚𝙧𝙩𝙚𝙣𝙘𝙞𝙖𝙨 𝙥𝙤𝙧 𝙡𝙤 𝙩𝙖𝙣𝙩𝙤 𝙨𝙚𝙧𝙖́𝙨 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙤 𝙙𝙚 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤`, false, {
 mentions: [m.sender],
 })
 user.banned = false
