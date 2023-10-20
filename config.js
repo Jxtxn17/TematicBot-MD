@@ -11,7 +11,7 @@ import { watchFile, unwatchFile } from 'fs'
  global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') { return rmPrefix ? /file:\/\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL : pathToFileURL(pathURL).toString() }; global.__dirname = function dirname(pathURL) { return path.dirname(global.__filename(pathURL, true)) }; global.__require = function require(dir = import.meta.url) { return createRequire(dir) } 
  const __dirname = global.__dirname(import.meta.url) 
   
- global.owner = [['51929972576', '🍇 DESARROLLADOR🍇', true], ['593968585383'], ['51992004117'], ['5492266613038'], ['573106040746'], ['50576390682'], ['5217294888993'], ['50558124470']] 
+ global.owner = [['51929972576', '🍇 𝐃𝐄𝐒𝐀𝐑𝐑𝐎𝐋𝐋𝐀𝐃𝐎𝐑 𝐓𝐁🍇', true], ['593968585383'], ['51992004117'], ['5492266613038'], ['573106040746'], ['50576390682'], ['5217294888993'], ['50558124470']] 
   
  global.animxscans = ['51929972576'] 
  global.suittag = ['994400359205'] 
