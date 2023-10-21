@@ -244,28 +244,31 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.reply(m.chat, `*🧃 𝙊𝙋𝘾𝙄𝙊𝙉𝙀𝙎 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊𝙎*
-
-_${usedPrefix + command} *welcome*_
-_${usedPrefix + command} *antilink*_
-_${usedPrefix + command} *antilink2*_
-_${usedPrefix + command} *antifake*_
-_${usedPrefix + command} *antitraba*_
-_${usedPrefix + command} *antitoxic*_
-_${usedPrefix + command} *autolevelup*_
-_${usedPrefix + command} *nsfw*_
-_${usedPrefix + command} *simi*_
-_${usedPrefix + command} *detect*_
-_${usedPrefix + command} *modoadmin*_
-
-*🍧 𝙊𝙋𝘾𝙄𝙊𝙉𝙀𝙎 𝘿𝙀 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊*
-
-_${usedPrefix + command} *restrict*_
-_${usedPrefix + command} *public*_
-_${usedPrefix + command} *pconly*_
-_${usedPrefix + command} *gconly*_
-_${usedPrefix + command} *autoread*_
-_${usedPrefix + command} *modejadibot*_`, fkontak, m)
+if (!/[01]/.test(command)) return await conn.reply(m.chat, `┏━━━━━━━━━━━━━┓
+*✪ ⃟🧃OPCIONES DE GRUPOS*
+┗━━━━━━━━━━━━
+┃ _.on *welcome*_
+┃ _.on *antilink*_
+┃ _.on *antilink2*_
+┃ _.on *antifake*_
+┃ _.on *antitraba*_
+┃ _.on *antitoxic*_
+┃ _.on *autolevelup*_
+┃ _.on *nsfw*_
+┃ _.on *simi*_
+┃ _.on *detect*_
+┃ _.on *modoadmin*_
+┗━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━┓
+*✪ ⃟🍧OPCIONES DE PROPIETARIO*
+┗━━━━━━━━━━━━━━
+┃ _.on *restrict*_
+┃ _.on *public*_
+┃ _.on *pconly*_
+┃ _.on *gconly*_
+┃ _.on *autoread*_
+┃ _.on *modejadibot*_
+┗━━━━━━━━━━━━━━━━ `, fkontak, m)
 throw false
 }
 conn.reply(m.chat, `*${isEnable ? '❕' : '❗'} La función ${type} se a ${isEnable ? 'activado' : 'desactivado'} en ${isAll ? 'este bot' : isUser ? '' : 'este chat'}*`, fkontak, m)
