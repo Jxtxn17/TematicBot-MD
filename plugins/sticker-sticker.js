@@ -8,8 +8,8 @@ let stiker = false
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*⚠️ RESPONDE A UNA IMAGEN O VIDEO CON ${usedPrefix + command}*`)
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*⚠️ EL VÍDEO NO PUEDE DURAR MAS DE 7 SEGUNDOS*')
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉 𝙊 𝙑𝙄𝘿𝙀𝙊 𝘾𝙊𝙉 ${usedPrefix + command}*`)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙇 𝙑𝙄́𝘿𝙀𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 7 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎*')
 
 if (/webp|image|video/g.test(mime)) {
 let img = await q.download?.()
@@ -27,7 +27,7 @@ stiker = await sticker(false, out, global.packname, global.author)
 if (!stiker) errorMessage = 'ERROR'
 }} else if (args[0]) {
 if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
-else return m.reply('*⚠️ EL ENLACE / URL / LINK NO ES VÁLIDO*')}
+else return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙇 𝙀𝙉𝙇𝘼𝘾𝙀 / 𝙐𝙍𝙇 / 𝙇𝙄𝙉𝙆 𝙉𝙊 𝙀𝙎 𝙑𝘼́𝙇𝙄𝘿𝙊*')}
 
 if (stiker) {
 conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
