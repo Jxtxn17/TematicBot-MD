@@ -49,7 +49,7 @@ let handler = async (m, {conn, args, usedPrefix, command}) => {
           contextInfo: {
             forwardingScore: 200,
             isForwarded: false,
-            externalAdReply: {showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl:, thumbnail: imagen7},
+            externalAdReply: {showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: thumbnail: imagen7},
           },
         },
         {quoted: m}
