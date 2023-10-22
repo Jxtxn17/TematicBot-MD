@@ -4,7 +4,7 @@ let info = `*Genial minaste ${hasil} XP ✨*`
 let time = global.db.data.users[m.sender].lastmiming + 600000
 if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*⏰ Debes esperar ${msToTime(time - new Date())} para volver a minar*`  
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🍁 CuriosityBot-MD 🍁*', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🍁 𝙏𝙪𝙧𝙗𝙤𝘽𝙤𝙩-𝙈𝘿 🍁*', 'status@broadcast')
 m.react('⛏️')   
 //m.reply(`*[ 🎉 ] 𝙶𝚎𝚗𝚒𝚊𝚕, 𝚖𝚒𝚗𝚊𝚜𝚝𝚎 ${hasil} 𝚇𝙿*`)
 global.db.data.users[m.sender].lastmiming = new Date * 1
