@@ -13,7 +13,7 @@ import {sticker} from "../lib/sticker.js";
        if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply("⚠️ *_Máximo 10 segundos._*"); 
        let img = await q.download?.(); 
        if (!img) 
-         throw `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝚅𝙸𝙳𝙴𝙾 𝙾 𝙸𝙼𝙰𝙶𝙴𝙽${usedPrefix + command}*`; 
+         throw `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝚅𝙸𝙳𝙴𝙾 𝙾 𝙸𝙼𝙰𝙶𝙴𝙽 ${usedPrefix + command}*`; 
        let out; 
        try { 
          stiker = await sticker(img, false, global.packname, global.author); 
