@@ -8,8 +8,8 @@ import { sticker } from '../lib/sticker.js'
  let q = m.quoted ? m.quoted : m 
  let mime = (q.msg || q).mimetype || q.mediaType || '' 
   
- if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉 𝙊 𝙑𝙄𝘿𝙀𝙊
-𝙊 𝘾𝙊𝙉* ${usedPrefix + command}`) 
+ if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉 𝙊 𝙑𝙄𝘿𝙀𝙊*
+*𝙊 𝘾𝙊𝙉* ${usedPrefix + command}`) 
  if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙇 𝙑𝙄́𝘿𝙀𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 7 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎*') 
   
  if (/webp|image|video/g.test(mime)) { 
