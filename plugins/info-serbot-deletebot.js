@@ -15,26 +15,26 @@ let handler  = async (m, { conn }, args) => {
     let parentw = conn
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 	let uniqid = `${who.split`@`[0]}` //parentw.getName(who)
-    if (global.conn.user.jid !== conn.user.jid) conn.sendMessage(m.chat, {text: '*⚠️ Por qué no vas directamente con el numero del Bot?*'}, { quoted: m }) 
+    if (global.conn.user.jid !== conn.user.jid) conn.sendMessage(m.chat, {text: '*[❗𝐈𝐍𝐅𝐎❗] 𝙋𝙤𝙧 𝙦𝙪𝙚 𝙣𝙤 𝙫𝙖𝙨 𝙙𝙞𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙘𝙤𝙣 𝙚𝙡 𝙣𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝘽𝙤𝙩?*'}, { quoted: m }) 
     else {
-      await conn.sendMessage(m.chat, {text: "😬 Adios bot"}, { quoted: m }) 
+      await conn.sendMessage(m.chat, {text: "[❗𝐈𝐍𝐅𝐎❗] 𝘼𝙙𝙞𝙤𝙨 𝙗𝙤𝙩"}, { quoted: m }) 
       }
 
     try {
         
         fs.rmdir("./jadibts/" + uniqid, { recursive: true, force: true })
         .then(() => {
-        console.log('*⚠️ SE HAN ELIMINADO TODOS LOS ARCHIVOS*')
+        console.log('*[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼𝙉 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 𝙏𝙊𝘿𝙊𝙎 𝙇𝙊𝙎 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎*')
         })
         await conn.sendMessage(m.chat, {text : "todos los archivos fueron eliminados" } , { quoted: m })
         /*fs.unlink("./jadibts/" + uniqid + "/creds.json")
         console.log('File removed')
-        await conn.sendMessage(m.chat, {text : "la session fue eliminada " } , { quoted: m })
+        await conn.sendMessage(m.chat, {text : "𝙡𝙖 𝙨𝙚𝙨𝙨𝙞𝙤𝙣 𝙛𝙪𝙚 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙖 " } , { quoted: m })
         await fs.unlink("./jadibts/" + uniqid).md
         console.log('Folder removed')
         await conn.sendMessage(m.chat, {text : "la carpeta fue eliminada " } , { quoted: m })*/
         } catch(err) {
-        console.error('*⚠️ LA CARPETA O SESIÓN NO EXISTEN*', err)
+        console.error('*[❗𝐈𝐍𝐅𝐎❗] 𝙇𝘼 𝘾𝘼𝙍𝙋𝙀𝙏𝘼 𝙊 𝙎𝙀𝙎𝙄𝙊́𝙉 𝙉𝙊 𝙀𝙓𝙄𝙎𝙏𝙀𝙉*', err)
       
     }
             
