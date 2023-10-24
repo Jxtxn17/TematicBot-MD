@@ -10,7 +10,7 @@ await db.write();
 let handler  = async (m, { conn }) => {
 
     if (global.conn.user.jid == conn.user.jid) {
-    let resp = 'Por qué no vas directamente con el numero del Bot?'
+    let resp = '[❗𝐈𝐍𝐅𝐎❗] 𝙋𝙤𝙧 𝙦𝙪𝙚 𝙣𝙤 𝙫𝙖𝙨 𝙙𝙞𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙘𝙤𝙣 𝙚𝙡 𝙣𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝘽𝙤𝙩?'
     await conn.sendPresenceUpdate('composing' , m.chat);
 
     let int = '';
@@ -32,7 +32,7 @@ let handler  = async (m, { conn }) => {
     await db.write();
     await conn.sendMessage(m.chat, { text: resp.trim(), mentions: conn.parseMention(resp) }, {quoted: m}, { disappearingMessagesInChat: 1 * 1000} )
     } else {
-      let resp = 'Me apagare :\')'
+      let resp = '[❗𝐈𝐍𝐅𝐎❗] 𝙈𝙚 𝙖𝙥𝙖𝙜𝙖𝙧𝙚 :\')'
       let int = '';
     for (const c of resp) {
         await new Promise(resolve => setTimeout(resolve, 50));
