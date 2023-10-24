@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `*[⚠️] ESCRIBE EL REPORTE*\n\n💡 EJEMPLO\n*${usedPrefix + command} el comando ${usedPrefix}infobot no funciona.*`
 if (text.length < 8) throw `⚠️ *Mínimo 10 caracteres para hacer El Reporte.*`
 if (text.length > 1000) throw `⚠️ *Máximo 1000 caracteres para hacer El Reporte.*`
-let teks = `*⚠️ REPORTE ⚠️*\n*📞 NÚMERO*\nWa.me/${m.sender.split`@`[0]}\n*📝 MENSAJE*\n${text}`
+let teks = `*⚠️ 𝙍𝙀𝙋𝙊𝙍𝙏𝙀 ⚠️*\n*📞 𝙉𝙐́𝙈𝙀𝙍𝙊*\nWa.me/${m.sender.split`@`[0]}\n*📝 𝙈𝙀𝙉𝙎𝘼𝙅𝙀*\n${text}`
 conn.reply('51929972576@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
 contextInfo: {
 mentionedJid: [m.sender]
