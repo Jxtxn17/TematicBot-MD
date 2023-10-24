@@ -15,7 +15,7 @@ import { watchFile, unwatchFile } from 'fs'
 
  global.animxscans = ['51929972576'] 
  global.suittag = ['51929972576'] 
- global.mods = ['573206117464'] 
+ global.mods = [] 
  global.prems = []
 global.packname = '× Stickers V2\ngithub.com/TurboBot-MD\n\n× Script:\ngithub.com/Jxtxn17/TurboBot-MD'
 global.author = ' T\n U\n R\n  B\n O\n '
