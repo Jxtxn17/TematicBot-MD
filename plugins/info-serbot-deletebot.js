@@ -26,7 +26,7 @@ let handler  = async (m, { conn }, args) => {
         .then(() => {
         console.log('*[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼𝙉 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 𝙏𝙊𝘿𝙊𝙎 𝙇𝙊𝙎 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎*')
         })
-        await conn.sendMessage(m.chat, {text : "todos los archivos fueron eliminados" } , { quoted: m })
+        await conn.sendMessage(m.chat, {text : 𝙏𝙤𝙙𝙤𝙨 𝙡𝙤𝙨 𝙖𝙧𝙘𝙝𝙞𝙫𝙤𝙨 𝙛𝙪𝙚𝙧𝙤𝙣 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙤𝙨" } , { quoted: m })
         /*fs.unlink("./jadibts/" + uniqid + "/creds.json")
         console.log('File removed')
         await conn.sendMessage(m.chat, {text : "𝙡𝙖 𝙨𝙚𝙨𝙨𝙞𝙤𝙣 𝙛𝙪𝙚 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙖 " } , { quoted: m })
