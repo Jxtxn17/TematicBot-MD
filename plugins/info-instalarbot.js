@@ -5,7 +5,7 @@ let texto = `
 │ *INSTALACIÓN DE TURBOBOT-MD*
 ╰┬────────────┈⊷
 ┌┤ *REQUISITOS PARA LAS INSTALACION*
-┌┤➳ _Dudas: wa.me/59894808483_
+┌┤➳ _Dudas: wa.me/51929972576
 ┌┤➳ _Tutoríal: https://youtu.be/qRb9ElGT8mM_
 ┌┤➳ _1 GB de almacenamiento_
 ┌┤➳ _Termux: https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file_
