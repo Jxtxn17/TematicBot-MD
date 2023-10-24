@@ -23,7 +23,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  *📑 INFO TURBO BOT MD* 
   
  👑 *CREADOR* 
-  *Azami* 
+  *Jxtxn17* 
  -------------------------- 
  🥏 *CONTACTO*  
   *${ig}* 
