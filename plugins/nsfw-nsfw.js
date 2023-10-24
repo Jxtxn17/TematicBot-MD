@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 let handler = async (m, { conn, usedPrefix, command }) => {
 	
-	if (!global.db.data.chats[m.chat].nsfw) throw `🚫 El grupo no admite contenido +18\n\nPara habilitar escriba \n*${usedPrefix}enable* nsfw`
+	if (!global.db.data.chats[m.chat].nsfw) throw `[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙡 𝙜𝙧𝙪𝙥𝙤 𝙣𝙤 𝙖𝙙𝙢𝙞𝙩𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 +18\n\n𝙋𝙖𝙧𝙖 𝙝𝙖𝙗𝙞𝙡𝙞𝙩𝙖𝙧 𝙚𝙨𝙘𝙧𝙞𝙗𝙖 \n*${usedPrefix}enable* nsfw`
     let user = global.db.data.users[m.sender].age
     if (user < 15) throw m.reply(`😐 ᴇʀᴇs ᴍᴇɴᴏʀ ᴅᴇ ᴇᴅᴀᴅ! ᴠᴜᴇʟᴠᴇ ᴄᴜᴀɴᴅᴏ ᴛᴇɴɢᴀs ᴍᴀs ᴅᴇ 15 ᴀñᴏs`) 
    
