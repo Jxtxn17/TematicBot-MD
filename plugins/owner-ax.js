@@ -2,8 +2,8 @@ let handler = (m) => m;
 handler.all = async function (m) {
 
 
-  if (/^Axel|AX|ax|axel|Julian|AXel|AXEL$/i.test(m.text)) {
-    var ax = `𝙲𝚁𝙴𝙰𝙳𝙾𝚁 @${global.suittag},${global.mods}
+  if (/^Axel|AX|ax|axel|AXel|AXEL$/i.test(m.text)) {
+    var ax = `𝙲𝚁𝙴𝙰𝙳𝙾𝚁 @${global.suittag}
  𝚄𝙽 𝙷𝚄𝙼𝙰𝙽𝙾 𝚃𝙴 𝙰 𝙸𝙽𝚅𝙾𝙲𝙰𝙳𝙾`;
 
 
