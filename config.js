@@ -12,7 +12,7 @@ import { watchFile, unwatchFile } from 'fs'
  const __dirname = global.__dirname(import.meta.url) 
   
  global.owner =
-[['51929972576', '🍇𝙹𝚡𝚝𝚡𝚗 𝚃𝙱🍇', true],  ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true]],
+[['51929972576', '🍇𝙹𝚡𝚝𝚡𝚗 𝚃𝙱🍇', true], ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true]],
 
  global.animxscans = ['51929972576'] 
  global.suittag = ['51929972576'] 
