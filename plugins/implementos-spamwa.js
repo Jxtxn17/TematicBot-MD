@@ -15,5 +15,4 @@ const handler = async (m, {conn, text}) => {
  handler.help = ['spamwa <number>|<mesage>|<no of messages>']; 
  handler.tags = ['owner']; 
  handler.command = /^spam(wa)?$/i;
-  
  export default handler;
