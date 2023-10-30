@@ -13,10 +13,7 @@ const handler = async (m, {conn, text}) => {
    } 
  }; 
  handler.help = ['spamwa <number>|<mesage>|<no of messages>']; 
- handler.tags = ['owners']; 
+ handler.tags = ['owner']; 
  handler.command = /^spam(wa)?$/i; 
- handler.group = false; 
- handler.premium = true; 
  // handler.private = true 
- // handler.limit = true 
  export default handler;
