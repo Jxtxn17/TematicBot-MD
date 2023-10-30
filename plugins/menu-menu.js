@@ -344,7 +344,7 @@
              'mediaType': 0x1, 
              'previewType': "PHOTO", 
              'title': 'Hola!!', 
-             'thumbnail': imagen1, 
+             'thumbnail': 'imagen1', 
              'renderLargerThumbnail': !![], 
              'sourceUrl': md 
          } 
