@@ -11,7 +11,7 @@ let handler = m => m
  let bio = `╔══════════════ 
 ║${global.wm} 
 ╚════════════ 
-║${uptime} ║.estado .menu .jadibot. .owner  𝙱𝚢 𝙹𝚡𝚝𝚡𝚗𝟷𝟽 
+${uptime} .estado .menu .jadibot. .owner  𝙱𝚢 𝙹𝚡𝚝𝚡𝚗𝟷𝟽 
 ╚══════` 
  await this.updateProfileStatus(bio).catch(_ => _) 
  setting.status = new Date() * 1 
