@@ -9,7 +9,7 @@ let handler = m => m
  setTimeout(resolve, 2000) }) * 1000} 
  let uptime = clockString(_uptime) 
  let bio = `╔══════════════
-║${global.packname}
+║${global.wm}
 ║════════════
 ║ ${uptime}
 ║.estado .menu .jadibot. .owner
