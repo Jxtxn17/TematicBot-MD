@@ -46,7 +46,7 @@
   
  let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
  let d2 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' 
- let d3  = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+ let d3 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
  let d4 = 'application/pdf' 
  let d5 = 'application/vnd.android.package-archive' 
  let d6 = 'application/zip' 
