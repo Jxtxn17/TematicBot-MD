@@ -21,23 +21,22 @@ const handler = async (m, {conn, args, participants}) => {
  ]; 
    const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)]; 
    const texto = ` 
- 🌐𝐓𝐎𝐃𝐎𝐒 𝐀 𝐏𝐎𝐑 𝐄𝐋 𝐏𝐎𝐃𝐄𝐑🌐 
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
+ 𝐌𝐈𝐑𝐀 𝐓𝐔 𝐑𝐀𝐍𝐆𝐎 𝐂𝐑𝐀𝐂𝐊⚡ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
  —◉ 𝗧𝗢𝗣𝗦 𝗥𝗔𝗡𝗚𝗢𝗦 (𝐓𝐔) ${len} 𝗘𝗫𝗣 [🌧️] 
   
- [💖]𝗧𝘂 𝗿𝗮𝗻𝗴𝗼 𝗲𝗻 𝗹𝗮 𝘁𝗮𝗯𝗹𝗮:✨ ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length} 
+𝗧𝘂 𝗿𝗮𝗻𝗴𝗼 𝗲𝗻 𝗹𝗮 𝘁𝗮𝗯𝗹𝗮:✨ ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length} 
   
  ${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n`} 
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  —◉ 𝗧𝗢𝗣𝗦 𝗥𝗔𝗡𝗚𝗢𝗦 (𝐓𝐔) ${len} 𝗗𝗜𝗔𝗠𝗔𝗡𝗧𝗘𝗦 [☃️] 
   
- [💖]𝗧𝘂 𝗿𝗮𝗻𝗴𝗼 𝗲𝗻 𝗹𝗮 𝘁𝗮𝗯𝗹𝗮:✨ ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length} 
+ 𝗧𝘂 𝗿𝗮𝗻𝗴𝗼 𝗲𝗻 𝗹𝗮 𝘁𝗮𝗯𝗹𝗮:✨ ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length} 
   
  ${sortedLim.slice(0, len).map(({jid, limit}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} diamantes*`).join`\n`} 
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  —◉ 𝗧𝗢𝗣𝗦 𝗥𝗔𝗡𝗚𝗢𝗦 (𝐓𝐔) ${len} 𝗟𝗘𝗩𝗘𝗟 [☔] 
   
- [💖]𝗧𝘂 𝗿𝗮𝗻𝗴𝗼 𝗲𝗻 𝗹𝗮 𝘁𝗮𝗯𝗹𝗮:✨ ${usersLevel.indexOf(m.sender) + 1} de ${usersLevel.length} 
+ 𝗧𝘂 𝗿𝗮𝗻𝗴𝗼 𝗲𝗻 𝗹𝗮 𝘁𝗮𝗯𝗹𝗮:✨ ${usersLevel.indexOf(m.sender) + 1} de ${usersLevel.length} 
   
  ${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *nivel ${level}*`).join`\n`} 
   
