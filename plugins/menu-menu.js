@@ -69,7 +69,7 @@
      } 
      } 
      await conn.reply(m.chat, '*Enviando el menu . . .*', fload, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.ig, thumbnail: await (await fetch(pp)).buffer() }}}) 
- m.react('🚀')      
+ m.react('🎃')      
  let menu = `┏━━━━━━━━━━━━━━━🕸
 ┃👋 𝙃𝙤𝙡𝙖, 𝙎𝙤𝙮 𝙏𝙪𝙧𝙗𝙤𝘽𝙤𝙩-𝙈𝘿.
 ┏━━━━━━━━━━━━━━━━🕸
@@ -296,7 +296,7 @@
 ┃┋ႌ〬🎃 .𝚞𝚗𝚋𝚊𝚗𝚞𝚜𝚎𝚛
 〬┗━━━━ ≪ •❈• ≫ ━━━━┛` 
  function _0x2daf() { 
-     const _0x4c1076 = ['namedoc', 'social', '1017dFLzIP', '11680bWFOeX', 'sendMessage', '1FnTozH', '6qNtNxK', '445374chjKag', '2096504ySppGm', '627669MaFyqj', 'readFileSync', 'En breve se enviará el menú...', '374160lMCurS', '356228pujvOS', './storage/logos/Menu1.jpg', '1019845zOpQQK', 'pdf', 'chat']; 
+     const _0x4c1076 = ['namedoc', 'social', '1017dFLzIP', '11680bWFOeX', 'sendMessage', '1FnTozH', '6qNtNxK', '445374chjKag', '2096504ySppGm', '627669MaFyqj', 'readFileSync', 'En breve se enviará el menú...', '374160lMCurS', '356228pujvOS', './storage/logos/MenuJS.jpg', '1019845zOpQQK', 'pdf', 'chat']; 
      _0x2daf = function() { 
          return _0x4c1076; 
      }; 
@@ -347,7 +347,7 @@
              'mediaType': 0x1, 
              'previewType': "PHOTO", 
              'title': 'Hola!!', 
-             'thumbnail': 'imagen1', 
+             'thumbnail': imagen1, 
              'renderLargerThumbnail': !![], 
              'sourceUrl': md 
          } 
