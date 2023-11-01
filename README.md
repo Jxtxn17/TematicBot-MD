@@ -88,8 +88,10 @@ npm start
 termux-setup-storage
 ```
 ```bash
-apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://github.com/Jxtxn17/TurboBot-MD/master/turbo.sh | bash
+apt update -y && yes | apt upgrade && pkg install yarn && pkg install -y
 ```
+```bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://github.com/Jxtxn17/TurboBot-MD/master/turbo.sh | bash
 
 ### `OBTENER OTRO CODIGO QR`
 ```bash
