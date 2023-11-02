@@ -33,8 +33,8 @@
 
 ### `⚙️ AJUSTES ⚙️`
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/TurboBot-MD/blob/main/config.js)
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/Undefined17/CuriosityBot-MD/fork)
-- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Undefined17/CuriosityBot-MD/blob/main/package.json#L42)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/TurboBot-MD/fork)
+- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Jxtxn17/TurboBot-MD/blob/main/package.json#L42)
 
 ### Ejemplo 
 En caso de duda, antes de instalar TurboBot-MD, pruebe el bot aquí
