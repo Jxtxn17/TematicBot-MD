@@ -91,7 +91,7 @@ termux-setup-storage
 apt update -y && yes | apt upgrade && pkg install yarn && pkg install -y
 ```
 ```bash
-Wget-0 - https://raw.githubusercontent.com/Jxtxn17/TurboBot-MD/main/turbo.sh | bash
+wget -0 - https://raw.githubusercontent.com/Jxtxn17/TurboBot-MD/main/turbo.sh | bash
 ```
 
 ### `OBTENER OTRO CODIGO QR`
