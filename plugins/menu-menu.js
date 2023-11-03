@@ -69,7 +69,7 @@
      } 
      } 
      await conn.reply(m.chat, '*Enviando el menu . . .*', fload, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.ig, thumbnail: await (await fetch(pp)).buffer() }}}) 
- m.react('🎃')      
+ m.react('👻')      
  let menu = `┏━━━━━━━━━━━━━━━🕸
 ┃👋 𝙃𝙤𝙡𝙖, 𝙎𝙤𝙮 𝙏𝙪𝙧𝙗𝙤𝘽𝙤𝙩-𝙈𝘿.
 ┏━━━━━━━━━━━━━━━━🕸
