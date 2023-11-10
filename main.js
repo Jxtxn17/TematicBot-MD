@@ -154,8 +154,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1'
  } 
   
  // Código adaptado para la compatibilidad de 
- // ser bot con el código de texto de 8 digitos 
- // Hecho por: GataNina-Li (Gata Dios) 💞 
+ // jadibot con el código de texto de 8 digitos 
+ // Hecho por: GataNina-Li (Gata Dios)  
   
  global.conn = makeWASocket(connectionOptions) 
  if (opcion === '2' || methodCode) { 
