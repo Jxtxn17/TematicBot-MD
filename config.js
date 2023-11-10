@@ -16,6 +16,12 @@ import { watchFile, unwatchFile } from 'fs'
 ['584129799955', '🤙รձռร г4🤙', true],
 ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true], ['5217294888993', '🍓𝙰𝚉𝙰𝙼𝙸🍓', true],
 ['573106040746', '𝙴𝙳𝙴𝚁', true]],
+
+//BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces: 
+ //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos) 
+ global.botNumberCode = '' //Ejemplo: +59309090909 
+ global.confirmCode = ''
+
  global.animxscans = ['51929972576'] 
  global.suittag = ['51929972576'] 
  global.mods = [] 
