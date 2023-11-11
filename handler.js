@@ -568,7 +568,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  private: '⚠️ *ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
  admin: '⚠️️ *ESTE COMANDO SOLO PUEDE SER USADO POR ADMINS*', 
  botAdmin: '⚠️️ *PARA USAR ESTA FUNCIÓN DEBO SER ADMIN*', 
- unreg: '⚠️ *REGÍSTRESE PARA USAR ESTA FUNCIÓN ESCRIBIENDO:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Azami.25*', 
+ unreg: '⚠️ *REGÍSTRESE PARA USAR ESTA FUNCIÓN ESCRIBIENDO:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
  restrict: '⚠️ *ESTA CARACTERÍSTICA ESTA DESACTIVADA*' 
  }[type] 
  if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.channel, thumbnail: imagen1 }}}) 
