@@ -63,7 +63,7 @@ irq: 0
 let old = performance.now()
 let neww = performance.now()
 let speed = neww - old
-let info = `┏━━━━❰･𝐄𝐒𝐓𝐀𝐃𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓･❱━━
+let info = `┏━━━━❰･𝐄𝐒𝐓𝐀𝐃𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓･❱
 ┃
 ┃웃 Hola ${taguser}
 ┃╍╍╍╍╍╍╍╍╍╍╍╍╍
