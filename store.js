@@ -47,6 +47,8 @@ global.paypal = 'https://paypal.me/Azami19'
 global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/Kc50zFnssaGIjurSA4iDYe' //Grupo ofc
 global.nnn = 'https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO' //Turbo global
+global.channel =
+'https://whatsapp.com/channel/0029VaDRDk2CBtxBVex2vB0Y' //TurboBot-MD
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
 global.nnnnn = 'https://chat.whatsapp.com/KlRcEfl8snBEEOA0JXzw5A' //enlace curiosity 
 global.linkSity = [yt, ig, md, paypal, git, nn]
