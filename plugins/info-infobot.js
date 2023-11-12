@@ -17,7 +17,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  const { autoread, gconly, pconly, self } = global.opts || {} 
  let old = performance.now() 
  let neww = performance.now() 
- let pp = './storage/menus/Menu1.jpg' 
+ let pp = './storage/logos/Menu1.jpg' 
  let speed = neww - old 
  let info = ` 
  *📑 INFO TURBO BOT MD* 
