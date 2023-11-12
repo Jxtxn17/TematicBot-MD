@@ -46,6 +46,7 @@ global.md = 'https://github.com/Jxtxn17/TurboBot-MD'
 global.paypal = 'https://paypal.me/Azami19'
 global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/Kc50zFnssaGIjurSA4iDYe' //Grupo ofc
+global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
 global.nnn = 'https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO' //Turbo global
 global.channel =
 'https://whatsapp.com/channel/0029VaDRDk2CBtxBVex2vB0Y' //TurboBot-MD
