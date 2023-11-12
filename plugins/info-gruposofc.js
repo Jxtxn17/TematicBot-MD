@@ -8,7 +8,7 @@ let texto = `𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖 𝙡𝙤𝙨 𝙜𝙧
 ╍╍╍╍╍╍╍╍╍╍╍╍
 *${nnn}*
 ╍╍╍╍╍╍╍╍╍╍╍╍
-*${canal}*
+*${channel}*
 ╍╍╍╍╍╍╍╍╍╍╍╍`
 await conn.sendFile(m.chat, foto, 'Curiosity.jpg', texto, estilo)}
 
