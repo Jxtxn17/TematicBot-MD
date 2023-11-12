@@ -571,7 +571,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  unreg: '⚠️ *REGÍSTRESE PARA USAR ESTA FUNCIÓN ESCRIBIENDO:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
  restrict: '⚠️ *ESTA CARACTERÍSTICA ESTA DESACTIVADA*' 
  }[type] 
- if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.channel, thumbnail: imagen1 }}}) 
+ if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.channel, thumbnail: imagen2 }}}) 
   
  } 
  let file = global.__filename(import.meta.url, true) 
