@@ -42,9 +42,9 @@ global.sityImg = [img, img1, img2, img3, img4, img5, img6, img7]
 //Enlaces
 global.yt = 'https://www.youtube.com/@Azami_Mods'
 global.ig = 'https://instagram.com/azami_ofc'
-global.md = 'https://github.com/AzamiJs/CuriosityBot-MD'
+global.md = 'https://github.com/Jxtxn17/TurboBot-MD'
 global.paypal = 'https://paypal.me/Azami19'
-global.git = 'https://github.com/GataNina-Li'
+global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Grupo ofc
 global.nnn = 'https://chat.whatsapp.com/J1R402WH1N0Hdl3S0NDEYu' //Curiosity global
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
