@@ -29,7 +29,7 @@ LoboBot-MD
 await conn.sendFile(m.chat, foto, 'Curiosity.jpg', texto, estilo)}
 
 handler.tags = ['main']
-handler.command = /^gruposcb|grupos|groups$/i
+handler.command = /^gruposcb|grupos|gruposofc$/i
 handler.exp = 35
 handler.register = true
 export default handler
