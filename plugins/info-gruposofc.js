@@ -21,7 +21,11 @@ CuriosityBot-MD
 HachikoBot-MD
 ╍╍╍╍╍┅╍╍╍┅╍
 *${hachiko}*
-╍╍┅╍╍╍╍╍╍╍┅`
+╍╍┅╍╍╍╍╍╍╍╍
+LoboBot-MD
+╍╍┅╍╍╍╍╍╍╍┅
+*${Lobo}*
+┅╍╍╍╍╍╍╍╍╍┅`
 await conn.sendFile(m.chat, foto, 'Curiosity.jpg', texto, estilo)}
 
 handler.tags = ['main']
