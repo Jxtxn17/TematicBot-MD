@@ -14,10 +14,9 @@ import { watchFile, unwatchFile } from 'fs'
  global.owner =
 [['51929972576', '🍇𝙹𝚡𝚝𝚡𝚗 𝚃𝙱🍇', true],
 ['51971959440', '🍧𝙹𝚇𝚃𝚇𝙽 𝚃𝙱🍧', true],
-['584129799955', '🤙รձռร г4🤙', true],
 ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true], ['5217294888993', '🍓𝙰𝚉𝙰𝙼𝙸🍓', true],
 ['573106040746', '𝙴𝙳𝙴𝚁', true],
-['524531287294'],['524437863111']],
+['524531287294'],['524437863111'],['584129799955']],
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces: 
  //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos) 
