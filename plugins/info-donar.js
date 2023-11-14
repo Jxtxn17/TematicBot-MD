@@ -1,9 +1,9 @@
 let media = './storage/logos/Menu2.jpg'
 let handler = async (m, { conn, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let str = `┏ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━
+let str = `┏ ┅ ━━━━━━━━━━━━━━━━━
  ┇          「 𝑨𝑷𝑶𝒀𝑨𝑹 」 
- ┣ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━ 
+ ┣ ┅ ━━━━━━━━━━━━━━━━━
  ┃ ¿ 𝙷𝙾𝙻𝙰 𝙲𝙾𝙼𝙾 𝙴𝚂𝚃𝙰𝚂 ?
  ┃ 
  ┃ 𝙿𝚄𝙴𝙳𝙴𝚂 𝙰𝙿𝙾𝚈𝙰𝚁 𝙴𝙻 𝙿𝚁𝙾𝚈𝙴𝙲𝚃𝙾 𝙳𝙴  
