@@ -1,7 +1,7 @@
 let media = './storage/logos/Menu2.jpg'
 let handler = async (m, { conn, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let str = `*┏ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━*
+let str = `┏ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━
  ┇          「 𝑨𝑷𝑶𝒀𝑨𝑹 」 
  ┣ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━ 
  ┃ ¿ 𝙷𝙾𝙻𝙰 𝙲𝙾𝙼𝙾 𝙴𝚂𝚃𝙰𝚂 ? ${name} 
@@ -13,7 +13,7 @@ let str = `*┏ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━*
  ┃ 𝙾 𝚃𝙰𝙼𝙱𝙸𝙴́𝙽 𝙿𝚄𝙴𝙳𝙴𝚂 𝙳𝙾𝙽𝙰𝚁 𝙰𝙻 ${paypal}
  ┃ 𝙿𝙰𝚁𝙰 𝙿𝙾𝙳𝙴𝚁 𝚂𝙴𝙶𝚄𝙸𝚁 𝙰𝙲𝚃𝚄𝙰𝙻𝙸𝚉𝙰𝙽𝙳𝙾 𝙴𝙻 𝙱𝙾𝚃
  ┃ 𝚈 𝚀𝚄𝙴 𝚄𝚂𝚃𝙴𝙳𝙴𝚂 𝚃𝙴𝙽𝙶𝙰𝙽 𝙼𝙴𝙹𝙾𝚁 𝚂𝙴𝚁𝚅𝙸𝙲𝙸𝙾, 𝙶𝚁𝙰𝙲𝙸𝙰𝚂.
- ┗ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━
+ ┗ ┅ ━━━━━━━━━━━━━━━━━ ┅ ━`
 await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)}
 handler.tags = ['main']
 handler.command = /^donar|donate|donasi$/i
