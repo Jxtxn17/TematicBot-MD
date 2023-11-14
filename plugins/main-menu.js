@@ -36,7 +36,7 @@ const defaultMenu = {
 ║╭──────────────
 ║├⫹⫺ *Creador : Jxtxn17
 ║├⫹⫺ *Numero:* wa.me/51929972576
-║├⫹⫺ *Tiempo Activo:* %muptime
+║├⫹⫺ *Tiempo Activo:* %uptime
 ║├⫹⫺ *Registrado :* %rtotalreg de %totalreg usuarios
 ║╰────────────── 
 ╚══════════════════⋆
