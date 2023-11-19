@@ -4,61 +4,7 @@
   let menu = `[❗𝐈𝐍𝐅𝐎❗] 𝙌𝙪𝙚 𝙩𝙖𝙡 𝙦𝙪𝙚𝙧𝙞𝙙𝙤 𝙪𝙨𝙪𝙖𝙧𝙞𝙤, 𝙥𝙤𝙧 𝙖𝙝𝙤𝙧𝙖 𝙚𝙡 𝙢𝙚𝙣𝙪́ 𝙙𝙚 ${wm} 𝙀𝙨𝙩𝙖 𝙙𝙖𝙣̃𝙖𝙙𝙤, 𝙥𝙪𝙚𝙙𝙚𝙨 𝙪𝙣𝙞𝙧𝙩𝙚 𝙖 𝙣𝙪𝙚𝙨𝙩𝙧𝙤 𝙘𝙖𝙣𝙖𝙡 𝙙𝙤𝙣𝙙𝙚 𝙥𝙤𝙙𝙧𝙖́𝙨 𝙚𝙨𝙩𝙖𝙧 𝙢𝙖́𝙨 𝙖𝙫𝙞𝙨𝙖𝙙𝙤 
 ${channel}
 𝙥𝙤𝙧 𝙡𝙤 𝙩𝙖𝙣𝙩𝙤 𝙥𝙖𝙧𝙖 𝙫𝙚𝙧 𝙚𝙡 𝙢𝙚𝙣𝙪́ 𝙪𝙨𝙖 .𝙢𝙚𝙣𝙪𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤.` 
-  function _0x2daf() { 
-      const _0x4c1076 = ['namedoc', 'social', '1017dFLzIP', '11680bWFOeX', 'sendMessage', '1FnTozH', '6qNtNxK', '445374chjKag', '2096504ySppGm', '627669MaFyqj', 'readFileSync', 'En breve se enviará el menú...', '374160lMCurS', '356228pujvOS', './storage/logos/Turbo.jpg', '1019845zOpQQK', 'pdf', 'chat'];  
-      _0x2daf = function() {  
-          return _0x4c1076;  
-      };  
-      return _0x2daf();  
-  }  
-  const _0x110137 = _0x13bb;   
-  (function(_0x14d3d7, _0x67b65e) {  
-      const _0x3a56bf = {  
-              _0x2e964c: 0x1b0,  
-              _0x4fc539: 0x1bd,  
-              _0x2a1845: 0x1b1,  
-              _0x2b6724: 0x1b3,  
-              _0x4293cc: 0x1b8,  
-              _0x59080a: 0x1b9  
-          },  
-          _0x30692c = _0x13bb,  
-          _0x119b1c = _0x14d3d7();  
-      while (!![]) {  
-          try {  
-              const _0x181128 = parseInt(_0x30692c(0x1bb)) / 0x1 * (parseInt(_0x30692c(_0x3a56bf._0x2e964c)) / 0x2) + parseInt(_0x30692c(_0x3a56bf._0x4fc539)) / 0x3 + parseInt(_0x30692c(_0x3a56bf._0x2a1845)) / 0x4 + parseInt(_0x30692c(_0x3a56bf._0x2b6724)) / 0x5 * (parseInt(_0x30692c(0x1bc)) / 0x6) + -parseInt(_0x30692c(0x1ad)) / 0x7 + -parseInt(_0x30692c(0x1be)) / 0x8 + parseInt(_0x30692c(_0x3a56bf._0x4293cc)) / 0x9 * (-parseInt(_0x30692c(_0x3a56bf._0x59080a)) / 0xa);  
-              if (_0x181128 === _0x67b65e) break;  
-              else _0x119b1c['push'](_0x119b1c['shift']());  
-          } catch (_0x1caf7d) {  
-              _0x119b1c['push'](_0x119b1c['shift']());  
-          }  
-      }  
-  }(_0x2daf, 0x235d2));  
   
-  function _0x13bb(_0x16c7de, _0x1a27b8) {  
-  const _0x2dafbc = _0x2daf();  
-  return _0x13bb = function(_0x13bbaf, _0x156d41) {  
-  _0x13bbaf = _0x13bbaf - 0x1ad;  
-  let _0x1a2b8a = _0x2dafbc[_0x13bbaf];  
-  return _0x1a2b8a;  
-  }, _0x13bb(_0x16c7de, _0x1a27b8);  
-  }  
-  let buttonMessage = {  
-      'document': {  
-          'url': md,  
-      },  
-      'mimetype': td,  
-      'fileName': '☰ D A S B O A R D ☰',  
-      'fileLength': '99',  
-      'pageCount': '999',  
-      'contextInfo': {  
-      'externalAdReply': {  
-      'showAdAttribution': !![],  
-              'mediaType': 0x1,  
-              'previewType': "PHOTO",  
-              'title': 'Hola!!',  
-              'thumbnail': imagen1,  
-              'renderLargerThumbnail': !![],  
-              'sourceUrl': md  
           }  
       },  
     'caption': menu['trim']()  
