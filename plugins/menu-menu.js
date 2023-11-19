@@ -6,7 +6,7 @@ ${channel}
 𝙥𝙤𝙧 𝙡𝙤 𝙩𝙖𝙣𝙩𝙤 𝙥𝙖𝙧𝙖 𝙫𝙚𝙧 𝙚𝙡 𝙢𝙚𝙣𝙪́ 𝙪𝙨𝙖 .𝙢𝙚𝙣𝙪𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤.` 
  await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)} 
  handler.tags = ['main'] 
- handler.command = /^donar|donate|donasi$/i 
+ handler.command = /^menu
  handler.exp = 35 
  handler.register = true 
  export default handler
