@@ -17,11 +17,11 @@ let handler = async (m, { conn, participants }) => {
    m.reply(`
 ╔═════════════════
 ║ *📑 Lista grupos:*
-║ *🚀 Grupos totales:* 
-║${groups.length} 
-╚═════════════════ 
- ${txt} 
-  
+║ *🚀 Grupos totales:* ${groups.length} 
+╚════════════════
+╔════════
+║ ${txt} 
+╚══════════  
  `.trim()) 
   
  } 
