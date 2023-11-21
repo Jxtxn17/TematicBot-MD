@@ -21,8 +21,7 @@ let handler = async (m, { conn, participants }) => {
 ╚════════════════
 ╔════════
 ║ ${txt} 
-╚══════════  
- `.trim()) 
+╚══════════`.trim()) 
   
  } 
   
