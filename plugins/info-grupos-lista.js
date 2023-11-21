@@ -19,17 +19,10 @@ let handler = async (m, { conn, participants }) => {
 ║ *📑 Lista grupos:*
 ║ *🚀 Grupos totales:* ${groups.length} 
 ╚════════════════
-╔════════
-║ ${txt} 
-║
-║
-║
-║
-║
-║
-║
-╚══════════
-`.trim()) 
+ ${txt}
+
+
+`.trim()
   
  } 
   
