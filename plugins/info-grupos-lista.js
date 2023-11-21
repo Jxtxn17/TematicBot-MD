@@ -14,13 +14,10 @@ let handler = async (m, { conn, participants }) => {
      } : db.data.chats[jid].expired ? msToDate(db.data.chats[jid].expired - now) : 'Grupo Vencido No Regulado'} 
  ${db.data.chats[jid].welcome ? '✅' : '❌'} *Bienvenida automática*
  ${db.data.chats[jid].antiLink ? '✅' : '❌'} *Anti Enlaces*\n\n` 
-   m.reply(`
-╔═════════════════
-║ *📑 Lista grupos:*
-║ *🚀 Grupos totales:* ${groups.length} 
-╚════════════════
+   m.reply(` *📑 Lista grupos:*
+*🚀 Grupos totales:* ${groups.length} 
 
-
+${txt}
 
 `.trim()
   
