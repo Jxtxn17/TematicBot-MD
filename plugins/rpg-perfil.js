@@ -1,7 +1,7 @@
 import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 let handler = async (m, { conn }) => {
-  let _pp = './storage/menus/Menu1.jpg'
+  let _pp = './storage/logos/╵╵╵╵╵╵╵╵╵╵╵╵╵┃.jpg'
   let user = db.data.users[m.sender]
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
@@ -11,13 +11,14 @@ let handler = async (m, { conn }) => {
     let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
     let str = `
 . . . *🔰 P E R F I L 🔰* . . .
-💌 • *Nombre:* ${username} 
-📧 • *Tag:* @${who.replace(/@.+/, '')}
-📞 • *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-🔗 • *Link:* https://wa.me/${who.split`@`[0]}
-🎨 • *Edad:* ${registered ? age : ''}
-💎 • *Limite: ${diamond} Usos* 
-📑 • *Registrado:* ${registered ? '✅': '❌'}
+┃💌 • *Nombre:* ${username} 
+┃📧 • *Tag:* @${who.replace(/@.+/, '')}
+┃📞 • *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+┃🔗 • *Link:* https://wa.me/${who.split`@`[0]}
+┃🎨 • *Edad:* ${registered ? age : ''}
+┃💎 • *Limite: ${diamond} Usos* 
+┃📑 • *Registrado:* ${registered ? '✅':
+'❌'}
 🌟 • *Premium:* ${premium ? "✅\n⏰ • *PremiumTime:* ${clockString(user.premiumTime)}" :"❌"}
 `.trim()
   //m.react(🌟) 
