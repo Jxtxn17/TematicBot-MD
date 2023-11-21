@@ -16,8 +16,9 @@ let handler = async (m, { conn, participants }) => {
  ${db.data.chats[jid].antiLink ? '✅' : '❌'} *Anti Enlaces*\n\n` 
    m.reply(`
 ╔═════════════════
-║*📑 Lista grupos:*
-║*🚀 Grupos totales:* ${groups.length} 
+║ *📑 Lista grupos:*
+║ *🚀 Grupos totales:* 
+${groups.length} 
 ╚═════════════════ 
  ${txt} 
   
