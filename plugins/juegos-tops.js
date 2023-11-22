@@ -81,9 +81,9 @@ m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]})
 }
 
 }
-handler.help =  ['topgays', 'topotakus', 'topheteros']
+handler.help =  ['topgays', 'topotakus', 'topheteros', 'toppajeros']
 handler.tags = ['juegos']
-handler.command =  ['topgays', 'topotakus', 'topheteros']
+handler.command =  ['topgays', 'topotakus', 'topheteros', 'toppajeros]
 handler.group = true
 handler.register = true
 
