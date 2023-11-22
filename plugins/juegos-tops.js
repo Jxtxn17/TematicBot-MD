@@ -49,7 +49,7 @@ m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]})
 }
 
 if (command == 'toppajeros') { 
- let top = `*🔥 TOP 10 PAJEROS DEL GRUPO 🦢
+ let top = `*🔥 TOP 10 PAJEROS DEL GRUPO 🦢*
       
  🔥 *_1.- ${user(a)}_* 
  🦢 *_2.- ${user(b)}_* 
