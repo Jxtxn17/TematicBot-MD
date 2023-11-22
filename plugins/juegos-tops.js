@@ -48,6 +48,22 @@ let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
 m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]})
 }
 
+if (command == 'toppajeros') { 
+ let top = `*🔥 TOP 10 PAJEROS DEL GRUPO 🦢
+      
+ 🔥 *_1.- ${user(a)}_* 
+ 🦢 *_2.- ${user(b)}_* 
+ 🔥 *_3.- ${user(c)}_* 
+ 🦢 *_4.- ${user(d)}_* 
+ 🔥 *_5.- ${user(e)}_* 
+ 🦢 *_6.- ${user(f)}_* 
+ 🔥 *_7.- ${user(g)}_* 
+ 🦢 *_8.- ${user(h)}_* 
+ 🔥 *_9.- ${user(i)}_* 
+ 🦢 *_10.- ${user(j)}_*` 
+ m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]}) 
+}
+
 if (command == 'topheteros') {
 let top = `*🏁 TOP 10 HETEROS DEL GRUPO 🏁*
     
