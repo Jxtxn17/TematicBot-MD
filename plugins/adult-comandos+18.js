@@ -10,7 +10,7 @@ import axios from 'axios';
    } 
   
    if (command == 'nsfwfoot') { 
-     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/nsfwfoot.json`)).data; 
+     const res = (await axios.get(`https://raw.githubusercontent.com/Jxtxn17/TurboBot-MD/master/src/JSON/nsfwfoot.json`)).data; 
      const haha = await res[Math.floor(res.length * Math.random())]; 
      conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m}); 
    } 
