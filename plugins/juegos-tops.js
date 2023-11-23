@@ -2,7 +2,7 @@ import util from 'util';
  import path from 'path'; 
  const user = (a) => '@' + a.split('@')[0]; 
  function handler(m, {groupMetadata, command, conn, text, usedPrefix}) { 
-   if (!text) throw `*[ 🍧 ] 𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝘿𝙀 𝙐𝙎𝙊:*\n.top *texto*`; 
+   if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]  𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝘿𝙀 𝙐𝙎𝙊:*\n.top *texto*`; 
    const ps = groupMetadata.participants.map((v) => v.id); 
    const a = ps.getRandom(); 
    const b = ps.getRandom(); 
