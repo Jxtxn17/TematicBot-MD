@@ -70,9 +70,3 @@ const role = [
 
 return role.reverse().find(role => level >= role.level)
 }}
-}
-handler.help = ['daily'] 
- handler.tags = ['xp'] 
- handler.command = ['rangos', 'rango']  
- handler.register = true 
- export default handler
