@@ -15,7 +15,7 @@ console.log('🚀 Iniciando...')
  const { say } = cfonts 
  const rl = createInterface(process.stdin, process.stdout) 
   
- say('Turbo\nBot\nMD', { 
+ say('Bailey\nBot\nMD', { 
  font: 'block', 
  align: 'center', 
  colors: ['magenta', 'cyan'] 
@@ -26,7 +26,7 @@ console.log('🚀 Iniciando...')
  colors: ['blueBright'] 
  }) 
  console.log(`  
-Turbo Bot V2 
+Bailey Bot V2 
   Author: Jxtxn 
   WA    : +994  
   Base  : BochilTeam 
