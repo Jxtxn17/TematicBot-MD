@@ -7,9 +7,9 @@ sudo dnf clean all -y
 
 RUN git clone https://github.com/Jxtxn17/TurboBot-MD
 
-WORKDIR /root/TurboBot-MD
+WORKDIR /root/BaileyBot-MD
 
-COPY ./root/TurboBot-MD
+COPY ./root/BaileyBot-MD
 
 RUN yarn install
 
