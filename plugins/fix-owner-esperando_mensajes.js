@@ -34,6 +34,6 @@
  }; 
  handler.help = ['del_reg_in_session_owner']; 
  handler.tags = ['owner']; 
- handler.command = /^(del_reg_in_session_owner|turbodel|delturbo|clearallsession)$/i; 
+ handler.command = /^(del_reg_in_session_owner|baileydel|delbailey|clearallsession)$/i; 
  handler.rowner = true 
  export default handler;
