@@ -11,7 +11,7 @@ let media = './storage/logos/Menu2.jpg'
  ╍╍┅┅┅┅┅┅┅╍╍╍╍╍╍╍╍╍` 
  await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)} 
  handler.tags = ['main'] 
- handler.command = /^donar|donate|donasi$/i 
+ handler.command = /^menu$/
  handler.exp = 35 
  handler.register = true 
  export default handler
