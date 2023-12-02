@@ -8,7 +8,7 @@ const ftrol = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsa
  
 let name = conn.getName(m.sender)
   
- let menu = m.reaction (✅)
+ let menu = m.reaction ('✅')
  `*👋 Hola* 
   
  *_${saludo}_* 
