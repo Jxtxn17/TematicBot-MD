@@ -1,6 +1,6 @@
-# `𝗧𝗨𝗥𝗕𝗢-𝗕𝗢𝗧-𝗠𝗗` 
+# `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗` 
 <p align="center">
-<img src="https://i.ibb.co/WnxshKZ/turbo.jpg" alt="TurboBot-MD" width="900"/>
+<img src="https://i.ibb.co/WnxshKZ/turbo.jpg" alt="BaileyBot-MD" width="900"/>
 </p>
 
 
@@ -32,12 +32,12 @@
 | Más funciones en adelante|⚡|
 
 ### `⚙️ AJUSTES ⚙️`
-- CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/TurboBot-MD/blob/main/config.js)
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/TurboBot-MD/fork)
-- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Jxtxn17/TurboBot-MD/blob/main/package.json#L42)
+- CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/config.js)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/BaileyBot-MD/fork)
+- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/package.json#L42)
 
 ### Ejemplo 
-En caso de duda, antes de instalar TurboBot-MD, pruebe el bot aquí
+En caso de duda, antes de instalar BaileyBot-MD, pruebe el bot aquí
 
 [![Grupos](https://img.shields.io/badge/TurboBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO) 
 
@@ -70,7 +70,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/Jxtxn17/TurboBot-MD && cd TurboBot-MD && yarn install && npm install
+git clone https://github.com/Jxtxn17/BaileyBot-MD && cd BaileyBot-MD && yarn install && npm install
 ```
 
 ```bash
@@ -98,7 +98,7 @@ wget -0 - https://raw.githubusercontent.com/Jxtxn17/TurboBot-MD/main/turbo.sh | 
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd TurboBot-MD1
+> cd BaileyBot-MD1
 > rm -rf sessions
 > npm start
 ```
