@@ -39,7 +39,7 @@
 ### Ejemplo 
 En caso de duda, antes de instalar BaileyBot-MD, pruebe el bot aquí
 
-[![Grupos](https://img.shields.io/badge/TurboBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO) 
+[![Grupos](https://img.shields.io/badge/BaileyBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO) 
 
 ***
 
