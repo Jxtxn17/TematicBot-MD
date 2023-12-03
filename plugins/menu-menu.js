@@ -4,13 +4,10 @@ let media = './storage/logos/Menu2.jpg'
 
 m.react ('✅')
 
- let menu = `*👋 _¿Hola querido usuario como esta?_*` 
-
-  `use.allmenu`
-  `_(Para ver el menú completo)_` 
- await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)} 
+ let menu = `*👋 _¿Hola querido usuario como esta?_* use .allmenu  
+  _(Para ver el menú completo)_` 
+ await conn.sendFile(m.chat, media, 'Curiosity.jpg', menu, fkontak)} 
  handler.tags = ['main'] 
  handler.command = /^menu$/i 
  handler.exp = 35 
- handler.register = true 
  export default handler
