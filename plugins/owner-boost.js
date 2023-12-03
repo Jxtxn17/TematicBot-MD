@@ -28,7 +28,7 @@ import { performance } from 'perf_hooks'
  } 
  handler.help = ['boost', 'refresh'] 
  handler.tags = ['info'] 
- handler.command = /^boost|/i 
+ handler.command = /^dash|/i 
  handler.owner = true 
  handler.fail = null 
  export default handler  
