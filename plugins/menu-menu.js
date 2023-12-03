@@ -12,7 +12,7 @@ const ftrol = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsa
   
   
  .allmenu 
- _(Para ver el menú completo)_` 
+ `_(Para ver el menú completo)_` 
  await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)} 
  handler.tags = ['main'] 
  handler.command = /^menu$/
