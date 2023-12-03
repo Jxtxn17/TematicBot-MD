@@ -6,10 +6,9 @@ let media = './storage/logos/Menu2.jpg'
 const ftrol = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsapp.net' }, message: { orderMessage: { itemCount : 2023, status: 1, surface : 1, message: `${name}!`, orderTitle: `▮Menu ▸`, sellerJid: '0@s.whatsapp.net' }}} 
  const fload = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsapp.net' }, message: { orderMessage: { itemCount : -99999999, status: 1, surface : 1, message: `BaileyBot-MD 🍧` + `\nJxtxn17`, orderTitle: `▮Menu ▸`, thumbnail: await (await fetch(pp)).buffer(), sellerJid: '0@s.whatsapp.net' }}} 
  
-let name = conn.getName(m.sender)
   
  let menu = m.reaction ('✅')
- `*👋 Hola, ${name}* 
+ `*👋 Hola, * 
   
  *_${saludo}_* 
   
