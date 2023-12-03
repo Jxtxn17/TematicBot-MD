@@ -2,7 +2,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 let handler  = async (m, { conn }) => {
 let texto = `
 ╭─────────────┈⊷
-│ *INSTALACIÓN DE TURBOBOT-MD*
+│ *INSTALACIÓN DE BAILEYBOT-MD*
 ╰┬────────────┈⊷
 ┌┤ *REQUISITOS PARA LAS INSTALACION*
 ┌┤➳ _Dudas: wa.me/51929972576
