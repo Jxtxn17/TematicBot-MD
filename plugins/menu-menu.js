@@ -10,7 +10,6 @@ const ftrol = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsa
  let menu = m.reaction ('✅')
  `*👋 Hola,*`
   
- *_${saludo}_* 
   
  .allmenu 
  _(Para ver el menú completo)_` 
