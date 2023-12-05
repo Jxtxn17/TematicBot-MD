@@ -4,10 +4,10 @@ import fs from 'fs'
 let handler = async (m, { args, text, usedPrefix, command }) => {
 	let info = `${usedPrefix + command} <Antiguo nombre> | <Nuevo nombre>
 
-*📌_ • Ejemplo:_*
+*📌 𝙀𝙅𝙀𝙈𝙋𝙇𝙊
 ➞ ${usedPrefix + command} inv | rpg-inv
 
-*_🗒 • Nota:_*
+*🗒 𝙉𝙊𝙏𝘼
 no use la palabra .js al final de la oracion y trate que la palabra no lleve espacios "rpg- inv"`
 if (!args[0]) throw info
 if (!args[1] == "|") throw `• *_ • Ejemplo:_*:
