@@ -12,7 +12,7 @@ import { watchFile, unwatchFile } from 'fs'
  const __dirname = global.__dirname(import.meta.url) 
   
  global.owner =
-[['51929972576', '🍧𝙹𝚇𝚃𝚇𝙽 𝚃𝙱🍧', true],
+[['51929972576', '🍧𝙹𝚇𝚃𝚇𝙽 𝙱𝙳🍧', true],
 ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true], ['5217294888993'],
 ['573106040746'],
 ['524531287294'],['524437863111']],
@@ -29,7 +29,7 @@ import { watchFile, unwatchFile } from 'fs'
 
 global.packname = 'ᥫ᭡𝘽𝙖𝙞𝙡𝙚𝙮𝘽𝙤𝙩-𝙈𝘿ꨄ'
 global.author = ' B\n A\n I\n  B\n O\n '
-global.wm = '𓆩𝘽𝙖𝙞𝙡𝙚𝙮𝐁𝐨𝐭-𝐌𝐃𓆪'
+global.wm = '𓆩𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃𓆪'
 global.wm2 = '✦𝘽𝙖𝙞𝙡𝙚𝙮-𝗯𝗼𝘁-𝗠𝗗✦'
 global.jxtxn = 'Jxtxn'
 global.cb = '⏤͟͟͞͞ＢａｉｌｅｙＢｏｔ-ＭＤ'
