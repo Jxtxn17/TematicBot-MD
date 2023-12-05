@@ -8,12 +8,12 @@ let handler = async (m, { conn, text }) => {
 		txt = Object.keys(data).map(v => `*${v.capitalize()}:* ${data[v]}`).join('\n'),
 		pp = await conn.profilePictureUrl(data.id, 'image').catch(console.error)
 		let groupinfo = `
-*╭───────────────╮*
-*│🎋❐ 𝙸𝙳:* ◜${data.id}◞
-*│🎋❐ 𝙽𝙾𝙼𝙱𝚁𝙴:* ◜${data.subject}◞
-*│🎋❐ 𝙲𝚁𝙴𝙰𝙳𝙾:* ◜${data.creation}◞
-*│🎋❐ 𝙲𝚁𝙴𝙰𝙳𝙾:* ◜${data.owner}◞
-*╰───────────────╯*
+╭───────────────╮
+│❐ 𝙸𝙳:* ${data.id}◞
+│❐ 𝙽𝙾𝙼𝙱𝚁𝙴:* ${data.subject}◞
+│❐ 𝙲𝚁𝙴𝙰𝙳𝙾:*  ${data.creation}◞
+│❐ 𝙲𝚁𝙴𝙰𝙳𝙾𝚁:* ${data.owner}◞
+╰───────────────╯
 `
 	await conn.reply(m.chat, groupinfo, fakemsg)
 	const botones = [
