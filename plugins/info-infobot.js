@@ -20,7 +20,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  let pp = './storage/logos/Menu1.jpg' 
  let speed = neww - old 
  let info = ` 
- *📑 INFO TURBO BOT MD* 
+ *📑 INFO BAILEY BOT MD* 
   
  👑 *CREADOR* 
   *Jxtxn17*
