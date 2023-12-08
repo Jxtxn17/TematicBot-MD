@@ -12,7 +12,7 @@ if (text.includes('+')) throw  `*⚠️ INGRESE EL NÚMERO TODO JUNTO SIN EL (+)
 let group = m.chat
 let link = 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group)
  
-await conn.reply(text+'@s.whatsapp.net', `*💌 Hola! soy TurboBot-MD, Una persona te a invitado a su grupo.*\n\n*🪀 LINK*\n${link}`, m, {mentions: [m.sender]})
+await conn.reply(text+'@s.whatsapp.net', `*💌 Hola! soy BaileyBot-MD, Una persona te a invitado a su grupo.*\n\n*🪀 LINK*\n${link}`, m, {mentions: [m.sender]})
 m.reply(`*⚠️ ENVIANDO INVITACION AL PRIVADO DE ${nom}*\n\n*📅 ${fecha}*\n⏰ *${tiempo}*`) 
 
 }
