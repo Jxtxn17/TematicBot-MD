@@ -9,7 +9,7 @@ let texto = `
 ┌┤➳ _Tutoríal: https://youtu.be/qRb9ElGT8mM_
 ┌┤➳ _1 GB de almacenamiento_
 ┌┤➳ _Termux: https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file_
-┌┤➳ _GitHub: https://github.com/Jxtxn17/TurboBot-MD_
+┌┤➳ _GitHub: https://github.com/Jxtxn17/BaileyBot-MD_
 ┌┤➳ _un whatsapp inmune (secundario)_
 ┌┤➳ _un número victual_
 ┌┤➳ _2 dispositivo o una PC para escanear_
@@ -18,7 +18,7 @@ let texto = `
   │> termux-setup-storage
   │> apt-get update -y && apt-get upgrade -y
   │> pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
-  │> git clone https://github.com/Jxtxn17/TurboBot-MD && cd TurboBot-MD && yarn install && npm install 
+  │> git clone https://github.com/Jxtxn17/BaileyBot-MD && cd BaileyBot-MD && yarn install && npm install 
   │> ls 
   │> npm start 
   ╰────────────┈⊷` 
