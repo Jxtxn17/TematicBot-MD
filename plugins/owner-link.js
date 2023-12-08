@@ -2,7 +2,7 @@
 const grupo = `https://chat.whatsapp.com/B8RJAm16U2EISSDETrPivq`
 let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
 
-  let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": 'TurboBot-MD', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': 'Unirte a mi grupo ^~^', 'jpegThumbnail': img }}}
+  let fakegif = { key: {participant: `0@s.whatsapp.net`, ...("6289643739077-1613049930@g.us" ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": 'BaileyBot-MD', "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': 'Unirte a mi grupo ^~^', 'jpegThumbnail': img }}}
 try {
   if (!text) throw `⚠️ *Ingrese el link de un grupo de WhatsApp.*`
   let [_, code, expired] = text.match(linkRegex) || []
