@@ -21,7 +21,7 @@ let msg = await generateWAMessageFromContent(m.chat, { locationMessage: {
 conn.relayMessage(m.chat, msg.message, {})
 }
 
-//let str = '*🍧 TurboBot-MD*'
+//let str = '*🍧 BaileyBot-MD*'
 //await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: imagen1, thumbnailUrl: imagen1, title: '🍓 Jxtxn17', }})
  
 handler.command = /^((a|a)a)$/i
