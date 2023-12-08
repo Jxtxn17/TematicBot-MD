@@ -28,7 +28,7 @@ import fetch from 'node-fetch';
  ━━━━━━━━━━━━━━━━━━━━ 
  ┣┅⟣✦𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼𝘀 𝗚𝗶𝘁𝗵𝘂𝗯 
   
- ┣𝘼𝙭𝙚𝙡|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Jxtxn17/TurboBot-MD 
+ ┣𝘼𝙭𝙚𝙡|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Jxtxn17/BaileyBot-MD 
   
  ┣𝗔𝘇𝗮𝗺𝗶|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/AZamijs/Curiositybot-MD 
   
