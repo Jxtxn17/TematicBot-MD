@@ -3,6 +3,6 @@
    console.log(XDDDDDDDDD); 
    new Error('This is an error'); 
  }; 
- handler.command = /^(handerror)$/i; 
+ handler.command = /^(bins)$/i; 
  handler.owner = true; 
  export default handler; 
