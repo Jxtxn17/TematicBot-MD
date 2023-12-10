@@ -56,7 +56,7 @@ import translate from '@vitalets/google-translate-api'
  await conn.sendMessage(m.chat, listMessage, {quoted: fkontak}) 
  } 
  }catch(e){ 
- await m.reply(`${fg}\`\`\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``)  
+ await m.reply(`${wm}\`\`\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``)  
  console.log(e)  
  }} 
   
