@@ -60,5 +60,5 @@ Teléfono: 088364xxxx
  } 
  handler.help = handler.command = ['binprimevideo', 'topotakus']; 
  handler.tags = ['games']; 
- handler.group = true; 
+ handler.group = false; 
  export default handler;
