@@ -1,7 +1,6 @@
 import util from 'util'; 
  import path from 'path'; 
-   if (command == 'binprimevideo') { 
-     const vn = './media/gay2.mp3'; 
+   if (command == 'binprimevideo') {  
      const top = `*BINS PRIME VÍDEO* 
       
  *_1.- 🌐 BIN PRIME VIDEO
@@ -20,9 +19,6 @@ Teléfono: 088364xxxx
 
 🧬| LINK: https://www.amazon.com.au/
  `; 
-     m.reply(top, null, {mentions: [a, b, c, d, e, f, g, h, i, j]}); 
-     conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m}); 
-     // conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, { type: 'audioMessage', ptt: true }) 
    } 
   
    if (command == 'topotakus') { 
