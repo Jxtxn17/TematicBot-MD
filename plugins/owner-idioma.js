@@ -8,9 +8,9 @@ import translate from '@vitalets/google-translate-api'
  let texto = `*Idioma de BaileyBot cambiado Correctamente:* ` 
  let texto2 = `*Seleccione el idioma para BaileyBot*` 
  let texto3 = `*Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje*` 
- let idioma = await translate(``, { to: args[0], autoCorrect: true }) 
- let idioma2 = await translate(``, { to: lenguajeGB.lenguaje(), autoCorrect: true }) 
- let idioma3 = await translate(``, { to: lenguajeGB.lenguaje(), autoCorrect: true }) 
+ let idioma = await translate(`${texto}`, { to: args[0], autoCorrect: true }) 
+ let idioma2 = await translate(`${texto2}`, { to: lenguajeGB.lenguaje(), autoCorrect: true }) 
+ let idioma3 = await translate(`${texto3}`, { to: lenguajeGB.lenguaje(), autoCorrect: true }) 
   
  try {   
  if (args[0] == 'es'){ 
@@ -50,7 +50,7 @@ import translate from '@vitalets/google-translate-api'
  ✦ Bahasa Indonesia = ${usedPrefix + command} id 
  ✦ عرب = ${usedPrefix + command} ar 
  ✦ Português = ${usedPrefix + command} pt\n\n` + wm, 
- title: `${htki} Idioma : Language 🌎`, 
+ title: `Idioma : Language 🌎`, 
  buttonText: `Seleccionar : Select`, 
  sections } 
  await conn.sendMessage(m.chat, listMessage, {quoted: fkontak}) 
