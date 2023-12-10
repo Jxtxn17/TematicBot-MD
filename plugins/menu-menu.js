@@ -4,7 +4,7 @@ let media = './storage/logos/Menu1.jpg'
 
 m.react ('✅')
 
- let menu = `👋 _¿Hola ${saludo} como esta?_ 
+ let menu = `👋 _¿Hola ${name} como esta?_ 
 
 use .allmenu  
   _(Para ver el menú completo)_` 
