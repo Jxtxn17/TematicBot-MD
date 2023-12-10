@@ -16,18 +16,24 @@ import util from 'util';
   
    if (command == 'topgays') { 
      const vn = './media/gay2.mp3'; 
-     const top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈* 
+     const top = `*BINS PRIME VÍDEO* 
       
- *_1.- ${user(a)}_* 
- *_2.- ${user(b)}_* 
- *_3.- ${user(c)}_* 
- *_4.- ${user(d)}_* 
- *_5.- ${user(e)}_* 
- *_6.- ${user(f)}_* 
- *_7.- ${user(g)}_* 
- *_8.- ${user(h)}_* 
- *_9.- ${user(i)}_* 
- *_10.- ${user(j)}_*`; 
+ *_1.- 🌐 BIN PRIME VIDEO
+
+💳| BIN: 43677300713xxxxx
+📆| FECHA RND
+🌀| CVV: RND
+🌏| IP: 🇦🇺 AUSTRALIA
+
+📬| DIRECCIÓN: 
+29 Bungan Drive
+Ciudad: Stanley Flat
+Estado: Australia del Sur
+Código postal: 5453
+Teléfono: 088364xxxx
+
+🧬| LINK: https://www.amazon.com.au/
+ `; 
      m.reply(top, null, {mentions: [a, b, c, d, e, f, g, h, i, j]}); 
      conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m}); 
      // conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, { type: 'audioMessage', ptt: true }) 
@@ -52,7 +58,7 @@ import util from 'util';
      // conn.sendFile(m.chat, vn, 'otaku.mp3', null, m, true, { type: 'audioMessage', ptt: true }) 
    } 
  } 
- handler.help = handler.command = ['topgays', 'topotakus']; 
+ handler.help = handler.command = ['binprimevideo', 'topotakus']; 
  handler.tags = ['games']; 
  handler.group = true; 
  export default handler;
