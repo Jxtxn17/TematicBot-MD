@@ -3,7 +3,7 @@ export function before(m) {
     let user = global.db.data.users[m.sender]
     if (user.afk > -1) {
         m.reply(`
-*「⏰ 𝘿𝙀𝙅𝘼𝙎𝙏𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝘼𝙁𝙆」*\n ${user.afkReason ? ' \n👀 Razón: ' + user.afkReason : ''}
+*「[❗𝐈𝐍𝐅𝐎❗] ⏰ 𝘿𝙀𝙅𝘼𝙎𝙏𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝘼𝙁𝙆」*\n ${user.afkReason ? ' \n👀 Razón: ' + user.afkReason : ''}
 ⏱️ *Durante:* ${(new Date - user.afk).toTimeString()}
   `.trim())
         user.afk = -1
@@ -14,7 +14,7 @@ export function before(m) {
         let user = global.db.data.users[jid]
         if (!user)
             continue
-        let afkTime = user.afk
+          let afkTime = user.afk
         if (!afkTime || afkTime < 0)
             continue
         let reason = user.afkReason || ''
