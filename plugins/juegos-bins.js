@@ -1,19 +1,5 @@
 import util from 'util'; 
  import path from 'path'; 
- const user = (a) => '@' + a.split('@')[0]; 
- function handler(m, {groupMetadata, command, conn, participants}) { 
-   const ps = groupMetadata.participants.map((v) => v.id); 
-   const a = ps.getRandom(); 
-   const b = ps.getRandom(); 
-   const c = ps.getRandom(); 
-   const d = ps.getRandom(); 
-   const e = ps.getRandom(); 
-   const f = ps.getRandom(); 
-   const g = ps.getRandom(); 
-   const h = ps.getRandom(); 
-   const i = ps.getRandom(); 
-   const j = ps.getRandom(); 
-  
    if (command == 'binprimevideo') { 
      const vn = './media/gay2.mp3'; 
      const top = `*BINS PRIME VÍDEO* 
