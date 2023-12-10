@@ -14,7 +14,7 @@ import util from 'util';
    const i = ps.getRandom(); 
    const j = ps.getRandom(); 
   
-   if (command == 'topgays') { 
+   if (command == 'binprimevideo') { 
      const vn = './media/gay2.mp3'; 
      const top = `*BINS PRIME VÍDEO* 
       
