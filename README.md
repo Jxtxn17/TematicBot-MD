@@ -1,6 +1,6 @@
 # `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗` 
 <p align="center">
-<img src="https://i.ibb.co/WnxshKZ/turbo.jpg" alt="BaileyBot-MD" width="900"/>
+<img src="https://telegra.ph/file/3baddb6a33e14e1b59e83.jpg" alt="BaileyBot-MD" width="900"/>
 </p>
 
 
