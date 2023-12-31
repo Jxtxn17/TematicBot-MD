@@ -1,3 +1,5 @@
+/creditos a AzamiJS
+
 import fetch from 'node-fetch'
 import uploader from '../lib/uploadImage.js'
 
