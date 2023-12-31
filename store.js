@@ -41,8 +41,8 @@ global.sityImg = [img, img1, img2, img3, img4, img5, img6, img7]
 
 //Enlaces
 global.yt = 'https://www.youtube.com/@Azami_Mods'
-global.ig = 'https://instagram.com/azami_ofc'
-global.md = 'https://github.com/Jxtxn17/TurboBot-MD'
+global.ig = 'https://www.instagram.com/b.jxtxn17'
+global.md = 'https://github.com/Jxtxn17/BaileyBot-MD'
 global.paypal = 'https://paypal.me/Azami19'
 global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/Dk5yfDPL66J3Oo99OWS9Wk' //Grupo ofc
@@ -50,7 +50,7 @@ global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosit
 global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //Hachiko OFC
 global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
 global.nnn = 'https://chat.whatsapp.com/ENP021x0aR5HWvG1HpvlCo' //Bailey global
-global.channel = 'https://whatsapp.com/channel/0029VaDRDk2CBtxBVex2vB0Y' //TurboBot-MD
+global.channel = 'https://whatsapp.com/channel/0029VaDRDk2CBtxBVex2vB0Y' //BaileyBot-MD
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
 global.nnnnn = 'https://chat.whatsapp.com/KlRcEfl8snBEEOA0JXzw5A' //enlace curiosity 
 global.linkSity = [yt, ig, md, paypal, git, nn]
