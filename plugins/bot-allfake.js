@@ -32,9 +32,6 @@ let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.
 global.fotos = sityImg.getRandom()
 global.enlaces = linkSity.getRandom()
   
- let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender 
- let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1861aab98389b13db8588.jpg') 
-  
  /*  
  Mensajes Fakes 
  */ 
