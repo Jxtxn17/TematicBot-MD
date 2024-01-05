@@ -4,7 +4,7 @@ var handler = async (m, {command, conn}) => {
 
 if (command == 'pepon') {
 let pepon = await fetch(`https://raw.githubusercontent.com/Jxtxn17/BaileyBot-MD/master/src/JSON/Gordo-PEPON.json`)
-conn.sendMessage(m.chat, {image: Gordo, caption: `*Pepon*`.trim()}, {quoted: m})
+conn.sendMessage(m.chat, {image: PEPON, caption: `*Pepon*`.trim()}, {quoted: m})
 }
 
 }
