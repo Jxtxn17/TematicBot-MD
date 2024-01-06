@@ -1,23 +1,21 @@
-import cp, { exec as _exec } from 'child_process'
-import { promisify } from 'util'
-let exec = promisify(_exec).bind(cp)
-let handler = async (m, { conn, isOwner, command, text }) => {
-  if (conn.user.jid != conn.user.jid) return
-  await m.reply(wait)
-  let o
+import cp, {exec as _exec} from 'child_process';
+import {promisify} from 'util';
+const exec = promisify(_exec).bind(cp);
+const handler = async (m, {conn, isOwner, command, text, usedPrefix, args, isROwner}) => {
+  if (!isROwner) return;
+  if (global.conn.user.jid != conn.user.jid) return;
+  m.reply('*[❗] 𝙴𝙹𝙴𝙲𝚄𝚃𝙰𝙽𝙳𝙾 𝙾𝚁𝙳𝙴𝙽...*');
+  let o;
   try {
-    o = await exec(command.trimStart()  + ' ' + text.trimEnd())
+    o = await exec(command.trimStart() + ' ' + text.trimEnd());
   } catch (e) {
-    o = e
+    o = e;
   } finally {
-    let { stdout, stderr } = o
-    if (stdout.trim()) m.reply(stdout)
-    if (stderr.trim()) m.reply(stderr)
+    const {stdout, stderr} = o;
+    if (stdout.trim()) m.reply(stdout);
+    if (stderr.trim()) m.reply(stderr);
   }
-}
-handler.help = ['$']
-handler.tags = ['owner']
-handler.customPrefix = /^[$] /
-handler.command = new RegExp
-handler.rowner = true
-export default handler
+};
+handler.customPrefix = /^[$]/;
+handler.command = new RegExp;
+export default handler;
