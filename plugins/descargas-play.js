@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
   
  var handler = async (m, { conn, command, args, text, usedPrefix }) => { 
   
- if (!text) throw `*⚠️ INGRESE EL NOMBRE DE UNA CANCIÓN*\n\n❕ EJEMPLO\n*${usedPrefix + command}* Another love` 
+ if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉𝘼 𝘾𝘼𝙉𝘾𝙄𝙊́𝙉*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command}* Another love` 
  m.react(done) 
  try { 
  const yt_play = await search(args.join(" ")) 
@@ -15,21 +15,21 @@ import fetch from 'node-fetch'
  additionalText = 'AUDIO' 
  } else if (command === 'play2') { 
  additionalText = 'VIDEO'} 
- let texto1 = `*∘ 📩 DESCARGANDO* 
+ let texto1 = `*∘ 📩 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊* 
  ${yt_play[0].title} 
   
- *∘ ⏰ DURACIÓN*  
+ ┃ *∘ ⏰ 𝘿𝙐𝙍𝘼𝘾𝙄𝙊́𝙉*  
  ${secondString(yt_play[0].duration.seconds)} 
   
- *∘ 👤 AUTOR* 
+ ┃ *∘ 👤 𝘼𝙐𝙏𝙊𝙍* 
  ${yt_play[0].author.name} 
   
- *∘ 📍 CANAL* 
+ ┃ *∘ 📍 𝘾𝘼𝙉𝘼𝙇* 
  ${yt_play[0].author.url} 
   
- *∘ 📎 LINK* 
+ ┃ *∘ 📎 𝙇𝙄𝙉𝙆* 
  ${yt_play[0].url} 
-  
+ ┗━━━━━━━━━━━━━━━━ 
  *⌚ ENVIANDO ${additionalText}, POR FAVOR ESPERE.*`.trim() 
  await conn.sendMessage(m.chat, { 
  text: texto1, 
