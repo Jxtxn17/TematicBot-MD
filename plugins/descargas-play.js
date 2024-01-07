@@ -31,8 +31,7 @@ import fetch from 'node-fetch'
   
  ┃ *∘ 📎 𝙇𝙄𝙉𝙆* 
  ${yt_play[0].url} 
- *⌚ ENVIANDO ${additionalText}, POR FAVOR  ESPERE.*
- 
+ ┃ *⌚ ENVIANDO ${additionalText}, POR FAVOR  ESPERE.*
  ┗━━━━━━━━━━━━━━━━━━━━━`
 .trim() 
  await conn.sendMessage(m.chat, { 
