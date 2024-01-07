@@ -14,9 +14,9 @@ console.log(e)
   
 switch (true) {   
 case isCommand7:
-if (!text) throw `*⚠️ INGRESE UN ENLACE DE FACEBOOK*\n\n❕ EJEMPLO\n*${usedPrefix}${command}* https://fb.watch/kAOXy3wf2L/?mibextid=Nif5oz`
-if (!args[0].match(/www.facebook.com|fb.watch|web.facebook.com|business.facebook.com|video.fb.com/g)) throw '*⚠️ NO ES UN ENLACE VÁLIDO*'
-await conn.reply(m.chat, '*🚀 D E S C A R G A N D O*', fkontak, m)
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙤\n*${usedPrefix}${command}* https://fb.watch/kAOXy3wf2L/?mibextid=Nif5oz`
+if (!args[0].match(/www.facebook.com|fb.watch|web.facebook.com|business.facebook.com|video.fb.com/g)) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙉𝙊 𝙀𝙎 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊*'
+await conn.reply(m.chat, '*🚀 𝘿 𝙀 𝙎 𝘾 𝘼 𝙍 𝙂 𝘼 𝙉 𝘿 𝙊*', fkontak, m)
 m.react(done)
 let messageType = checkMessageType(args[0])
 let message = ''
