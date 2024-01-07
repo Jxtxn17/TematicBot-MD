@@ -16,7 +16,7 @@ import fetch from 'node-fetch'
  } else if (command === 'play2') { 
  additionalText = 'VIDEO'} 
  let texto1 = `
-  ┏━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━
  ┃ *∘ 📩 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊* 
  ${yt_play[0].title} 
   
