@@ -9,7 +9,7 @@ let forbidPrefixes = ["965", "966", "971", "974", "212", "213", "216", "44", "1"
 
 for (let prefix of forbidPrefixes) {
 if (m.sender.startsWith(prefix)) {
-m.reply('*⚠️ 𝙏𝙐 𝙉𝙐𝙈𝙀𝙍𝙊 𝙀𝙎 𝙍𝘼𝙍𝙊.. 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊/A*\n\n_𝙃𝙖𝙨𝙩𝙖 𝙥𝙧𝙤𝙣𝙩𝙤_', m.sender)
+m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙏𝙐 𝙉𝙐𝙈𝙀𝙍𝙊 𝙀𝙎 𝙍𝘼𝙍𝙊.. 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊/A*\n\n_𝙃𝙖𝙨𝙩𝙖 𝙥𝙧𝙤𝙣𝙩𝙤_', m.sender)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 return false
 }}}
