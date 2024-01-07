@@ -15,7 +15,9 @@ import fetch from 'node-fetch'
  additionalText = 'AUDIO' 
  } else if (command === 'play2') { 
  additionalText = 'VIDEO'} 
- let texto1 = `*∘ 📩 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊* 
+
+✧༺✦✮✦༻∞${wm}∞༺✦✮✦༻✧
+ let texto1 = `┃ *∘ 📩 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊* 
  ${yt_play[0].title} 
   
  ┃ *∘ ⏰ 𝘿𝙐𝙍𝘼𝘾𝙄𝙊́𝙉*  
@@ -29,7 +31,7 @@ import fetch from 'node-fetch'
   
  ┃ *∘ 📎 𝙇𝙄𝙉𝙆* 
  ${yt_play[0].url} 
- ┗━━━━━━━━━━━━━━━━ 
+ ✧༺✦✮✦༻∞${wm}∞༺✦✮✦༻✧
  *⌚ ENVIANDO ${additionalText}, POR FAVOR ESPERE.*`.trim() 
  await conn.sendMessage(m.chat, { 
  text: texto1, 
