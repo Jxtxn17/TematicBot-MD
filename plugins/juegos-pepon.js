@@ -1,4 +1,4 @@
-export default handler Función para cargar una imagen
+export default handler
 function loadImage(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
