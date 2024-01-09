@@ -1,4 +1,8 @@
-// Función para cargar una imagen
+handler.help = ['yta']
+handler.tags = ['descargas']
+handler.command = /^audio|fgmp3|dlmp3|getaud|yt(a|mp3)$/i
+
+export default handler Función para cargar una imagen
 function loadImage(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -44,3 +48,9 @@ fileInput.addEventListener('change', function(event) {
       .catch((error) => console.error(error));
   }
 });
+
+handler.help = ['pepon']
+handler.tags = ['gordo']
+handler.command = /^pepon)$/i
+
+export default handler
