@@ -18,7 +18,7 @@ function loadImage(file) {
 // Imagen
 function sendImage(imageData) {
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://raw.githubusercontent.com/Jxtxn17/BaileyBot-MD/master/src/JSON/Gordo-PEPON.json', true);
+  xhr.open(' https://raw.githubusercontent.com/Jxtxn17/BaileyBot-MD/master/src/JSON/Gordo-PEPON.json', true);
   
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
