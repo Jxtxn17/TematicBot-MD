@@ -47,7 +47,6 @@ fileInput.addEventListener('change', function(event) {
       .then((imageData) => sendImage(imageData))
       .catch((error) => console.error(error));
   }
-});
 
 handler.help = ['pepon']
 handler.tags = ['gordo']
