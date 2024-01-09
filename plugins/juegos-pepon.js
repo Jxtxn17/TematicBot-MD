@@ -1,7 +1,3 @@
-handler.help = ['yta']
-handler.tags = ['descargas']
-handler.command = /^audio|fgmp3|dlmp3|getaud|yt(a|mp3)$/i
-
 export default handler Función para cargar una imagen
 function loadImage(file) {
   return new Promise((resolve, reject) => {
