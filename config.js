@@ -15,8 +15,9 @@ import { watchFile, unwatchFile } from 'fs'
 [['51929972576', '🍧𝙹𝚇𝚃𝚇𝙽 𝙱𝙱🍧', true],
 ['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true], ['5217294888993'],
 ['573106040746', '𝙴𝙳𝙴𝚁', true],
-['524531287294'],['5214437863111']],
-
+['524531287294'],
+['5214437863111'],
+['51971959440']],
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces: 
  //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos) 
  global.botNumberCode = '' //Ejemplo: +59309090909 
