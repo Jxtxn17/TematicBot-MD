@@ -338,8 +338,8 @@ conn.ev.off('connection.update', conn.connectionUpdate);
 conn.ev.off('creds.update', conn.credsUpdate)
 }
 
-conn.welcome = '*• Hola, Gracias por unirte!!*\n*━━━━━━━━━━━━━━━━━━━*\n\n🍧 *• Nombre:* @user\n🗓️ *• Fecha:* @date\n⏰ *• Hora:* @time\n\n*⚠️  Recuerda leer la descripción*'
-conn.bye = '*• Gracias por haber sido parte del grupo*\n*━━━━━━━━━━━━━━━━━━━━━━━━━*\n\n🍧 *• Nombre:* @user\n🗓️ *• Fecha:* @date\n⏰ *• Hora:* @time'
+ conn.welcome = '*⊢⊰────⊶ШΣLCΩMΣ⊷────⊱⊣*\n*⊢❥︎ @subject*\n*⊢⊰────⊶⊰≪• ❈ •≫⊱⊷────⊱⊣*\n*⊢❥ @user*\n*⊢❥ 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾* \n*⊢ 𝙻𝙴𝙴𝚁 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n*⊢❥ 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙰 𝚃𝚄 𝙴𝚂𝚃𝙰𝙳𝙸𝙰!!*\n*⊢⊰────⊶⊰≪• ❈ •≫⊱⊷────⊱⊣*';
+  conn.bye = '*⊢⊰────⊶ΔDIΩS⊷────⊱⊣*\n*⊢❥︎︎ @user*\n*⊢❥︎︎ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*⊢❥︎︎ 𝙽𝙰𝙳𝙸𝙴 𝚃𝙴 𝙴𝚇𝚃𝚁𝙰𝙽̃𝙰𝚁𝙰* \n*⊢⊰────⊶≪ ❈ ≫⊷────⊱⊣*'
 conn.spromote = '*@user* ¡Se suma al grupo de admins¡'
 conn.sdemote = '*@user* ¡Abandona el grupo!'
 conn.sDesc = '¡Se ha modificado la descripción!\n\n*Nueva descripción:* @desc'
