@@ -12,14 +12,14 @@ const isClose = {
 }[(args[0] || '')];
 if (isClose === undefined) {
 throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙁𝙊𝙍𝙈𝘼𝙏𝙊 𝙀𝙍𝙍𝙊́𝙉𝙀𝙊*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊:
+┏━━━━━━━━━━━﹏━━━
+┃*○ ${usedPrefix + command} abrir*
 
-*○ ${usedPrefix + command} abrir*
+┃*○ ${usedPrefix + command} cerrar*
 
-*○ ${usedPrefix + command} cerrar*
+┃*○ ${usedPrefix + command} bloquear*
 
-*○ ${usedPrefix + command} bloquear*
-
-*○ ${usedPrefix + command} desbloquear*
+┃*○ ${usedPrefix + command} desbloquear*
 `.trim()
 }
 await conn.groupSettingUpdate(m.chat, isClose)
