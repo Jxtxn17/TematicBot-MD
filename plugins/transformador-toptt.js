@@ -4,13 +4,13 @@ var handler = async (m, { conn, usedPrefix, command }) => {
 
 let q = m.quoted ? m.quoted : m
 let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
-if (!/video|audio/.test(mime)) throw `*⚠️ RESPONDE AL VIDEO O AUDIO QUE DESEE CONVERTIR A NOTA DE VOZ*`
+if (!/video|audio/.test(mime)) throw `*[❗𝐈𝐍𝐅𝐎❗] RESPONDE AL VIDEO O AUDIO QUE DESEE CONVERTIR A NOTA DE VOZ*`
 let media = await q.download?.()
-if (!media && !/video/.test(mime)) throw '*⚠️ OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
-if (!media && !/audio/.test(mime)) throw '*⚠️ OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
+if (!media && !/video/.test(mime)) throw '*[❗𝐈𝐍𝐅𝐎❗] OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
+if (!media && !/audio/.test(mime)) throw '*[❗𝐈𝐍𝐅𝐎❗] OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
 let audio = await toPTT(media, 'mp4')
-if (!audio.data && !/audio/.test(mime)) throw '*⚠️ OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
-if (!audio.data && !/video/.test(mime)) throw '*⚠️ OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
+if (!audio.data && !/audio/.test(mime)) throw '*[❗𝐈𝐍𝐅𝐎❗] OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
+if (!audio.data && !/video/.test(mime)) throw '*[❗𝐈𝐍𝐅𝐎❗] OCURRIÓ UN ERROR, VUELVA A INTENTARLO*'
 conn.sendFile(m.chat, audio.data, 'error.mp3', '', m, true, { mimetype: 'audio/mp4' })
 
 }
