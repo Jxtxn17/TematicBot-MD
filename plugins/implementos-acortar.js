@@ -2,8 +2,8 @@ import fetch from 'node-fetch'
 
 var handler = async (m, { command, usedPrefix, conn, args }) => {
 
-if (!args[0]) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] INGRESE EL ENLACE PARA ACORTAR*')
-if (!args[0].startsWith("https://")) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] EL ENLACE DEBE SER https://*')
+if (!args[0]) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙀𝙉𝙇𝘼𝘾𝙀 𝙋𝘼𝙍𝘼 𝘼𝘾𝙊𝙍𝙏𝘼𝙍*')
+if (!args[0].startsWith("https://")) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙇 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝘽𝙀 𝙎𝙀𝙍 https://*')
 let urllist = [ "tinyurl", "linkpoi", "bitly", "ouo", "1pt", "cleanuri", "gotiny", "isgd", "vgd", "tnyim", "kutt", "rebrandly", "multishort", "shrtco"]
 
 if (!urllist.includes(args[1])) return m.reply('*❕ EJEMPLO:*\n.short https://s.id 1pt\n\n*Seleccione un tipo existente*\n' + urllist.map((v, index) => '  ○ ' + v).join('\n'))
