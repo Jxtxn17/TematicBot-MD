@@ -1,6 +1,6 @@
 var handler = async (m, {conn}) => {
 
-if (!m.quoted) throw `*[❗𝐈𝐍𝐅𝐎❗] RESPONDE AL MENSAJE QUE DESEE ELIMINAR*`
+if (!m.quoted) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙌𝙐𝙀 𝘿𝙀𝙎𝙀𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍*`
 
 try {
 let key = {}
