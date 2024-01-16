@@ -2,8 +2,8 @@ var handler = async (m, {conn, text, usedPrefix, command}) => {
 
 const regex = /x/g
   
-if (!text) throw '*[❗𝐈𝐍𝐅𝐎❗] LE FALTO EL NÚMERO*'
-if (!text.match(regex)) throw `*❕ EJEMPLO DE USO:*\n${usedPrefix + command} 521999340434x*`
+if (!text) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙇𝙀 𝙁𝘼𝙇𝙏𝙊́ 𝙀𝙇 𝙉𝙐́𝙈𝙀𝙍𝙊*'
+if (!text.match(regex)) throw `*❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝘿𝙀 𝙐𝙎𝙊:*\n${usedPrefix + command} 521999340434x*`
 let random = text.match(regex).length
 let total = Math.pow(10, random)
 let array = []
