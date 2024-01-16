@@ -4,7 +4,7 @@ var handler = async (m, {conn, text, args, usedPrefix, command}) => {
 
 const q = m.quoted ? m.quoted : m
 const mime = (q.msg || q).mimetype || q.mediaType || ''
-if (!/image/g.test(mime)) throw '*⚠️ RESPONDA O ETIQUETE UNA IMÁGEN*'
+if (!/image/g.test(mime)) throw '*[❗𝐈𝐍𝐅𝐎❗] RESPONDA O ETIQUETE UNA IMÁGEN PARA SABER QUE ANIME ES*'
  
 m.reply('*🚀 P R O C E S A N D O*') 
 const data = await q.download?.()
@@ -21,7 +21,7 @@ try {
 const anime3 = `https://api.caliph.biz.id/api/animeai?img=${image}&apikey=caliphkey`
 await conn.sendFile(m.chat, anime3, 'error.jpg', null, m)
 } catch (e) {
-throw '*⚠️ ERROR, INTENTE DE NUEVO*'}}}
+throw '*[❗𝐈𝐍𝐅𝐎❗] ERROR, INTENTE DE NUEVO*'}}}
          
 }
 handler.help = ['toanime']
