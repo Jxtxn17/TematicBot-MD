@@ -122,3 +122,5 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
   href="https://github.com/Aleixon127271"><img src="https://github.com/Aleixon127271.png?size=100" width="100px;" alt=""/><br /><sub><b>Aleixon</b></sub></a><br /><sub><i>Desarollador Oficial</i></sub></td>
     <td align="center"><a href="https://github.com/Ender-GB-Isis777"><img src="https://github.com/Ender-GB-Isis777.png?size=100" width="100px;" alt=""/><br /><sub><b>Ender GB</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
     <td align="center"><a 
+       <td align="center"><a href="https://github.com/DanielDiod"><img src="https://github.com/DanielDiod.png?size=100" width="100px;" alt=""/><br /><sub><b>Ender GB</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
+    <td align="center"><a 
