@@ -1,6 +1,6 @@
 var handler = async (m, { conn, text, usedPrefix, command }) => {
 
-if (!text) return m.reply(`*⚠️ USO DEL COMANDO*\n\n*${usedPrefix + command}* hola @${m.sender.split`@`[0]} hi`, null, { mentions: [m.sender] })
+if (!text) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] USO DEL COMANDO*\n\n*${usedPrefix + command}* hola @${m.sender.split`@`[0]} hi`, null, { mentions: [m.sender] })
 let cm = copy(m)
 let who
 
@@ -8,7 +8,7 @@ if (text.includes('@0')) who = '0@s.whatsapp.net'
 else if (m.isGroup) who = cm.participant = m.mentionedJid[0]
 else who = m.chat
 
-if (!who) return m.reply(`*⚠️ USO DEL COMANDO*\n\n*${usedPrefix + command}* hola @${m.sender.split`@`[0]} hi`, null, { mentions: [m.sender] })
+if (!who) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] USO DEL COMANDO*\n\n*${usedPrefix + command}* hola @${m.sender.split`@`[0]} hi`, null, { mentions: [m.sender] })
 cm.key.fromMe = false
  
 cm.message[m.mtype] = copy(m.msg)
