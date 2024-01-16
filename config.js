@@ -29,7 +29,7 @@ import { watchFile, unwatchFile } from 'fs'
  global.prems = []
 
 global.packname = 'ᥫ᭡𝘽𝙖𝙞𝙡𝙚𝙮𝘽𝙤𝙩-𝙈𝘿ꨄ'
-global.author = ' B\n A\n I\n  B\n O\n '
+global.author = 'Jxtxn17'
 global.wm = '𓆩𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃𓆪'
 global.wm2 = '✦𝘽𝙖𝙞𝙡𝙚𝙮-𝗯𝗼𝘁-𝗠𝗗✦'
 global.jxtxn = 'Jxtxn'
