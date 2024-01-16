@@ -28,7 +28,7 @@ await m.reply(eror);
 }
 
 if (feature == 'message') {
-if (!conn.dropmail[id]) return m.reply('*⚠️ NO HAY MENSAJES, CREE UN CORREO ELECTRÓNICO PRIMERO*\n\n❕ EJEMPLO\n*' + usedPrefix + command + ' create*')
+if (!conn.dropmail[id]) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] NO HAY MENSAJES, CREE UN CORREO ELECTRÓNICO PRIMERO*\n\n❕ EJEMPLO\n*' + usedPrefix + command + ' create*')
 
 try {
 const eml = await get_mails(conn.dropmail[id][2]);
@@ -48,7 +48,7 @@ await m.reply(eror)
 }
 }
 if (feature == 'delete') {
-if (!conn.dropmail[id]) return m.reply('*⚠️ NO HAY CORREO VALIDO*')
+if (!conn.dropmail[id]) return m.reply('*[❗𝐈𝐍𝐅𝐎❗] NO ES UN CORREO VALIDO*')
 
 try {
 delete conn.dropmail[id];
