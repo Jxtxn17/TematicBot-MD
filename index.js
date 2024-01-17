@@ -1,4 +1,4 @@
-console.log('🚀 Iniciando...')
+console.log('🚀 Iniciando BaileyBot-MD')
 import { join, dirname } from 'path'
 import { createRequire } from 'module'
 import { fileURLToPath } from 'url'
