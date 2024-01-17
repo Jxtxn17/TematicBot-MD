@@ -18,7 +18,7 @@ for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper 
                } else {
     await m.reply('¡𝗧𝘂 𝗻𝗼 𝘁𝗶𝗲𝗻𝗲𝘀 𝗽𝗲𝗿𝗺𝗶𝘀𝗼 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼!')}
 
-                           // conn.reply(data.jid, text, m, { mentions: [m.sender] })
+                           conn.reply(data.jid, text, m, { mentions: [m.sender] })
 
 
 }
