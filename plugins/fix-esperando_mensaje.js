@@ -1,38 +1,43 @@
-/* Codigo hecho por @Fabri115 y mejorado por BrunoSobrino */
+import { readdirSync, unlinkSync, existsSync, promises as fs, rmSync } from 'fs'
+import path from 'path'
 
-import { readdirSync, unlinkSync, existsSync, promises as fs, rmSync } from 'fs';
-import path from 'path';
+var handler = async (m, { conn, usedPrefix }) => {
 
-const handler = async (m, { conn, usedPrefix }) => {
-  if (global.conn.user.jid !== conn.user.jid) {
-    return conn.sendMessage(m.chat, {text: '*[❗] Utiliza este comando directamente en el número principal del Bot*'}, {quoted: m});
-  }
-  const chatId = m.isGroup ? [m.chat, m.sender] : [m.sender];
-  const sessionPath = './BaileySession/';
-  try {
-    const files = await fs.readdir(sessionPath);
-    let filesDeleted = 0;
-    for (const file of files) {
-      for (const id of chatId) {
-        if (file.includes(id.split('@')[0])) {
-          await fs.unlink(path.join(sessionPath, file));
-          filesDeleted++;
-          break;
-        }
-      }
-    }
-    if (filesDeleted === 0) {
-      await conn.sendMessage(m.chat, {text: '*[❗] No se encontró ningún archivo que incluya la ID del chat*'}, {quoted: m});
-    } else {
-      await conn.sendMessage(m.chat, {text: `*[❗] Se eliminaron ${filesDeleted} archivos de sesión*`}, {quoted: m});
-    }
-  } catch (err) {
-    console.error('Error al leer la carpeta o los archivos de sesión:', err);
-    await conn.sendMessage(m.chat, {text: '*[❗] Ocurrió un error al eliminar los archivos de sesión*'}, {quoted: m});
-  }
-  await conn.sendMessage(m.chat, {text: `𝗛𝗼𝗹𝗮👋, 𝗔𝗵𝗼𝗿𝗮 𝗲𝘀𝘁𝗼𝘆 𝗹𝗶𝘀𝘁𝗼\n\n*[❗] Si el Bot no le responde a sus comandos por favor haga un pequeño spam*\n\n*—◉ Ejemplo:*\n${usedPrefix}s\n${usedPrefix}s\n${usedPrefix}s`}, {quoted: m});
-};
-handler.help = ['fixmsgespera'];
-handler.tags = ['fix'];
-handler.command = /^(fixmsgespera|ds)$/i;
-export default handler;
+if (global.conn.user.jid !== conn.user.jid) {
+return conn.reply(m.chat, '🚩 *Utiliza este comando directamente en el número principal del Bot*', m, fake, )
+}
+
+let chatId = m.isGroup ? [m.chat, m.sender] : [m.sender]
+let sessionPath = './sessions/'
+
+try {
+
+let files = await fs.readdir(sessionPath)
+let filesDeleted = 0
+for (let file of files) {
+for (let id of chatId) {
+if (file.includes(id.split('@')[0])) {
+await fs.unlink(path.join(sessionPath, file))
+filesDeleted++;
+break
+}}}
+
+if (filesDeleted === 0) {
+await conn.reply(m.chat, '🚩 *No se encontró ningún archivo que incluya la ID del chat*', m, fake, )
+} else {
+await conn.reply(m.chat, `🎌 *Se eliminaron ${filesDeleted} archivos de sesión*`, m, fake, )
+conn.reply(m.chat, `😸 *¡Hola! logras verme*`, m, fake, )
+}
+} catch (err) {
+console.error('Error al leer la carpeta o los archivos de sesión:', err)
+await conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, fake, )
+}
+
+}
+handler.help = ['ds']
+handler.tags = ['bot']
+handler.command = /^(fixmsgespera|ds)$/i
+
+handler.register = true
+
+export default handler
