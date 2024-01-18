@@ -4,7 +4,7 @@ import path from 'path'
 var handler = async (m, { conn, usedPrefix }) => {
 
 if (global.conn.user.jid !== conn.user.jid) {
-return conn.reply(m.chat, '[❗𝐈𝐍𝐅𝐎❗] *𝙐𝙩𝙞𝙡𝙞𝙯𝙖 𝙚𝙨𝙩𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙙𝙞𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚 𝙚𝙣 𝙚𝙡 𝙣𝙪́𝙢𝙚𝙧𝙤 𝙥𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 𝙙𝙚𝙡 𝘽𝙤𝙩*', m, fake, )
+return conn.reply(m.chat, '🚩 *Utiliza este comando directamente en el número principal del Bot*', m, fake, )
 }
 
 let chatId = m.isGroup ? [m.chat, m.sender] : [m.sender]
@@ -23,11 +23,10 @@ break
 }}}
 
 if (filesDeleted === 0) {
-await conn.reply(m.chat, '[❗𝐈𝐍𝐅𝐎❗] *𝙉𝙤 𝙨𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙤 𝙣𝙞𝙣𝙜𝙪́𝙣 𝙖𝙧𝙘𝙝𝙞𝙫𝙤
-𝙦𝙪𝙚 𝙞𝙣𝙘𝙡𝙪𝙮𝙖 𝙡𝙖 𝙄𝘿 𝙙𝙚𝙡 𝙘𝙝𝙖𝙩*', m, fake, )
+await conn.reply(m.chat, '🚩 *No se encontró ningún archivo que incluya la ID del chat*', m, fake, )
 } else {
-await conn.reply(m.chat, `[❗𝐈𝐍𝐅𝐎❗] *𝙎𝙚 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙧𝙤𝙣 ${filesDeleted} 𝙖𝙧𝙘𝙝𝙞𝙫𝙤𝙨 𝙙𝙚 𝙨𝙚𝙨𝙨𝙞𝙤𝙣*`, m, fake, )
-conn.reply(m.chat, `[❗𝐈𝐍𝐅𝐎❗]*¿𝙃𝙤𝙡𝙖, 𝙡𝙤𝙜𝙧𝙖𝙨 𝙫𝙚𝙧𝙢𝙚?`, m, fake, )
+await conn.reply(m.chat, `🎌 *Se eliminaron ${filesDeleted} archivos de sesión*`, m, fake, )
+conn.reply(m.chat, `😸 *¡Hola! logras verme*`, m, fake, )
 }
 } catch (err) {
 console.error('Error al leer la carpeta o los archivos de sesión:', err)
