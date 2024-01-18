@@ -26,7 +26,7 @@ if (filesDeleted === 0) {
 await conn.reply(m.chat, '[❗𝐈𝐍𝐅𝐎❗] *𝙉𝙤 𝙨𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙤 𝙣𝙞𝙣𝙜𝙪́𝙣 𝙖𝙧𝙘𝙝𝙞𝙫𝙤 𝙦𝙪𝙚 𝙞𝙣𝙘𝙡𝙪𝙮𝙖 𝙡𝙖 𝙄𝘿 𝙙𝙚𝙡 𝙘𝙝𝙖𝙩*', m, fake, )
 } else {
 await conn.reply(m.chat, `[❗𝐈𝐍𝐅𝐎❗] *𝙎𝙚 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙧𝙤𝙣
- ${filesDeleted} 𝙖𝙧𝙘𝙝𝙞𝙫𝙤𝙨 𝙙𝙚 𝙨𝙚𝙨𝙞𝙤𝙣*`
+ ${filesDeleted} 𝙖𝙧𝙘𝙝𝙞𝙫𝙤𝙨 𝙙𝙚 𝙨𝙚𝙨𝙞𝙤𝙣*`, {quoted: m});
   await conn.sendMessage(m.chat, {text: `𝗛𝗼𝗹𝗮👋, 𝗔𝗵𝗼𝗿𝗮 𝗲𝘀𝘁𝗼𝘆 𝗹𝗶𝘀𝘁𝗼\n\n*[❗] Si el Bot no le responde a sus comandos por favor haga un pequeño spam*\n\n*—◉ Ejemplo:*\n${usedPrefix}s\n${usedPrefix}s\n${usedPrefix}s`}, {quoted: m});
 };
 } catch (err) {
