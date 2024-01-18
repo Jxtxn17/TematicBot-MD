@@ -25,7 +25,8 @@ break
 if (filesDeleted === 0) {
 await conn.reply(m.chat, '[❗𝐈𝐍𝐅𝐎❗] *𝙉𝙤 𝙨𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙤 𝙣𝙞𝙣𝙜𝙪́𝙣 𝙖𝙧𝙘𝙝𝙞𝙫𝙤 𝙦𝙪𝙚 𝙞𝙣𝙘𝙡𝙪𝙮𝙖 𝙡𝙖 𝙄𝘿 𝙙𝙚𝙡 𝙘𝙝𝙖𝙩*', m, fake, )
 } else {
-await conn.reply(m.chat, `🎌 *Se eliminaron ${filesDeleted} archivos de sesión*`, m, fake, )
+await conn.reply(m.chat, `[❗𝐈𝐍𝐅𝐎❗] *𝙎𝙚 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙧𝙤𝙣
+ ${filesDeleted} 𝙖𝙧𝙘𝙝𝙞𝙫𝙤𝙨 𝙙𝙚 𝙨𝙚𝙨𝙞𝙤𝙣*`, m, fake, )
 conn.reply(m.chat, `😸 *¡Hola! logras verme*`, m, fake, )
 }
 } catch (err) {
