@@ -35,7 +35,7 @@ let texto = `┏━━━━━━━━━━━${wm}━━━━━━━━�
 ┃ {format(totalmem())}`.trim()
 
 
-conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'BAILEYBOT-MD', thumbnailUrl: 'https://telegra.ph/file/89fa6a3c8e9cedda6f5ca.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'Klk ', thumbnailUrl: 'https://telegra.ph/file/59b115e9eed4ba57eb4de.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
 handler.help = ['ping']
