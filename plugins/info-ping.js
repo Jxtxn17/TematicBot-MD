@@ -35,7 +35,7 @@ let texto = `┏━━━━━━━━━━━${wm}━━━━━━━━�
 ┗━━━━━━━━━━━━${wm}━━━━━━━━━━━`
 
 
-conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'Klk ', thumbnailUrl: 'https://telegra.ph/file/59b115e9eed4ba57eb4de.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'By Jxtxn17, thumbnailUrl: 'https://telegra.ph/file/59b115e9eed4ba57eb4de.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
 handler.help = ['ping']
