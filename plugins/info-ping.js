@@ -32,7 +32,7 @@ let texto = `┏━━━━━━━━━━━${wm}━━━━━━━━�
 
 ┃ *💻 𝐒𝐞𝐫𝐯𝐢𝐝𝐨𝐫*
 ┃ • *Ram:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-┗━━━━━━━━━━━━${wm}━━━━━━━━━━━━`
+┗━━━━━━━━━━━━${wm}━━━━━━━━━━━`
 
 
 conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'Klk ', thumbnailUrl: 'https://telegra.ph/file/59b115e9eed4ba57eb4de.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
