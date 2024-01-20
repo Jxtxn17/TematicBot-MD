@@ -17,7 +17,7 @@ global.imagen2 = fs.readFileSync('./storage/logos/Menu2.jpg')
 global.imagen3 = fs.readFileSync('./storage/logos/Menu3.jpg')
 global.imagen4 = fs.readFileSync('./storage/logos/Menu4.jpg')
 global.imagen5 = fs.readFileSync('./storage/logos/Pepon1.jpg')
-global.imagen4 = fs.readFileSync('./storage/logos/Pepon2.jpg')
+global.imagen6 = fs.readFileSync('./storage/logos/Pepon2.jpg')
 
 global.nuevobot = fs.readFileSync('./src/nuevobot.jpg')
 global.prebot = fs.readFileSync('./src/Pre Bot Publi.png')
