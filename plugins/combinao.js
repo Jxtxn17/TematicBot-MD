@@ -2,7 +2,7 @@ import fs from "fs"
  let handler = m => m 
  handler.all = async function (m) { 
  let bot = `*🚀 Hola soy Bot*\nEn que te puedo ayudar?` 
- let vn = ['Pepon1, Pepon2 img1'].getRandom() 
+ let vn = [imagen5, imagen6, img1].getRandom() 
  let chat = global.db.data.chats[m.chat] 
  if (/^Pepon$/i.test(m.text) && !chat.isBanned) {  
  conn.sendPresenceUpdate('recording', m.chat)     
