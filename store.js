@@ -16,6 +16,7 @@ global.imagen1 = fs.readFileSync('./storage/logos/Menu1.jpg')
 global.imagen2 = fs.readFileSync('./storage/logos/Menu2.jpg')
 global.imagen3 = fs.readFileSync('./storage/logos/Menu3.jpg')
 global.imagen4 = fs.readFileSync('./storage/logos/Menu4.jpg')
+
 global.nuevobot = fs.readFileSync('./src/nuevobot.jpg')
 global.prebot = fs.readFileSync('./src/Pre Bot Publi.png')
 global.stickerAMX = fs.readFileSync('./src/Curiosity.webp')
