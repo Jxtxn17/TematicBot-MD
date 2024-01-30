@@ -3,7 +3,7 @@ var handler = async (m, { conn, args, usedPrefix, command }) => {
 conn.math = conn.math ? conn.math : {}
     
 if (args.length < 1) throw `
-*CURIOSITY - MATES*
+*BAILEY - MATES*
 🧮 Dificultades disponibles : 
   
 ${Object.keys(modes).join(' | ')} 
