@@ -28,7 +28,7 @@ const defaultMenu = {
 ┃├⫹⫺ *Nombre :* %name
 ┃├⫹⫺ *Limite :* %diamond
 ┃├⫹⫺ *Nivel :* %level
-〬┃├⫹⫺ *Rango :* %role
+┃├⫹⫺ *Rango :* %role
 ┃├⫹⫺ *Exp :* %exp
 ┃╰──────────────
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -50,7 +50,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '━━━━━━━「 %category 」━━━━━━━',
   body: '┃ ⫹⫺  %cmd',
-  footer: '━━━━━━━ ≪ •❈• ≫ ━━━━━━━\n',
+  footer: '━━━━━━━ ≪ •❈• ≫ ━━━━━━━',
   after: `
 `,
 }
