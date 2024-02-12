@@ -40,7 +40,7 @@ conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title:
 }
 handler.help = ['ping']
 handler.tags = ['bot']
-handler.command = ['ping', 'speed']
+handler.command = ['ping', 'speed', 'tiempo' ]
 
 handler.register = true
 
