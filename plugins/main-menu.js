@@ -22,35 +22,35 @@ let tags = {
   'owner': 'O W N E R', */
 }
 const defaultMenu = {
-  before: `◙┈┈┈┈┈❍[ ＵＳＵＡＲＩＯＳ ]❍┈┈┈┈┈◙
-❍┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈◙
-┆╭──────────────
-┆├⫹⫺ *Nombre :* %name
-┆├⫹⫺ *Limite :* %diamond
-┆├⫹⫺ *Nivel :* %level
-〬┆├⫹⫺ *Rango :* %role
-┆├⫹⫺ *Exp :* %exp
-┆╰──────────────
-❍┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈◙
+  before: `━━━━━━━[ ＵＳＵＡＲＩＯＳ ]━━━━━━━
+┏━━━━━━━━━━━━━━━━━━━━━━
+┃╭──────────────
+┃├⫹⫺ *Nombre :* %name
+┃├⫹⫺ *Limite :* %diamond
+┃├⫹⫺ *Nivel :* %level
+〬┃├⫹⫺ *Rango :* %role
+┃├⫹⫺ *Exp :* %exp
+┃╰──────────────
+┗━━━━━━━━━━━━━━━━━━━━━━
 
-◙┈┈┈┈┈❍[ ＩＮＦＯＢＯＴ ]❍┈┈┈┈┈◙
-❍┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈◙
-┆╭──────────────
-┆├⫹⫺ *Creador :* Jxtxn17
-┆├⫹⫺ *Numero:* wa.me/51929972576
-┆├⫹⫺ *Tiempo Activo:* %uptime
-┆│*Registrado :* %rtotalreg de %totalreg usuarios
-┆╰────────────── 
-❍┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈◙
+━━━━━━━[ ＩＮＦＯＢＯＴ ]━━━━━━━
+┏━━━━━━━━━━━━━━━━━━━━━━
+┃╭──────────────
+┃├⫹⫺ *Creador :* Jxtxn17
+┃├⫹⫺ *Numero:* wa.me/51929972576
+┃├⫹⫺ *Tiempo Activo:* %uptime
+┃│*Registrado :* %rtotalreg de %totalreg usuarios
+┃╰──────────────
+┗━━━━━━━━━━━━━━━━━━━━━━
 
-◙┈┈┈┈┈❍「 ＨＯＹ 」❍┈┈┈┈┈◙
-┆ *Fecha :* %date
-〬◙┈┈┈┈┈❍ ≪ •❈• ≫ ❍┈┈┈┈┈◙
+━━━━━━━「 ＨＯＹ 」━━━━━━━
+┃ *Fecha :* %date
+〬━━━━━━━ ≪ •❈• ≫ ━━━━━━━
 
 `.trimStart(),
-  header: '◙┈┈┈┈┈❍「 %category 」❍┈┈┈┈┈◙',
-  body: '┆ ⫹⫺  %cmd',
-  footer: '◙┈┈┈┈┈❍ ≪ •❈• ≫ ❍┈┈┈┈┈◙\n',
+  header: '━━━━━━━「 %category 」━━━━━━━',
+  body: '┃ ⫹⫺  %cmd',
+  footer: '━━━━━━━ ≪ •❈• ≫ ━━━━━━━\n',
   after: `
 `,
 }
