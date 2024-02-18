@@ -135,7 +135,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : false,
 mobile: MethodMobile, 
-browser: ['Ubuntu', 'Chrome', '20.0.04'],
+browser: ['Ubuntu', 'Chrome', '110.0.5585.95'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -265,50 +265,63 @@ console.log(chalk.bold.red(`Archivo ${file} no borrado` + err))
 }
 
 async function connectionUpdate(update) {
-const {connection, lastDisconnect, isNewLogin} = update
-global.stopped = connection
+const {connection, lastDisconnect, isNewLogin} = update;
+global.stopped = connection;
 if (isNewLogin) conn.isInit = true;
-const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
+const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode;
 if (code && code !== DisconnectReason.loggedOut && conn?.ws.socket == null) {
-await global.reloadHandler(true).catch(console.error)
-global.timestamp.connect = new Date
+await global.reloadHandler(true).catch(console.error);
+//console.log(await global.reloadHandler(true).catch(console.error));
+global.timestamp.connect = new Date;
 }
-if (global.db.data == null) loadDatabase()
+if (global.db.data == null) loadDatabase();
 if (update.qr != 0 && update.qr != undefined || methodCodeQR) {
 if (opcion == '1') {
 console.log(chalk.yellow('⚠️ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'))
-}}
+ }}
 if (connection == 'open') {
-console.log(chalk.yellowBright('\n╭───────────────────────────◉\n│\n│Conectado correctamente al WhatsApp.\n│\n╰───────────────────────────◉\n'))
-//conn.fakeReply('5217294888993@s.whatsapp.net', '😃', '0@s.whatsapp.net', '😅 Soy CuriosityBot\nRecientemente me e conectado', '0@s.whatsapp.net')
+console.log(chalk.yellowBright('\n╭───────────────────────────◉\n│\n│Conectado correctamente al WhatsApp.\n│\n╰───────────────────────────◉\n'))}
+if (conn.user.connect) {
+conn.fakeReply('5217294888993@s.whatsapp.net', '😃', '0@s.whatsapp.net', '😅 Soy CuriosityBot\nRecientemente me e conectado', '0@s.whatsapp.net')
+conn.user.connect = true;
 }
-let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
+let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
+if (reason == 405) { 
+await fs.unlinkSync("./sessions/" + "creds.json")
+console.log(chalk.bold.redBright(`[ ⚠️ ] Conexión replazada, Por favor espere un momento me voy a reiniciar...\nSi aparecen error vuelve a iniciar con : npm start`)) 
+process.send('reset')}
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
-conn.logger.error(`⚠️ Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`)
+conn.logger.error(`⚠️ Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+//process.exit();
 } else if (reason === DisconnectReason.connectionClosed) {
 conn.logger.warn(`⚠️ Conexión cerrada, reconectando...`)
-await global.reloadHandler(true).catch(console.error)
+await global.reloadHandler(true).catch(console.error);
 } else if (reason === DisconnectReason.connectionLost) {
-conn.logger.warn(`⚠️ Conexión perdida con el servidor, reconectando...`)
+conn.logger.warn(`⚠️ Conexión perdida con el servidor, reconectando...`);
 await global.reloadHandler(true).catch(console.error);
 } else if (reason === DisconnectReason.connectionReplaced) {
-conn.logger.error(`⚠️ Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`)
+conn.logger.error(`⚠️ Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`);
+//process.exit();
 } else if (reason === DisconnectReason.loggedOut) {
-conn.logger.error(`⚠️ Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`)
+conn.logger.error(`⚠️ Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+//process.exit();
 } else if (reason === DisconnectReason.restartRequired) {
-conn.logger.info(`⚠️ Reinicio necesario, reinicie el servidor si presenta algún problema.`)
-await global.reloadHandler(true).catch(console.error)
+conn.logger.info(`⚠️ Reinicio necesario, reinicie el servidor si presenta algún problema.`);
+await global.reloadHandler(true).catch(console.error);
 } else if (reason === DisconnectReason.timedOut) {
-conn.logger.warn(`⚠️ Tiempo de conexión agotado, reconectando...`)
-await global.reloadHandler(true).catch(console.error)
+conn.logger.warn(`⚠️ Tiempo de conexión agotado, reconectando...`);
+await global.reloadHandler(true).catch(console.error);
 } else {
-conn.logger.warn(`⚠️ Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`)
-await global.reloadHandler(true).catch(console.error)
-}}}
+conn.logger.warn(`⚠️ Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`);
+await global.reloadHandler(true).catch(console.error);
+}}
+  /*if (connection == 'close') {
+    console.log(chalk.yellow(`🚩ㅤConexion cerrada, por favor borre la carpeta ${global.authFile} y reescanee el codigo QR`));
+  }*/
+}
 
-
-process.on('uncaughtException', console.error)
+process.on('uncaughtException', console.error);
 
 let isInit = true
 let handler = await import('./handler.js')
@@ -338,15 +351,14 @@ conn.ev.off('connection.update', conn.connectionUpdate);
 conn.ev.off('creds.update', conn.credsUpdate)
 }
 
- conn.welcome = '*⊢⊰────⊶ШΣLCΩMΣ⊷────⊱⊣*\n*⊢❥︎ @subject*\n*⊢⊰────⊶⊰≪• ❈ •≫⊱⊷────⊱⊣*\n*⊢❥ @user*\n*⊢❥ 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾* \n*⊢ 𝙻𝙴𝙴𝚁 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n*⊢❥ 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙰 𝚃𝚄 𝙴𝚂𝚃𝙰𝙳𝙸𝙰!!*\n*⊢⊰────⊶⊰≪• ❈ •≫⊱⊷────⊱⊣*';
-  conn.bye = '*⊢⊰────⊶ΔDIΩS⊷────⊱⊣*\n*⊢❥︎︎ @user*\n*⊢❥︎︎ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*⊢❥︎︎ 𝙽𝙰𝙳𝙸𝙴 𝚃𝙴 𝙴𝚇𝚃𝚁𝙰𝙽̃𝙰𝚁𝙰* \n*⊢⊰────⊶≪ ❈ ≫⊷────⊱⊣*'
-conn.spromote = '*@user* ¡𝙎𝙀 𝙎𝙐𝙈𝘼 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝘼𝘿𝙈𝙄𝙉𝙎¡'
-conn.sdemote = '*@user*[❗𝐈𝐍𝐅𝐎❗] !𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊!'
+conn.welcome = '⊢⊰────⊶ШΣLCΩMΣ⊷────⊱⊣\n*⊢❥︎ @subject*\n*⊢⊰────⊶⊰≪• ❈ •≫⊱⊷────⊱⊣\n⊢❥ @user*\n*⊢❥ 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾* \n*⊢ 𝙻𝙴𝙴𝚁 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n*⊢❥ 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙰 𝚃𝚄 𝙴𝚂𝚃𝙰𝙳𝙸𝙰!!\n⊢⊰────⊶⊰≪• ❈ •≫⊱⊷────⊱⊣*';
+conn.bye = '⊢⊰────⊶ΔDIΩS⊷────⊱⊣\n*⊢❥︎︎ @user*\n*⊢❥︎︎ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*⊢❥︎︎ 𝙽𝙰𝙳𝙸𝙴 𝚃𝙴 𝙴𝚇𝚃𝚁𝙰𝙽̃𝙰𝚁𝙰* \n*⊢⊰────⊶≪ ❈ ≫⊷────⊱⊣*'
+conn.spromote = '@user ¡𝙎𝙀 𝙎𝙐𝙈𝘼 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝘼𝘿𝙈𝙄𝙉𝙎¡'
+conn.sdemote = '@user[❗𝐈𝐍𝐅𝐎❗] !𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊!'
 conn.sDesc = '¡Se ha modificado la descripción!\n\n*Nueva descripción:* @desc'
 conn.sSubject = '[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼 𝙈𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝘿𝙊 𝙀𝙇.𝙏𝙄𝙏𝙐𝙇𝙊 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊'
 conn.sIcon = '[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼 𝘾𝘼𝙈𝘽𝙄𝘼𝘿𝙊 𝙇𝘼 𝙁𝙊𝙏𝙊 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊'
-conn.sRevoke = '[❗𝐈𝐍𝐅𝐎❗] ¡𝙎𝙀 𝙃𝘼 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝘿𝙊 𝙀𝙇 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊!*\n*𝙉𝙐𝙀𝙑𝙊 𝙀𝙉𝙇𝘼𝘾𝙀:* @revoke'
-
+conn.sRevoke = '[❗𝐈𝐍𝐅𝐎❗] ¡𝙎𝙀 𝙃𝘼 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝘿𝙊 𝙀𝙇 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊!\n*𝙉𝙐𝙀𝙑𝙊 𝙀𝙉𝙇𝘼𝘾𝙀: @revoke
 
 conn.handler = handler.handler.bind(global.conn)
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
@@ -460,5 +472,4 @@ if (stopped === 'close' || !conn || !conn.user) return
 await purgeOldFiles()
 console.log(chalk.cyanBright(`\nAUTO_PURGE_OLDFILES │ BASURA ELIMINADA\n`))
 }, 1000 * 60 * 60)
-
 _quickTest().catch(console.error)
