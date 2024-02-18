@@ -358,6 +358,7 @@ conn.sdemote = '@user[❗𝐈𝐍𝐅𝐎❗] !𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼 
 conn.sDesc = '¡Se ha modificado la descripción!\n\n*Nueva descripción:* @desc'
 conn.sSubject = '[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼 𝙈𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝘿𝙊 𝙀𝙇.𝙏𝙄𝙏𝙐𝙇𝙊 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊'
 conn.sIcon = '[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼 𝘾𝘼𝙈𝘽𝙄𝘼𝘿𝙊 𝙇𝘼 𝙁𝙊𝙏𝙊 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊'
+conn.Revoke = '*Se a cambiado el enlace del grupo*'
 
 conn.handler = handler.handler.bind(global.conn)
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
