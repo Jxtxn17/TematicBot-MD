@@ -3,7 +3,6 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let str = `Chambeaste y ahora ganaste un pene negro guasaa`
 await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)}
 handler.tags = ['main']
-handler.command = /^chambear$/i
-handler.exp = 35
+handler.command = /^chambear$/i/^donar|chambear|$/i5
 handler.register = true
 export default handler
