@@ -1,11 +1,3 @@
-import { totalmem, freemem } from 'os'
-import os from 'os'
-import util from 'util'
-import osu from 'node-os-utils'
-import { performance } from 'perf_hooks'
-import { sizeFormatter } from 'human-readable'
-import speed from 'performance-now'
-import { spawn, exec, execSync } from 'child_process'
 const format = sizeFormatter({ std: 'JEDEC', decimalPlaces: 2, keepTrailingZeroes: false, render: (literal, symbol) => `${literal} ${symbol}B` })
 
 var handler = async (m, { conn }) => {
@@ -18,6 +10,7 @@ let muptime = clockString(_muptime)
 
 let chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
 let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
+
 
 let texto = `┏━━━━━━━━━━━${wm}━━━━━━━━━━
 ┃ *🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝*
@@ -35,12 +28,12 @@ let texto = `┏━━━━━━━━━━━${wm}━━━━━━━━�
 ┗━━━━━━━━━━━━${wm}━━━━━━━━━━━`
 
 
-conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'By Jxtxn17, thumbnailUrl: 'https://telegra.ph/file/59b115e9eed4ba57eb4de.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: 'CURIOSITY - BOT - MD', thumbnailUrl: 'https://telegra.ph/file/6cbf9148b572711e9b000.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
 handler.help = ['ping']
 handler.tags = ['bot']
-handler.command = ['ping', 'speed', 'tiempo' ]
+handler.command = ['ping', 'speed']
 
 handler.register = true
 
