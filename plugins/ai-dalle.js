@@ -2,7 +2,7 @@ import fetch from "node-fetch"
   
 var handler = async (m, { conn, isOwner, usedPrefix, command, args }) => {
  
-let query = '*⚠️ ESTE COMANDO GENERA IMAGENES APARTIR DE TEXTOS*.\n\n❕ EJEMPLO\n*.fotoai* Universo azul con estrellas verdes'
+let query = '*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝙂𝙀𝙉𝙀𝙍𝘼𝙇 𝙄𝙈𝘼́𝙂𝙀𝙉𝙀𝙎 𝘼 𝙋𝘼𝙍𝙏𝙄𝙍 𝘿𝙀 𝙏𝙀𝙓𝙏𝙊𝙎 *.\n\n❕ EJEMPLO\n*.fotoai* Universo azul con estrellas verdes'
 let text
 if (args.length >= 1) {
 text = args.slice(0).join(" ")
