@@ -5,15 +5,15 @@ var handler = async (m, { conn, usedPrefix, command }) => {
 
 conn.hdr = conn.hdr ? conn.hdr : {}
 if (m.sender in conn.hdr)
-throw '*⚠️ TODAVÍA HAY UN PROCESO QUE NO SE HA TERMINADO. ESPERE A QUE TERMINE*'
+throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙏𝙊𝘿𝘼𝙑𝙄𝘼 𝙃𝘼𝙔 𝙐𝙉 𝙋𝙍𝙊𝘾𝙀𝙎𝙊 𝙉𝙊 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝘿𝙊. 𝙀𝙎𝙋𝙀𝙍𝙀 𝘼 𝙌𝙐𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝙀*'
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ""
 if (!mime)
 
-throw `*⚠️ RESPONDE A UNA FOTO*`
+throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙐𝙉𝘼 𝙁𝙊𝙏𝙊*`
 if (!/image\/(jpe?g|png|mp4)/.test(mime))
 
-throw `⚠️ *Mímica ${mime} No soportada*` 
+throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙈𝙞́𝙢𝙞𝙘𝙖 ${mime} 𝙉𝙤 𝙨𝙤𝙥𝙤𝙧𝙩𝙖𝙙𝙖*` 
 else conn.hdr[m.sender] = true
 
 m.reply('*🚀 P R O C E S A N D O*')
@@ -27,7 +27,7 @@ conn.sendFile(m.chat, This, '', '🧃 Toma tu foto', m)
 error = true
 } finally {
 if (error) {
-m.reply('*⚠️ PROCESO FALLIDO ⚠️*')
+m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙋𝙍𝙊𝘾𝙀𝙎𝙊 𝙁𝘼𝙇𝙇𝙄𝘿𝙊*')
 }
 delete conn.hdr[m.sender]
 }}
