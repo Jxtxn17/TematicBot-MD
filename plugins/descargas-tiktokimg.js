@@ -2,9 +2,9 @@ import fetch from 'node-fetch'
 
 var handler = async(m, { conn, text, usedPrefix, command }) => {
 
-if (!text) throw `*⚠️ INGRESE UN ENLACE DE TIKTOK QUE CONTENGA IMÁGENES*`
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙈𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙌𝙐𝙀 𝘾𝙊𝙉𝙏𝙀𝙉𝙂𝘼 𝙄𝙈𝘼́𝙂𝙀𝙉𝙀𝙎*`
 if (!(text.includes('http://') || text.includes('https://'))) return m.reply(`url invalid, please input a valid url. Try with add http:// or https://`)
-if (!text.includes('tiktok.com')) return m.reply(`*⚠️ URL INVALIDA.*`)
+if (!text.includes('tiktok.com')) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙐𝙍𝙇 𝙄𝙉𝙑𝘼𝙇𝙄𝘿𝙊.*`)
 try {
 let res = await fetch(`https://api.lolhuman.xyz/api/tiktokslide?apikey=${global.lolkeysapi}&url=${text}`)
 let anu = await res.json()
@@ -19,7 +19,7 @@ c += 1
 }
 } catch (e) {
 console.log(e)
-throw `*⚠️ ERROR, INTENTE DE NUEVO*`
+throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙍𝙍𝙊𝙍, 𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊*`
 }
 
 }
