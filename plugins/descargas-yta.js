@@ -5,7 +5,7 @@ import ytdl from 'ytdl-core'
 
 var handler = async (m, { text, conn, args, usedPrefix, command }) => {
 
-if (!args[0]) throw '*⚠️ INGRESE EL COMANDO MAS UN ENLACE DE YOUTUBE*'
+if (!args[0]) throw *[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝙈𝘼𝙎 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀*'
 let youtubeLink = ''
 if (args[0].includes('you')) {
 youtubeLink = args[0]
@@ -18,11 +18,11 @@ if (matchingItem) {
 if (index < matchingItem.urls.length) {
 youtubeLink = matchingItem.urls[index]
 } else {
-throw `*⚠️ NO SE ENCONTRO UN ENLACE PARA ESE NUMERO INGRESA UN NUMERO DEL 1 AL ${matchingItem.urls.length}*`
+throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙋𝘼𝙍𝘼 𝙀𝙎𝙀 𝙉𝙐𝙈𝙀𝙍𝙊 𝙄𝙉𝙂𝙍𝙀𝙎𝘼 𝙐𝙉 𝙉𝙐𝙈𝙀𝙍𝙊 𝘿𝙀𝙇 1 𝘼𝙇 ${matchingItem.urls.length}*`
 }} else {
-throw `*🧃 PARA PODER USAR ESTE COMANDO DE LA MANERA (${usedPrefix + command} <numero>), REALIZA LA BUSQUEDA DE VIDEOS CON ${usedPrefix}playlist <texto>*`
+throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙀 𝙇𝘼 𝙈𝘼𝙉𝙀𝙍𝘼 (${usedPrefix + command} <numero>), 𝙍𝙀𝘼𝙇𝙄𝙕𝘼 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼 𝘿𝙀 𝙑𝙄𝘿𝙀𝙊𝙎 𝘾𝙊𝙉 ${usedPrefix}playlist <texto>*`
 }} else {
-throw `*🧃 PARA PODER USAR ESTE COMANDO DE LA MANERA (${usedPrefix + command} <numero>), REALIZA LA BUSQUEDA DE VIDEOS CON ${usedPrefix}playlist <texto>*`
+throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙀 𝙇𝘼 𝙈𝘼𝙉𝙀𝙍𝘼 (${usedPrefix + command} <numero>), 𝙍𝙀𝘼𝙇𝙄𝙕𝘼 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼 𝘿𝙀 𝙑𝙄𝘿𝙀𝙊𝙎 𝘾𝙊𝙉 ${usedPrefix}playlist <texto>*`
 }}} 
 await conn.sendMessage(m.chat, {text: `*🚀 D E S C A R G A N D O*`}, {quoted: m})
 try {
@@ -48,7 +48,7 @@ let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
 let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
 conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })
 } catch {
-await conn.reply(m.chat, '*⚠️ NO PUDE ENVIAR EL AUDIO*', m)}
+await conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙍𝙍𝙊𝙍, 𝙉𝙊 𝙎𝙀 𝙋𝙐𝘿𝙊 𝙀𝙉𝙑𝙄𝘼𝙍 𝙀𝙇 𝘼𝙐𝘿𝙄𝙊*', m)}
 }}
 
 }
