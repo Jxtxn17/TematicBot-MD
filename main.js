@@ -359,8 +359,7 @@ conn.spromote = '@user ¡𝙎𝙀 𝙎𝙐𝙈𝘼 𝘼𝙇 𝙂𝙍𝙐𝙋𝙊
 
 conn.sdemote = '@user[❗𝐈𝐍𝐅𝐎❗] !𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊!'
 
-conn.sDesc = '¡Se ha modificado la descripción!\n\n*Nueva 
-descripción'
+conn.sDesc = 'Se ha modificado la descripción del Grupo, nueva descripción: @desc
 
 conn.sSubject = '[❗𝐈𝐍𝐅𝐎❗] 𝙎𝙀 𝙃𝘼 𝙈𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝘿𝙊 𝙀𝙇.𝙏𝙄𝙏𝙐𝙇𝙊 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊'
 
