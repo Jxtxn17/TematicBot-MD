@@ -5,12 +5,16 @@ _${usedPrefix}ytmp4_`.trim();
 
     m.reply(mp4);
   }
+  if (command == "chambear1") {
+    var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y llegaron 3 negros a violarte*..`.trim();
+    m.reply(play);
+}
 
-  if (command == "chambear") {
-    var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y 5 negros se corrieron en tu boca..`.trim();
+  if (command == "chambear2") {
+    var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y 5 negros se corrieron en tu boca€..`.trim();
     m.reply(play);
   }
 };
-handler.command = ["chambear", "chambear", ""];
+handler.command = ["chambear1", "chambear2", ""];
 handler.tags = ["internet"];
 export default handler
