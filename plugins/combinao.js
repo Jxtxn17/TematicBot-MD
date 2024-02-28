@@ -4,7 +4,7 @@ var handler = async (m, {command, conn}) => {
 
 if (command == 'chambear1') {
 let china = await fetch(`https://aemt.me/china`)
-conn.sendMessage(m.chat, {image: china, caption: `🇨🇳 *China*`.trim()}, {quoted: m})
+conn.sendMessage(m.chat, {image: china, caption: `*CHAMBEANDO..*`.trim()}, {quoted: m})
 }
 
 if (command == 'chambear2') {
