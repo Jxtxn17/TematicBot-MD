@@ -40,4 +40,5 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-global.chamba = ["*CHAMBEANDO..*, estuviste chambeando y 3 negros se corrieron en tu boca","*CHAMBEANDO..*, estuviste chambeando y llegaron 5 negros s violarte.. (quedaste como una Kardashian:c)"
+global.chamba = [
+"*CHAMBEANDO..*, estuviste chambeando y 3 negros se corrieron en tu boca","*CHAMBEANDO..*, estuviste chambeando y llegaron 5 negros s violarte.. (quedaste como una Kardashian:c)"
