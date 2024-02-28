@@ -8,7 +8,7 @@ _${usedPrefix}ytmp4_`.trim();
 
   if (command == "chambear") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste Chambeando y 3 negros te llegaron y fuiste violado*..`.trim();
-    m.reply(play);
+    {
 
 if (command == "chamba") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste Chambeando y 5 negros se corrieron en tu boca..*`.trim();
