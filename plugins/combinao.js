@@ -1,44 +1,16 @@
-/*---------------------------------------------------------------------------------------
-  😎 • By https://github.com/HACHEJOTA
------------------------------------------------------------------------------------------*/
-import db from '../lib/database.js'
+var handler = async (m, {command, conn, args, usedPrefix, text}) => {
+  if (command == "y" || command == "y") {
+    let mp4 = `*_descargando :_
+_${usedPrefix}ytmp4_`.trim();
 
-let handler = async (m, { conn, text}) => {
+    m.reply(mp4);
+  }
 
-let hasil = Math.floor(Math.random() * 5000)
-
-conn.reply(m.chat, `*╭─────◈🌹🗿◈──────╮*
-
-${pickRandom(global.piropo)}
-
-*╰─────◈🗿◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '🗿 Chamba 🗿', body: saludo, sourceUrl: global.paypal, thumbnail: rosas }}})
-
-}
-handler.help = ['chambear']
-handler.tags = ['chamba']
-handler.command = ['piropo1']
-handler.fail = null
-handler.exp = 0
-
+  if (command == "chambear") {
+    var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y 5 negros se corrieron en tu boca..`.trim();
+    m.reply(play);
+  }
+};
+handler.command = ["chambear", "chambear", ""];
+handler.tags = ["internet"];
 export default handler
-
-function msToTime(duration) {
-var milliseconds = parseInt((duration % 1000) / 100),
-seconds = Math.floor((duration / 1000) % 60),
-minutes = Math.floor((duration / (1000 * 60)) % 60),
-hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
-
-hours = (hours < 10) ? "0" + hours : hours
-minutes = (minutes < 10) ? "0" + minutes : minutes
-seconds = (seconds < 10) ? "0" + seconds : seconds
-
-return minutes + " m " + seconds + " s " 
-}
-
-
-function pickRandom(list) {
-return list[Math.floor(list.length * Math.random())]
-}
-
-global.piropo = [
-"*CHAMBEANDO..*, estuviste chambeando y 3 negros se corrieron en tu boca","*CHAMBEANDO..*, estuviste chambeando y llegaron 5 negros s violarte.. (quedaste como una Kardashian:c)"
