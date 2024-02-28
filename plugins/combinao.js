@@ -16,7 +16,7 @@ ${pickRandom(global.piropo)}
 }
 handler.help = ['piropo']
 handler.tags = ['frases']
-handler.command = ['piropo']
+handler.command = ['chambear']
 handler.fail = null
 handler.exp = 0
 
