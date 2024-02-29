@@ -49,7 +49,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '┏━━━━━━「 %category 」━━━━━━┓',
   body: '┃ ⫹⫺  %cmd',
-  footer: '┗━━━━━━ ≪ •❈• ≫ ━━━━━━━┛',
+  footer: '┗━━━━━━ ≪ •❈• ≫ ━━━━━━━━',
   after: `
 `,
 }
