@@ -5,21 +5,21 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-/*'main': 'I N F O R M A C I Ó N ',
-  'group': 'G R U P O S',
-  'game': 'J U E G O S',
-  'dl': ' D E S C A R G A S',
-  'jadibot': 'J A D I B O T', 
-  'nable': 'E N A B L E / D I S A B L E', 
-  'internet': 'B U S C A D O R E S',
-  'convertido': 'C O N V E R T I D O R E S', 
-  'sticker': 'S T I C K E R',
-  'rg': 'R P G',
-  'audio': 'A U D I O S   E F E C T O S', 
-  'tools': 'H E R R A M I E N T A S', 
-  'anime': 'A N I M E', 
-  'nsfw': 'N S F W +18', 
-  'owner': 'O W N E R', */
+  'main': '𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾́𝙽 💻',
+  'group': '𝙶𝚁𝚄𝙿𝙾𝚂',
+  'game': '𝙹𝚄𝙴𝙶𝙾𝚂',
+  'dl': '𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂',
+  'jadibot': '𝙹𝙰𝙳𝙸𝙱𝙾𝚃', 
+  'nable': '𝙴𝙽𝙰𝙱𝙻𝙴 / 𝙳𝙸𝚂𝙰𝙱𝙻𝙴', 
+  'internet': '𝙱𝚄𝚂𝙲𝙰𝙳𝙾𝚁𝙴𝚂',
+  'convertido': '𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝙳𝙾𝚁𝙴𝚂', 
+  'sticker': '𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂',
+  'rg': '𝚁𝙿𝙶',
+  'audio': '𝙰𝚄𝙳𝙸𝙾𝚂-𝙴𝙵𝙴𝙲𝚃𝙾𝚂', 
+  'tools': '𝙷𝙴𝚁𝚁𝙰𝙼𝙸𝙴𝙽𝚃𝙰𝚂', 
+  'anime': '𝙰𝙽𝙸𝙼𝙴', 
+  'nsfw': '𝙽𝚂𝙵𝚆 +18', 
+  'owner': '𝙾𝚆𝙽𝙴𝚁', 
 }
 const defaultMenu = {
   before: `━━━━━━━[ ＵＳＵＡＲＩＯＳ ]━━━━━━━
