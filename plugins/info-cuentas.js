@@ -4,12 +4,15 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let str = `
 ┏───◆ ${wm} ◆───┓
  *GITHUB*
+────────
  ${git}
 ┣────────────────
  *INSTAGRAM*
+────────
  ${ig}
 ┣────────────────
  *YOUTUBE*
+────────
  ${yt}
 ┗───◆ ${wm} ◆───┛`
 
