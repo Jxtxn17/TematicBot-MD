@@ -7,14 +7,13 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   const res = await fetch(`https://api.ikyy.my.id/tiktoksearch?text=${text}`);        
   const data = await res.json();
   const json = data.result[0];
-  await conn.sendFile(m.chat, json.play, 'tiktok.mp4', `
-*T I K T O K  - S E A R C H *
+ await conn.sendFile(m.chat, json.play, 'tiktok.mp4', `
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ *T I K T O K  - S E A R C H *
 
-*Author👤:* ${json.author}\n
-*Region 🌍:* ${json.region}\n
-*Duración ⌛:* ${json.duration} detik\n
-*Titulo 📋:* ${json.title}
-
+┃ *Duración ⌛:* ${json.duration} detik\n
+┃ *Titulo 📋:* ${json.title}
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${vs}`, m);
   await conn.sendFile(m.chat, json.music, 'error.mp3', null, m, true);
 };
