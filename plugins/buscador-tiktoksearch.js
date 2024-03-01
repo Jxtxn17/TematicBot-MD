@@ -8,7 +8,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   const data = await res.json();
   const json = data.result[0];
  await conn.sendFile(m.chat, json.play, 'tiktok.mp4',
- ${json.title}
+  ${json.title}
 `, m);
   await conn.sendFile(m.chat, json.music, 'error.mp3', null, m, true);
 };
