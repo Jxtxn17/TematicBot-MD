@@ -1,4 +1,5 @@
 //Este comando aun falta hacer algunos arreglos
+//Créditos a @Danieldiod
 
 import fetch from 'node-fetch';
 
