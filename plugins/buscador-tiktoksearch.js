@@ -13,8 +13,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 
 ┃ *Duración ⌛:* ${json.duration} detik\n
 ┃ *Titulo 📋:* ${json.title}
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━
-${vs}`, m);
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━`, m);
   await conn.sendFile(m.chat, json.music, 'error.mp3', null, m, true);
 };
 
