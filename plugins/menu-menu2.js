@@ -25,7 +25,7 @@ let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 
 let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./storage/menus/Menu3.jpg'), thumbnail: fs.readFileSync('./storage/menus/Menu3.jpg'),sendEphemeral: true}}}
+let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./storage/logos/Menu3.jpg'), thumbnail: fs.readFileSync('./storage/logos/Menu3.jpg'),sendEphemeral: true}}}
 let links = linkSity.getRandom()
     const ftrol = {
     key : {
@@ -60,7 +60,7 @@ let td = `${pickRandom([d1,d2,d3,d4,d5,d6])}`
     },
     message: {
     orderMessage: {
-    itemCount : 2023,
+    itemCount : 2024,
     status: 1,
     surface : 1,
     message: 'Menú...' + '\n🚀 Cargando ^ω^', 
@@ -301,7 +301,7 @@ let menu = `╔══════════════
 ║┋ႌ〬⫹⫺ .𝚞𝚗𝚋𝚊𝚗𝚞𝚜𝚎𝚛
 〬╚════ ≪ •❈• ≫ ════╝`
 function _0x2daf() {
-    const _0x4c1076 = ['namedoc', 'social', '1017dFLzIP', '11680bWFOeX', 'sendMessage', '1FnTozH', '6qNtNxK', '445374chjKag', '2096504ySppGm', '627669MaFyqj', 'readFileSync', 'En breve se enviará el menú...', '374160lMCurS', '356228pujvOS', './storage/menus/Menu1.jpg', '1019845zOpQQK', 'pdf', 'chat'];
+    const _0x4c1076 = ['namedoc', 'social', '1017dFLzIP', '11680bWFOeX', 'sendMessage', '1FnTozH', '6qNtNxK', '445374chjKag', '2096504ySppGm', '627669MaFyqj', 'readFileSync', 'En breve se enviará el menú...', '374160lMCurS', '356228pujvOS', './storage/logos/Menu1.jpg', '1019845zOpQQK', 'pdf', 'chat'];
     _0x2daf = function() {
         return _0x4c1076;
     };
@@ -352,7 +352,7 @@ let buttonMessage = {
             'mediaType': 0x1,
             'previewType': "PHOTO",
             'title': 'Hola!!',
-            'thumbnail': fs.readFileSync('./storage/menus/Menu1.jpg'),
+            'thumbnail': fs.readFileSync('./storage/logos/Menu1.jpg'),
             'renderLargerThumbnail': !![],
             'sourceUrl': md
         }
