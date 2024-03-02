@@ -10,12 +10,12 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
     await conn.reply(m.chat, '𝙐𝙣 𝙈𝙤𝙢𝙚𝙣𝙩𝙤...',m, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝘾𝙤𝙢𝙤 𝙚𝙨𝙩𝙖𝙨?!!', body: 'bienvenido', sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
 //m.react('🗿');
-    await conn.sendMessage(m.chat, { react: { text: '💖', key: m.key } })
+    await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
   let txt =`┏━━━━━━━━━━━━━━━
 ┃ ✪ ⃟ 📋 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒
 ┗━━━━━━━━━━━━━━━
 ┃╭──────────────
-┃├⫹⫺ 𝙽𝙾𝙼𝙱𝚁𝙴 : ${𝚗𝚊𝚖𝚎}$
+┃├⫹⫺ 𝙽𝙾𝙼𝙱𝚁𝙴 : ${𝚗𝚊𝚖𝚎}
 ┃├⫹⫺ 𝙻𝙸𝙼𝙸𝚃𝙴 : ${𝚍𝚒𝚊𝚖𝚘𝚗𝚍}
 ┃├⫹⫺ 𝙽𝙸𝚅𝙴𝙻 : ${𝚕𝚎𝚟𝚎𝚕}
 〬┃├⫹⫺ 𝚁𝙰𝙽𝙶𝙾 : ${𝚛𝚘𝚕𝚎}
@@ -29,7 +29,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃├⫹⫺ 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 : 𝐉𝐱𝐭𝐱𝐧𝟏𝟕
 ┃├⫹⫺ 𝙽𝚄𝙼𝙴𝚁𝙾: 𝚠𝚊.𝚖𝚎/𝟻𝟷𝟿𝟸𝟿𝟿𝟽𝟸𝟻𝟽𝟼
 ┃├⫹⫺ 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${𝚞𝚙𝚝𝚒𝚖𝚎}
-┃├⫹⫺ 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾𝚂 : ${𝚛𝚝𝚘𝚝𝚊𝚕𝚛𝚎𝚐} 𝐝𝐞 ${𝚝𝚘𝚝𝚊𝚕𝚛𝚎𝚐}𝐮𝐬𝐮𝐚𝐫𝐢𝐨𝐬:
+┃├⫹⫺ 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾𝚂 : ${𝚛𝚝𝚘𝚝𝚊𝚕𝚛𝚎𝚐} 𝐝𝐞 ${𝚝𝚘𝚝𝚊𝚕𝚛𝚎𝚐} 𝐮𝐬𝐮𝐚𝐫𝐢𝐨𝐬:
 ┃╰────────────── 
 ┗━━━━━━━━━━━━━━━━━━
 
