@@ -11,23 +11,24 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   if (name.length >= 30) throw '*[❗𝐈𝐍𝐅𝐎❗] El nombre es demasiado largo*' 
   age = parseInt(age)
   if (age > 100) throw '*Pellé quiere jugar con el bot?*'
-  if (age < 5) throw '*Eres menor, no  puedes registrarte en ${wm}*'
+  if (age < 5) throw '*Eres menor, no  puedes registrarte en ${global.wm}*'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`
-┏━━━━━━━━━━━┓
+┏━━━━━━━━━━━━━━━━┓
 ┃ *𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙾* 
-┃━━━━━━━━━━━┛
+┃━━━━━━━━━━━━━━━━┛
 ┃ *𝙽𝙾𝙼𝙱𝚁𝙴:* ${name}
 ┃ *𝙴𝙳𝙰𝙳* : ${age} años
 ┃ *𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴*:
 ┃${sn}
-┃━━━━━━━━━━━━━━━━
-┃ *${usedPrefix}menu* para ver el Menu
-┗━━━━━━━━━━━━━━━━
+┃━━━━━━━━━━━━━━━━━━┓
+┃ *${usedPrefix}𝙼𝙴𝙽𝚄*
+┃ *𝙿𝙰𝚁𝙰 𝚅𝙴𝚁 𝙴𝙻 𝙼𝙴𝙽𝚄́*
+┗━━━━━━━━━━━━━━━━━━┛
 `.trim())
 }
 handler.help = ['reg'].map(v => v + ' <nombre.edad>')
