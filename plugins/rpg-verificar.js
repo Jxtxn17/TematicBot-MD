@@ -11,7 +11,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   if (name.length >= 30) throw '*[❗𝐈𝐍𝐅𝐎❗] El nombre es demasiado largo*' 
   age = parseInt(age)
   if (age > 100) throw '*Pellé quiere jugar con el bot?*'
-  if (age < 5) throw '*Eres menor, no  puedes registrarte en* ${global.wm}'
+  if (age < 5) throw '*Eres menor, no  puedes registrarte en BaileyBot-MD*'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
