@@ -3,15 +3,15 @@ let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
-  if (user.registered === true) throw `*⚠️ Ya estás registrado*\n\n¿Quiere volver a registrarse?\n\n💬 Use este comando para *eliminar su registro*\n*${usedPrefix}unreg* <Número de serie>`
-  if (!Reg.test(text)) throw `*⚠️ Formato incorrecto*\n\n📝 Uso del comamdo: *${usedPrefix + command} nombre.edad*\n💡 Ejemplo : *${usedPrefix + command}* ${name2}.18`
+  if (user.registered === true) throw `[❗𝐈𝐍𝐅𝐎❗] *Ya estás registrado*\n\n¿Quiere volver a registrarse?\n\n💬 Use este comando para *eliminar su registro*\n*${usedPrefix}unreg* <Número de serie>`
+  if (!Reg.test(text)) throw `[❗𝐈𝐍𝐅𝐎❗] *Formato incorrecto*\n\n📝 Uso del comamdo: *${usedPrefix + command} nombre.edad*\n💡 Ejemplo : *${usedPrefix + command}* ${name2}.18`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw '*📝 El nombre no puede estar vacío*'
-  if (!age) throw '*📝 La edad no puede estar vacía*'
-  if (name.length >= 30) throw '*⚠️ El nombre es demasiado largo*' 
+  if (!name) throw '[❗𝐈𝐍𝐅𝐎❗] €€El nombre no puede estar vacío*'
+  if (!age) throw '[❗𝐈𝐍𝐅𝐎❗] *La edad no puede estar vacía*'
+  if (name.length >= 30) throw '*[❗𝐈𝐍𝐅𝐎❗] El nombre es demasiado largo*' 
   age = parseInt(age)
-  if (age > 100) throw '*👴🏻 Wow el abuelo quiere jugar al bot*'
-  if (age < 5) throw '*👀 hay un bebé jsjsj*'
+  if (age > 100) throw '*Pellé quiere jugar con el bot?*'
+  if (age < 5) throw '*Eres menor, no  puedes registrarte en ${wm}*'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
