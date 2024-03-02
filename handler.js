@@ -560,12 +560,12 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  global.dfail = (type, m, conn) => { 
   
  let msg = { 
- rowner: '[❗𝐈𝐍𝐅𝐎❗] *ESTE COMANDO SOLO MI DESAROLLADOR LO PUEDE USAR*', 
- owner: '[❗𝐈𝐍𝐅𝐎❗] *ESTE COMANDO SOLO MI PROPIETARIO LO PUEDE USAR*', 
- mods: '[❗𝐈𝐍𝐅𝐎❗] *ESTA FUNCIÓN SOLO ES PARA MIS MODERADORES*', 
- premium: '[❗𝐈𝐍𝐅𝐎❗] *ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*', 
- group: [❗𝐈𝐍𝐅𝐎❗] *LA FUNCIÓN SOLO PUEDE SER EJECUTADA EN GRUPOS*', 
- private: '[❗𝐈𝐍𝐅𝐎❗] *ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
+ rowner: '*ESTE COMANDO SOLO MI DESAROLLADOR LO PUEDE USAR*', 
+ owner: '*ESTE COMANDO SOLO MI PROPIETARIO LO PUEDE USAR*', 
+ mods: '*ESTA FUNCIÓN SOLO ES PARA MIS MODERADORES*', 
+ premium: '*ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*', 
+ group:  '*LA FUNCIÓN SOLO PUEDE SER EJECUTADA EN GRUPOS*', 
+ private: '*ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
  admin: ' *ESTE COMANDO SOLO PUEDE SER USADO POR ADMINS*', 
  botAdmin: '[❗𝐈𝐍𝐅𝐎❗] *PARA USAR ESTA FUNCIÓN DEBO SER ADMIN*', 
  unreg: '[❗𝐈𝐍𝐅𝐎❗] *HEY! ALTO AHI NO ESTAS REGISTRADO, REGÍSTRESE PARA USAR ESTA FUNCIÓN ESCRIBIENDO:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
