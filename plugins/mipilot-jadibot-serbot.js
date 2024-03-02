@@ -304,7 +304,7 @@ function _0x16a5() {
         'krKSb',
         'kzYjq',
         'deleteUpdate',
-        '[❗𝐈𝐍𝐅𝐎❗]\x20*Ya Estas Conectado*\x0a\x0aUtilice\x20su\x20Codigo\x20para\x20volver\x20a\x20conectarse\x20a\x20BaileyBot-MD',
+        '[❗𝐈𝐍𝐅𝐎❗]\x20*Ya Estas Conectado*\x0a\x0aUtilice\x20su\x20Codigo\x20para\x20volver\x20a\x20conectarse',
         'participantsUpdate',
         '🚩\x20*La\x20conexión\x20se\x20ha\x20cerrado,\x20tendras\x20que\x20volver\x20a\x20conectarse\x20usando:*\x0a!deletesesion\x20(Para\x20borrar\x20los\x20datos\x20y\x20poder\x20volver\x20a\x20solitar\x20el\x20QR\x20o\x20el\x20código\x20de\x20emparejamiento',
         'silent',
