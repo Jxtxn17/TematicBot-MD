@@ -13,4 +13,4 @@ use .allmenu
  handler.tags = ['main'] 
  handler.command = /^menu$/i 
  handler.exp = 35 
- export default handler/*
+ export default handler*/
