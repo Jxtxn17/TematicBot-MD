@@ -246,4 +246,4 @@ handler.help = ['menu'];
 handler.tags = ['menu'];
 handler.command = /^(menu|menú|COMANDOS|comandos)$/i;
 handler.register = true
-export default handler;/*
+export default handler;*/
