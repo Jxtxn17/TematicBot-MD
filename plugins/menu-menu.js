@@ -7,7 +7,10 @@ m.react ('✅')
  let menu = `👋 _¿Hola, ${nombre} como estas?_ 
 
 use .allmenu  
-  _(Para ver el menú completo)_` 
+  _(Para ver el menú completo)_`
+ }[type] 
+ if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.channel, thumbnail: imagen2 }}}) 
+
  await conn.sendFile(m.chat, media, 'Curiosity.jpg', menu, fkontak)} 
  handler.tags = ['main'] 
  handler.command = /^menu$/i 
