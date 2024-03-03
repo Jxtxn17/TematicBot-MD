@@ -122,7 +122,7 @@ throw false
 }}
 chat.antiToxic = isEnable
 break
-case '𝙈𝙊𝘿𝙊𝙃𝙊𝙍𝙉𝙔':
+case 'modohorny':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
