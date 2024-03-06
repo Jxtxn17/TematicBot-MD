@@ -8,7 +8,6 @@ _${usedPrefix}ytmp4_`.trim();
 if (command == "chambearhub") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando como regalona en el oxxo*..`.trim();
     m.reply(play);
-
   }
   if (command == "chambear1") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y llegaron 3 negros a violarte*..`.trim();
