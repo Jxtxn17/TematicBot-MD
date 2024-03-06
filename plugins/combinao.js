@@ -4,6 +4,12 @@ var handler = async (m, {command, conn, args, usedPrefix, text}) => {
 _${usedPrefix}ytmp4_`.trim();
 
     m.reply(mp4);
+
+if (command == "chambearhub") {
+    var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando como regalona en el oxxo*..`.trim();
+    m.reply(play);
+}
+
   }
   if (command == "chambear1") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y llegaron 3 negros a violarte*..`.trim();
@@ -15,6 +21,6 @@ _${usedPrefix}ytmp4_`.trim();
     m.reply(play);
   }
 };
-handler.command = ["chambear1", "chambear2", ""];
+handler.command = ["chambear1", "chambear2", "chambearhub"];
 handler.tags = ["internet"];
 export default handler
