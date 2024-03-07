@@ -6,7 +6,7 @@ _${usedPrefix}ytmp4_`.trim();
     m.reply(mp4);
 }
 
- if (command == "chambearhub") {
+  if (command == "chambearhub") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y llegaron 3 negros a violarte*..`.trim();
     m.reply(play);
 }
