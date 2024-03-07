@@ -144,9 +144,9 @@ import fetch from 'node-fetch'
  let n4 = lolh.result.thumbnail 
  await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${n}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${n3}`, thumbnail: await fetch(n4) }, { quoted: m }) 
  } catch { 
- await conn.reply(m.chat, '*⚠️ NO FUE POSIBLE DESCARGAR EL VÍDEO*', m)}}}     
+ await conn.reply(m.chat, '[❗𝐈𝐍𝐅𝐎❗] NO FUE POSIBLE DESCARGAR EL VÍDEO*', m)}}}     
  }} catch { 
- throw "*⚠️ ERROR, INTENTALO DE NUEVO*"} 
+ throw "[❗𝐈𝐍𝐅𝐎❗] *ERROR, INTENTALO DE NUEVO*"} 
  } 
  handler.help = ['play', 'play2'] 
  handler.tags = ['descargas'] 
