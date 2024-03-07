@@ -3,8 +3,8 @@ import TicTacToe from '../lib/tictactoe.js'
 var handler = async (m, { conn, usedPrefix, command, text }) => {
 
 conn.game = conn.game ? conn.game : {}
-if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `*⚠️ TODAVÍA ESTAS EN UN JUEGO, ESCRIBE ${usedPrefix}delttt PARA CERRAR EL JUEGO*`
-if (!text) throw `*⚠️ PONGA UN NOMBRE A LA SALA*`
+if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `[❗𝐈𝐍𝐅𝐎❗] *TODAVÍA ESTAS EN UN JUEGO, ESCRIBE ${usedPrefix}delttt PARA CERRAR EL JUEGO*`
+if (!text) throw `[❗𝐈𝐍𝐅𝐎❗] *PONGA UN NOMBRE A LA SALA*`
 let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
 if (room) {
 m.reply('*✅ COMPAÑERO ENCONTRADO*')
@@ -34,7 +34,7 @@ ${arr.slice(6).join('')}
 
 *SALA ID* ${room.id}
 
-*⚠️ REGLAS*
+[❗𝐈𝐍𝐅𝐎❗] *REGLAS*
 
 Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar
 Escribe *surrender* para salir del juego y ser declarado derrotado.`.trim()
