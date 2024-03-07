@@ -28,10 +28,10 @@ text: m.text
 }))
 if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
 m.reply({
-'-3': '*⚠️ EL JUEGO A TERMINADO*',
-'-2': '*⚠️ INVALIDO*',
-'-1': '*⚠️ POSICIÓN INVALIDA*',
-0: '*⚠️ POSICIÓN INVALIDA*',
+'-3': '[❗𝐈𝐍𝐅𝐎❗] *EL JUEGO A TERMINADO*',
+'-2': '[❗𝐈𝐍𝐅𝐎❗] *INVALIDO*',
+'-1': [❗𝐈𝐍𝐅𝐎❗] *POSICIÓN INVALIDA*',
+0: '[❗𝐈𝐍𝐅𝐎❗] *POSICIÓN INVALIDA*',
 }[ok])
 return !0
 }
