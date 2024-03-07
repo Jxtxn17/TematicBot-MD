@@ -30,7 +30,7 @@ if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, par
 m.reply({
 '-3': '[❗𝐈𝐍𝐅𝐎❗] *EL JUEGO A TERMINADO*',
 '-2': '[❗𝐈𝐍𝐅𝐎❗] *INVALIDO*',
-'-1': [❗𝐈𝐍𝐅𝐎❗] *POSICIÓN INVALIDA*',
+'-1': '[❗𝐈𝐍𝐅𝐎❗] *POSICIÓN INVALIDA*',
 0: '[❗𝐈𝐍𝐅𝐎❗] *POSICIÓN INVALIDA*',
 }[ok])
 return !0
