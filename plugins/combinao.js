@@ -4,7 +4,7 @@ var handler = async (m, {command, conn, args, usedPrefix, text}) => {
 _${usedPrefix}ytmp4_`.trim();
 
     m.reply(mp4);
-}
+  }
 
   if (command == "chambearhub") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y llegaron 3 negros a violarte*..`.trim();
