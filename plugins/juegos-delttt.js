@@ -1,7 +1,7 @@
 var handler = async (m, { conn, text }) => {
 
 let room = Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))
-if (room == undefined) return conn.reply(m.chat,`*⚠️ NO ESTAS EN UNA PARTIDA DE TICTACTOE*`, m)
+if (room == undefined) return conn.reply(m.chat,`[❗𝐈𝐍𝐅𝐎❗] *NO ESTAS EN UNA PARTIDA DE TICTACTOE*`, m)
 delete conn.game[room.id]
 await conn.reply(m.chat, `*✅ SE ELIMINÓ LA SESIÓN DE TICTACTOE*`, m)
 
