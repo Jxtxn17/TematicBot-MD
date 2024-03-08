@@ -7,7 +7,7 @@ _${usedPrefix}ytmp4_`.trim();
   }
 
   if (command == "chambearhub") {
-    var play = `*CHAMBEANDO..*\n\n*Estuviste chambeando y llegaron 3 negros a violarte*..`.trim();
+    var play = `*CHAMBEANDO..*\n\n*Estuviste como regalona en el oxxo, bailandole a 9 negros 🗿*..`.trim();
     m.reply(play);
 }
 
