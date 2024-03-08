@@ -20,42 +20,42 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  let pp = './storage/logos/Menu1.jpg' 
  let speed = neww - old 
  let info = ` 
- *📑 INFO BAILEY BOT MD* 
+ *INFO BAILEY BOT MD* 
   
- 👑 *CREADOR* 
+  ꨄ *CREADOR* 
   *Jxtxn17*
- -------------------------- 
- 🥏 *CONTACTO*  
-  *${ig}* 
- -------------------------- 
- 🌐 *VERSIÓN ACTUAL* 
+ 
+  ꨄ *CONTACTO*  
+  *${ig}*
+
+  ꨄ *VERSIÓN ACTUAL* 
   ${vs} 
- -------------------------- 
- 💻 *PREFIJO* 
+ 
+  ꨄ *PREFIJO* 
   *${usedPrefix}* 
- -------------------------- 
- 🚦 *CHATS PRIVADOS* 
+
+  ꨄ *CHATS PRIVADOS* 
   *${chats.length - groups.length}* 
- -------------------------- 
- 📑 *CHATS GRUPALES* 
+ 
+  ꨄ *CHATS GRUPALES* 
   *${groups.length}*  
- -------------------------- 
- 💬 *CHATS EN TOTAL* 
+ 
+  ꨄ *CHATS EN TOTAL* 
   *${chats.length}*  
- -------------------------- 
- ⏰ *ACTIVIDAD* 
+
+  ꨄ *ACTIVIDAD* 
   *${uptime}* 
- -------------------------- 
- 👥 *USUARIOS* 
+ 
+  ꨄ *USUARIOS* 
   *${totalreg}*  
- -------------------------- 
- 🚀 *VELOCIDAD:* 
+ 
+  ꨄ *VELOCIDAD:* 
   *${speed}* 
- -------------------------- 
- 📡 *AUTOREAD:* 
+ 
+  ꨄ *AUTOREAD:* 
   ${autoread ? '*Habilitado ✅*' : '*Deshabilitado ❌*'} 
- -------------------------- 
- 🔰 *RESTRICT:* 
+ 
+  ꨄ *RESTRICT:* 
  ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}`.trim()  
  let aa = { quoted: m, userJid: conn.user.jid } 
  let res = generateWAMessageFromContent (m.chat, {liveLocationMessage: {degreesLatitude: 0, degreesLongitude: 0, caption: info, secuenceNumber: "0", contextInfo: {mentionedJid: conn.parseMention()}}}, aa) 
