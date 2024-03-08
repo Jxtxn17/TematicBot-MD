@@ -19,44 +19,43 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  let neww = performance.now() 
  let pp = './storage/logos/Menu1.jpg' 
  let speed = neww - old 
- let info = ` 
- *INFO BAILEY BOT MD* 
-  
-  ꨄ *CREADOR* 
-  *Jxtxn17*
+ let info = `┏━━━━━━━━━━━━━━━━━
+┃ ꨄ *CREADOR* 
+┃ *Jxtxn17*
  
-  ꨄ *CONTACTO*  
-  *${ig}*
+┃  ꨄ *CONTACTO*  
+┃  *${ig}*
 
-  ꨄ *VERSIÓN ACTUAL* 
-  ${vs} 
+┃ ꨄ *VERSIÓN ACTUAL* 
+┃  ${vs} 
  
-  ꨄ *PREFIJO* 
-  *${usedPrefix}* 
+┃ ꨄ *PREFIJO* 
+┃ *${usedPrefix}* 
 
-  ꨄ *CHATS PRIVADOS* 
-  *${chats.length - groups.length}* 
+┃  ꨄ *CHATS PRIVADOS* 
+┃  *${chats.length - groups.length}* 
  
-  ꨄ *CHATS GRUPALES* 
-  *${groups.length}*  
+┃  ꨄ *CHATS GRUPALES* 
+┃ *${groups.length}*  
  
-  ꨄ *CHATS EN TOTAL* 
-  *${chats.length}*  
+┃ ꨄ *CHATS EN TOTAL* 
+┃ *${chats.length}*  
 
-  ꨄ *ACTIVIDAD* 
-  *${uptime}* 
+┃  ꨄ *ACTIVIDAD* 
+┃ *${uptime}* 
  
-  ꨄ *USUARIOS* 
-  *${totalreg}*  
+┃ ꨄ *USUARIOS* 
+┃ *${totalreg}*  
  
-  ꨄ *VELOCIDAD:* 
-  *${speed}* 
+┃  ꨄ *VELOCIDAD:* 
+┃  *${speed}* 
  
-  ꨄ *AUTOREAD:* 
-  ${autoread ? '*Habilitado ✅*' : '*Deshabilitado ❌*'} 
+┃ ꨄ *AUTOREAD:* 
+┃ ${autoread ? '*Habilitado ✅*' : '*Deshabilitado ❌*'} 
  
-  ꨄ *RESTRICT:* 
- ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}`.trim()  
+┃  ꨄ *RESTRICT:* 
+┃ ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}`.trim()  
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: '${global.wm}', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
  } 
  handler.help = ['infobot', 'speed'] 
