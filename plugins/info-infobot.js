@@ -57,9 +57,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  
   ꨄ *RESTRICT:* 
  ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}`.trim()  
- let aa = { quoted: m, userJid: conn.user.jid } 
- let res = generateWAMessageFromContent (m.chat, {liveLocationMessage: {degreesLatitude: 0, degreesLongitude: 0, caption: info, secuenceNumber: "0", contextInfo: {mentionedJid: conn.parseMention()}}}, aa) 
- conn.relayMessage(m.chat, res.message, {}) 
+  conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: '${global.wm}', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
  } 
  handler.help = ['infobot', 'speed'] 
  handler.tags = ['main'] 
