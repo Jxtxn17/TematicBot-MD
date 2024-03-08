@@ -54,8 +54,9 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 ┃ ${autoread ? '*Habilitado ✅*' : '*Deshabilitado ❌*'} 
  
 ┃  ꨄ *RESTRICT:* 
-┃ ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}`.trim()  
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━
+`.trim()  
   conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: '${global.wm}', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
  } 
  handler.help = ['infobot', 'speed'] 
