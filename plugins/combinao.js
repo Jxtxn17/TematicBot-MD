@@ -7,8 +7,7 @@ _${usedPrefix}ytmp4_`.trim();
   }
 
   if (command == "chambearhub") {
-    var play = `*CHAMBEANDO..*\n\n*Estuviste como regalona en el oxxo, bailandole a 9 negros 🗿
-🎐 ganaste ${exp} xp*..`.trim();
+    var play = `*CHAMBEANDO..*\n\n*Estuviste como regalona en el oxxo, bailandole a 9 negros 🗿*..`.trim();
     m.reply(play);
 }
 
