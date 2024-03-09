@@ -4,8 +4,8 @@ let d = 20
 
 let handler = async (m, {conn, text, usedPrefix, command, groupMetadata}) => {
   let time = global.db.data.users[m.sender].lastrob + 1800000;
-  if (new Date() - global.db.data.users[m.sender].lastrob < 1800000) throw `*⏰ ESPERA ${msToTime(time - new Date())} PARA VOLVER A ROBAR*`;
-  if (!text) return m.reply(`*➳ ETIQUETA AL USUARIO QUE QUIERE SAQUEAR*\n\n*EJEMPLO:* ${usedPrefix + command} @tɑg>.`);
+  if (new Date() - global.db.data.users[m.sender].lastrob < 1800000) throw `[❗𝐈𝐍𝐅𝐎❗] *⏰ ESPERA ${msToTime(time - new Date())} PARA VOLVER A ROBAR*`;
+  if (!text) return m.reply(`[❗𝐈𝐍𝐅𝐎❗] *ETIQUETA AL USUARIO QUE QUIERE SAQUEAR*\n\n*EJEMPLO:* ${usedPrefix + command} @tɑg>.`);
   try { 
     let _user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender;
     if (!_user in global.db.data.users) return m.reply(`➳ El usuɑrio no estά registrɑdo en lɑ bɑse de dɑtos!`);
@@ -37,7 +37,7 @@ let handler = async (m, {conn, text, usedPrefix, command, groupMetadata}) => {
   );*/
     global.db.data.users[m.sender].lastrob = new Date() * 1;
   } catch {
-    await m.reply(`*🚓🚓🚓No le pudiste robar por que a este usuario los protege la policía 👮(AFK)*`);
+    await m.reply(`[❗𝐈𝐍𝐅𝐎❗] *No le pudiste robar por que a este usuario los protege la policía 👮(AFK)*`);
   }
 };
 
