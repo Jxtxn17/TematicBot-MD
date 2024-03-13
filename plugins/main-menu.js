@@ -48,7 +48,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '╭═━═━═━─「 %category 」─━═━═━═╮',
   body: '〣 ├⫹⫺  %cmd',
-  footer: ''꒷︶꒷꒥꒷‧₊˚૮꒰˵•ᵜ•˵꒱ა‧₊˚꒷₊˚૮꒰˵•ᵜ•˵꒱ა‧',
+  footer: '꒷︶꒷꒥꒷‧₊˚૮꒰˵•ᵜ•˵꒱ა‧₊˚꒷₊˚૮꒰˵•ᵜ•˵꒱ა‧',
   after: `
 `,
 }
