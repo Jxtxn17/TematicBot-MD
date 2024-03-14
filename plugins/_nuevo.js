@@ -1,4 +1,4 @@
-> const namso = require('namso-cc-gen');
+const namso = require('namso-cc-gen');
 
 let res = namso.gen({
  ShowCCV: true,
