@@ -57,7 +57,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 ┃ ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `.trim()  
-  conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: '${global.wm}', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+  conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: 'BaileyBot-MD 🗿', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
  } 
  handler.help = ['infobot', 'speed'] 
  handler.tags = ['main'] 
