@@ -46,7 +46,7 @@ const defaultMenu = {
 ꒷︶꒷꒥꒷‧₊˚૮꒰˵•ᵜ•˵꒱ა‧₊˚꒷₊˚૮꒰˵•ᵜ•˵꒱
 
 `.trimStart(),
-  header: '╭═━═━═━─「 %category 」─━═━═━═╮',
+  header: '*╭═━═━═━─「 %category 」─━═━═━═╮*',
   body: '*〣* ├⫹⫺  %cmd',
   footer: '꒷︶꒷꒥꒷‧₊˚૮꒰˵•ᵜ•˵꒱ა‧₊˚꒷₊˚૮꒰˵•ᵜ•˵꒱ა‧',
   after: `
