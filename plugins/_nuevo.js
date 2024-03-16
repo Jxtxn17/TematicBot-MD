@@ -1,22 +1,24 @@
-import namso = from 'namso-cc-gen;
-
-const handler = async (m, {conn, text,command, usedPrefix}) => {
-let res = namso.gen({
- ShowCCV: true,
- CCV: 'rnd',
- ShowExpDate: true,
- ShowBank: false,
- Month: "09",
- Year: "2026",
- Quantity: "10",
- Bin: "{txt}",
- Format: "PIPE"
+import fetch from 'node-fetch' 
+let handler = async function (m, { conn, text, usedPrefix }) {
+const apiUrl = `https://lookup.binlist.net/${text}`
+fetch(apiUrl).then(response => {
+if (!response.ok) {
+return console.log('La página no esta funcionando actualmente')
+}
+return response.json()
+}).then(data => {
+const formattedResult = `
+📇| BIN: ${text}
+💳| MARCA: ${data.scheme}
+🏧| TIPO: ${data.type}
+🌐| PAIS: ${data.country.name}
+🏁| BANDERA: ${data.country.emoji}
+🏦| BANCO: ${data.bank.name}
+`
+m.reply(formattedResult.trim())
+}).catch(error => {
+console.error('Error:', error)
 })
-return res;
-  }
-};
-
-handler.command = /^(bin|cc)$/i;
-
-
+}
+handler.command = /^(bin|card)$/i
 export default handler
