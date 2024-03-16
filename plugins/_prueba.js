@@ -1,6 +1,5 @@
-import namso from 'namso-cc-gen;
+const namso = require('namso-cc-gen');
 
-const handler = async (m, {conn, text,command, usedPrefix}) => {
 let res = namso.gen({
  ShowCCV: true,
  CCV: 'rnd',
@@ -9,12 +8,7 @@ let res = namso.gen({
  Month: "09",
  Year: "2026",
  Quantity: "10",
- Bin: "{txt}",
+ Bin: "486742802285xxxx",
  Format: "PIPE"
 })
-return res;
-  }
-};
-
-handler.command = /^(gen|namso)$/i;
-export default handler;
+m.return res
