@@ -17,4 +17,6 @@ return res;
 };
 
 handler.command = /^(bin|cc)$/i;
-export default handler;
+
+
+export default handler
