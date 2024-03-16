@@ -11,4 +11,4 @@ let res = namso.gen({
  Bin: "486742802285xxxx",
  Format: "PIPE"
 })
-m.return res
+return res
