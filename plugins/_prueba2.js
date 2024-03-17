@@ -10,7 +10,7 @@ try {
     const bot = participants.find((u) => conn.decodeJid(u.id) === conn.user.jid) || {};
     const isBotAdmin = bot?.admin || false;
     const isParticipant = participants.some((u) => conn.decodeJid(u.id) === conn.user.jid);
-    const participantStatus = isParticipant ? '𝙳𝙴𝙽𝚃𝚁𝙾' : '❌ 𝙵𝚄𝙴𝚁𝙰';
+    const participantStatus = isParticipant ? '𝚄𝙽𝙸𝙳𝙾' : '𝚂𝙰𝙻𝙸𝙳𝙾';
     const totalParticipants = participants.length;
     txt += `*📝 𝙶𝚁𝚄𝙿𝙾 ${i + 1}*
     *◉ 𝙽𝙾𝙼𝙱𝚁𝙴:* ${await conn.getName(jid)}
@@ -33,7 +33,7 @@ ${txt}`, m, fake, )
     const bot = participants.find((u) => conn.decodeJid(u.id) === conn.user.jid) || {};
     const isBotAdmin = bot?.admin || false;
     const isParticipant = participants.some((u) => conn.decodeJid(u.id) === conn.user.jid);
-    const participantStatus = isParticipant ? '𝙳𝙴𝙽𝚃𝚁𝙾' : '❌ 𝙵𝚄𝙴𝚁𝙰';
+    const participantStatus = isParticipant ? '𝚄𝙽𝙸𝙳𝙾' : '𝚂𝙰𝙻𝙸𝙳𝙾';
     const totalParticipants = participants.length;    
     txt += `*📝 𝙶𝚁𝚄𝙿𝙾 ${i + 1}*
     *◉ 𝙽𝙾𝙼𝙱𝚁𝙴:* ${await conn.getName(jid)}
