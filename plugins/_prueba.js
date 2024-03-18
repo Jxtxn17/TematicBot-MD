@@ -41,4 +41,5 @@ return list[Math.floor(list.length * Math.random())]
 }
 
 global.chamba = ["*CHAMBEANDO*
-Estuviste chambeando Y llegaron 3 negros a violarte.." ]    
+Estuviste chambeando Y llegaron 3 negros a violarte..", "*CHAMBEANDO*
+Estuviste chambeando como regalona en el oxxo y llegaron 5 negros a bailarte 🗿.."]    
