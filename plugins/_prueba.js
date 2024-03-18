@@ -5,7 +5,7 @@ import db from '../lib/database.js'
 
 let handler = async (m, { conn, text}) => {
 
-let hasil = Math.floor(Math.random() * 5000)
+let hasil = Math.floor(Math.random() * 2)
 
 conn.reply(m.chat, `*╭─────◈🗿◈──────╮*
 
