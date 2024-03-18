@@ -40,5 +40,5 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-global.piropo = ["*CHAMBEANDO*
+global.chamba = ["*CHAMBEANDO*
 Estuviste chambeando Y llegaron 3 negros a violarte.." ]    
