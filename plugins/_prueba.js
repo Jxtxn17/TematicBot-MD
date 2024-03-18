@@ -7,14 +7,14 @@ let handler = async (m, { conn, text}) => {
 
 let hasil = Math.floor(Math.random() * 5000)
 
-conn.reply(m.chat, `*╭─────◈🌹◈──────╮*
+conn.reply(m.chat, `*╭─────◈🗿◈──────╮*
 
-${pickRandom(global.piropo)}
+${pickRandom(global.chamba)}
 
-*╰─────◈🌹◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '🥀 Piropo 🥀', body: saludo, sourceUrl: global.paypal, thumbnail: rosas }}})
+*╰─────◈🗿◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '🗿 chamba 🗿', body: saludo, sourceUrl: global.paypal, thumbnail: rosas }}})
 
 }
-handler.help = ['piropo']
+handler.help = ['chamba']
 handler.tags = ['frases']
 handler.command = ['chamba']
 handler.fail = null
