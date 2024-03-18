@@ -15,7 +15,7 @@ ${pickRandom(global.chamba)}
 
 }
 handler.help = ['chamba']
-handler.tags = ['_prueba']
+handler.tags = ['chamba']
 handler.command = ['chamba']
 handler.fail = null
 handler.exp = 0
