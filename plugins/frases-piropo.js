@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------------------
-  😎 • By https://github.com/
+  😎 • By https://github.com/HACHEJOTA
 -----------------------------------------------------------------------------------------*/
 import db from '../lib/database.js'
 
@@ -11,7 +11,7 @@ conn.reply(m.chat, `*╭─────◈🌹◈──────╮*
 
 ${pickRandom(global.piropo)}
 
-*╰─────◈🌹◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '🥀 Piropo 🥀', body: saludo, sourceUrl: global.imagen1, thumbnail: rosas }}})
+*╰─────◈🌹◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '🥀 Piropo 🥀', body: saludo, sourceUrl: ${global.imagen1}, thumbnail: rosas }}})
 
 }
 handler.help = ['piropo']
