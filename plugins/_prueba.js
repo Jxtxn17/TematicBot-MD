@@ -9,7 +9,7 @@ let hasil = Math.floor(Math.random() * 5000)
 
 conn.reply(m.chat, `*╭─────◈🌹◈──────╮*
 
-${pickRandom(global.chamba)}
+${pickRandom(global.piropo)}
 
 *╰─────◈🌹◈──────╯*`, m, { contextInfo:{ externalAdReply: {title: '🥀 Piropo 🥀', body: saludo, sourceUrl: global.paypal, thumbnail: rosas }}})
 
@@ -40,5 +40,5 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-global.chamba = ["*CHAMBEANDO*
+global.piropo = ["*CHAMBEANDO*
 Estuviste chambeando Y llegaron 3 negros a violarte.." ]    
