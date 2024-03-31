@@ -6,7 +6,7 @@ import {instagramdl} from '@bochilteam/scraper';
 import instagramDl from '@sasmeee/igdl';
 import {fileTypeFromBuffer} from 'file-type';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `_*DESCARGAS - INSTAGRAM*_\n\n*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙙𝙚 𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢*\n\n*[ 💡 ] 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:* _${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link_`;
+  if (!args[0]) throw `_*𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 - 𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌*_\n\n*[❗𝐈𝐍𝐅𝐎❗] ingrese un enlace de Instagram*\n\n*[ 💡 ] ᥱȷᥱm⍴ᥣ᥆:* _${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link_`;
   m.reply(global.wait);
   try {
 const img = await instagramDl(args[0]);
@@ -23,7 +23,7 @@ for (let i = 0; i < img.length; i++) {
     const datTa = await instagram.download(args[0]);
     for (const urRRl of datTa) {
       const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-      const tXXxt = `_*DESCARGAS - INSTAGRAM*_\n\n▢ *URL:* _${shortUrRRl}_`.trim();
+      const tXXxt = `_*𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 - 𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌*_\n\n▢ *URL:* _${shortUrRRl}_`.trim();
       conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, m);
       await new Promise((resolve) => setTimeout(resolve, 10000));
     }
@@ -45,10 +45,10 @@ for (let i = 0; i < img.length; i++) {
             const json = await human.json();
             const videoig = json.result;
             const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-            const txt1 = `_*< DESCARGAS - INSTAGRAM />*_\n\n▢ *URL:* _${shortUrl1}_`.trim();
+            const txt1 = `_*< 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 - 𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 />*_\n\n▢ *URL:* _${shortUrl1}_`.trim();
             await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
           } catch {
-            throw `_*< DESCARGAS - INSTAGRAM />*_\n\n*[❗𝐈𝐍𝐅𝐎❗] 𝙊𝙘𝙪𝙧𝙧𝙞𝙤́ 𝙪𝙣 𝙚𝙧𝙧𝙤𝙧. 𝙋𝙤𝙧 𝙛𝙖𝙫𝙤𝙧, 𝙞𝙣𝙩𝙚́𝙣𝙩𝙖𝙡𝙤 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤 𝙢𝙖́𝙨 𝙩𝙖𝙧𝙙𝙚.*`;
+            throw `_*< DESCARGAS - INSTAGRAM />*_\n\n*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥆ᥴᥙrrі᥆ ᥙᥒ ᥱrr᥆r. ⍴᥆r𝖿ᥲ᥎᥆r, іᥒ𝗍ᥱᥣ᥆ ძᥱ ᥒᥙᥱ᥎᥆ mᥲs 𝗍ᥲrძᥱ.*`;
           }
         }
       }
