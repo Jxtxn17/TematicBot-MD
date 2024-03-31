@@ -10,18 +10,18 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 const isGroupLink = linkRegex.exec(m.text)
 const grupo = `https://chat.whatsapp.com`
-if (isAdmin && chat.antiLink && m.text.includes(grupo)) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙃𝙀𝙔!! 𝙀𝙇 𝘼𝙉𝙏𝙄 𝙇𝙄𝙉𝙆 𝙀𝙎𝙏𝘼 𝘼𝘾𝙏𝙄𝙑𝙊 𝙋𝙀𝙍𝙊 𝙀𝙍𝙀𝙎 𝘼𝘿𝙈𝙄𝙉, ¡𝙎𝘼𝙇𝙑𝘼𝘿𝙊!*`)
+if (isAdmin && chat.antiLink && m.text.includes(grupo)) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 һᥱᥡ!! ᥱᥣ ᥲᥒ𝗍іᥣіᥒk ᥱs𝗍ᥲ ᥱᥒᥴᥱᥒძіძ᥆ ⍴ᥱr᥆ ᥱrᥱs ᥲძmіᥒ.. 𝗍ᥱ sᥲᥣ᥎ᥲs𝗍ᥱ.*`)
 if (chat.antiLink && isGroupLink && !isAdmin) {
 if (isBotAdmin) {
 const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
 if (m.text.includes(linkThisGroup)) return !0
 }
-await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝙏𝙀𝘾𝙏𝘼𝘿𝙊*\n\n*${await this.getName(m.sender)} 𝙈𝘼𝙉𝘿𝘼𝙎𝙏𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙋𝙍𝙊𝙃𝙄𝘽𝙄𝘿𝙊 𝙋𝙊𝙍 𝙇𝙊 𝘾𝙐𝘼𝙇 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊*`)
-if (!isBotAdmin) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙉𝙊 𝙎𝙊𝙔 𝘼𝘿𝙈𝙄𝙉, 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍 𝙄𝙉𝙏𝙍𝙐𝙎𝙊𝙎*`)
+await m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥒᥣᥲᥴᥱ ძᥱ𝗍ᥱᥴ𝗍ᥲძ᥆*\n\n*${await this.getName(m.sender)} mᥲᥒძᥲs𝗍ᥱ ᥙᥒ ᥣіᥒk?, sᥱrᥲ́s ᥱᥣіmіᥒᥲძ᥆*`)
+if (!isBotAdmin) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥒ᥆ s᥆ᥡ ᥲძmіᥒ, ᥒ᥆ ⍴ᥙᥱძ᥆ һᥲᥴᥱrmᥱ ᥴᥲrg᥆*`)
 if (isBotAdmin) {
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-} else if (!bot.restrict) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙈𝙄 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊 𝘿𝙀𝘽𝙀 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙈𝙊𝘿𝙊 𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝘿𝙊 𝘼𝘾𝙏𝙄𝙑𝙊*`)
+} else if (!bot.restrict) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥲᥴ𝗍і᥎ᥱ ᥱᥣ m᥆ძ᥆ rᥱs𝗍rіᥴ𝗍 ⍴ᥲrᥲ ⍴᥆ძᥱr ᥙsᥲr.*`)
 }
 return !0
 
