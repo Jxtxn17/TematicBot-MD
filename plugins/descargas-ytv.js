@@ -1,9 +1,9 @@
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return conn.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙋𝘼𝙍𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} https://youtu.be/85xI8WFMIUY*`, fkontak, m)
+if (!args[0]) return conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 іᥒgrᥱsᥱ ᥙᥒ ᥱᥒᥣᥲᥴᥱ ძᥱ ᥡ᥆ᥙ𝗍ᥙᑲᥱ ⍴ᥲrᥲ ძᥱsᥴᥲrgᥲr ᥱᥣ ᥎іძᥱ᥆*\n\n [ 💡 ] ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix + command} https://youtu.be/85xI8WFMIUY*`, fkontak, m)
 m.react(rwait)
-await conn.reply(m.chat, `*🚀 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄́𝘿𝙀𝙊, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊*`, m)
+await conn.reply(m.chat, `*🚀 ᴄᴀʀɢᴀɴᴅᴏ ᴇsᴘᴇʀᴇ.. ツ*`, m)
 try {
 let qu = args[1] || '360'
 let q = qu + 'p'
@@ -22,9 +22,9 @@ let n2 = lolh.result.link
 let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
 m.react(done)
-await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*📑 𝙏𝙄́𝙏𝙐𝙇𝙊*\n${n}\n\n*📍 𝙋𝙀𝙎𝙊*\n${n3}`, thumbnail: await fetch(n4) }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*📑 𝗍і́𝗍ᥙᥣ᥆/𝗍і𝗍ᥣᥱ*\n${n}\n\n*📍 ⍴ᥱs᥆*\n${n3}`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
-await conn.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙎 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝙌𝙐𝙀 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙎𝙀𝘼 𝙈𝙐𝙔 𝙋𝙀𝙎𝘼𝘿𝙊. 𝙄𝙉𝙏𝙀𝙉𝙏𝙀 𝘾𝙊𝙉 𝙊𝙏𝙍𝘼 𝙊𝙋𝘾𝙄𝙊́𝙉 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼*`, fkontak, m)
+await conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱs ⍴᥆sіᑲᥣᥱ 𝗊ᥙᥱ ᥱᥣ ᥎іძᥱ᥆ sᥱᥲ mᥙᥡ ⍴ᥱsᥲძ᥆. іᥒ𝗍ᥱᥒ𝗍ᥱ ᥴ᥆ᥒ ᥆𝗍rᥲ ᥆⍴ᥴі᥆ᥒ ძᥱ ძᥱsᥴᥲrgᥲ*`, fkontak, m)
 m.react(error)}
 }
 
