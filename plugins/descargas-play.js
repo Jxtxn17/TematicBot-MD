@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
   
  var handler = async (m, { conn, command, args, text, usedPrefix }) => { 
   
- if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉𝘼 𝘾𝘼𝙉𝘾𝙄𝙊́𝙉*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command}* Another love` 
+ if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] іᥒgrᥱsᥱ ᥱᥣ ᥒ᥆mᑲrᥱ ძᥱ ᥙᥒᥲ ᥴᥲᥒᥴі᥆ᥒ*\n\ᥒ [ 💡 ] ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix + command}* Another love` 
  m.react(done) 
  try { 
  const yt_play = await search(args.join(" ")) 
@@ -16,19 +16,19 @@ import fetch from 'node-fetch'
  } else if (command === 'play2') { 
  additionalText = 'VIDEO'} 
  let texto1 = `┏━━━━━━━━━━━━━━━━━
- ┃ *∘ 📩 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊* 
+ ┃ *∘ 📩 ძᥱsᥴᥲrgᥲ* 
  ${yt_play[0].title} 
   
- ┃ *∘ ⏰ 𝘿𝙐𝙍𝘼𝘾𝙄𝙊́𝙉*  
+ ┃ *∘ ⏰ ძᥙrᥲᥴі᥆́ᥒ*  
  ${secondString(yt_play[0].duration.seconds)} 
   
- ┃ *∘ 👤 𝘼𝙐𝙏𝙊𝙍* 
+ ┃ *∘ 👤 ᥲᥙ𝗍᥆r* 
  ${yt_play[0].author.name} 
   
- ┃ *∘ 📍 𝘾𝘼𝙉𝘼𝙇* 
+ ┃ *∘ 📍 ᥴᥲᥒᥲᥣ* 
  ${yt_play[0].author.url} 
   
- ┃ *∘ 📎 𝙇𝙄𝙉𝙆* 
+ ┃ *∘ 📎 ᥣіᥒk* 
  ${yt_play[0].url} 
  ┃ *⌚ ENVIANDO ${additionalText}, POR FAVOR  ESPERE.*
  ┗━━━━━━━━━━━━━━━━━━━━━`
@@ -129,7 +129,7 @@ import fetch from 'node-fetch'
  const dl_url = await yt.video[q].download() 
  const ttl = await yt.title 
  const size = await yt.video[q].fileSizeH 
- await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 TÍTULO*: ${ttl}\n*📍 PESO:* ${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m }) 
+ await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 𝗍і́𝗍ᥙᥣ᥆*: ${ttl}\n*📍 ⍴ᥱs᥆:* ${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m }) 
  } catch {    
  try {   
  let mediaa = await ytMp4(yt_play[0].url) 
