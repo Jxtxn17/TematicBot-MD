@@ -17,11 +17,11 @@ if (m.text.includes(linkThisGroup)) return !0
 if (m.text.includes(linkThisGroup2)) return !0
 if (m.text.includes(linkThisGroup3)) return !0
 }
-await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀𝙏𝙀𝘾𝙏𝘼𝘿𝙊*\n\n*${await this.getName(m.sender)} 𝙍𝙊𝙈𝙋𝙄𝙎𝙏𝙀 𝙇𝘼𝙎 𝙍𝙀𝙂𝙇𝘼𝙎 𝙋𝙊𝙍 𝙇𝙊 𝘾𝙐𝘼𝙇 𝙎𝙀𝙍𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊*`)
-if (!isBotAdmin) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙉𝙊 𝙎𝙊𝙔 𝘼𝘿𝙈𝙄𝙉, 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍 𝙄𝙉𝙏𝙍𝙐𝙎𝙊𝙎*`)
+await m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥒᥣᥲᥴᥱ ძᥱ𝗍ᥱᥴ𝗍ᥲძ᥆*\n\n*${await this.getName(m.sender)} r᥆m⍴іs𝗍ᥱ ᥣᥲs rᥱgᥣᥲs, sᥱrᥲ́s ᥱᥣіmіᥒᥲძ᥆*`)
+if (!isBotAdmin) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥒ᥆ s᥆ᥡ ᥲძmіᥒ, ᥒ᥆ ⍴ᥙᥱძ᥆ һᥲᥴᥱrmᥱ ᥴᥲrg᥆*`)
 if (isBotAdmin && bot.restrict) {
 await conn.groupParticipantsUpdate(m.chat, [m.sender],'remove')
-} else if (!bot.restrict) return m.reply(`*℅[❗𝐈𝐍𝐅𝐎❗] 𝙈𝙄 𝘿𝙀𝙎𝘼𝙍𝙍𝙊𝙇𝘼𝘿𝙊𝙍 𝘿𝙀𝘽𝙀 𝙏𝙀𝙉𝙀𝙍 𝙀𝙇 𝙈𝙊𝘿𝙊 𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝘿𝙊 𝘼𝘾𝙏𝙄𝙑𝙊*`)
+} else if (!bot.restrict) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥲᥴ𝗍і᥎ᥱ ᥱᥣ m᥆ძ᥆ rᥱs𝗍rіᥴ𝗍 ⍴ᥲrᥲ ᥙsᥲr.*`)
 }
 return !0
 
