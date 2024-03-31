@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 var handler = async (m, {conn, text, usedPrefix, command}) => {
 
-if (!text) throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 іᥒgrᥱsᥱ ᥙᥒ 𝗍ᥱ᥊𝗍᥆ ⍴ᥲrᥲ ᥴrᥱᥲr ᥙᥒᥲ іmᥲgᥱᥒ ᥡ ᥲsі́ ᥙsᥲr Dall-E 2*\n\n❕ ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix + command}* gatitos llorando`
+if (!text) throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 іᥒgrᥱsᥱ ᥙᥒ 𝗍ᥱ᥊𝗍᥆ ⍴ᥲrᥲ ᥴrᥱᥲr ᥙᥒᥲ іmᥲgᥱᥒ ᥡ ᥲsі́ ᥙsᥲr Dall-E 2 🥨*\n\n❕ ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix + command}* gatitos llorando`
 await conn.sendMessage(m.chat, {text: '*🚀 ᴄᴀʀɢᴀɴᴅᴏ ɪᴍᴀɢᴇɴ ッ, AGUARDE UN MOMENTO.*'}, {quoted: m})
 try {
 const tiores1 = await fetch(`https://vihangayt.me/tools/imagine?q=${text}`)
