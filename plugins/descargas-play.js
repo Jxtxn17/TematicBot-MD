@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
   
  var handler = async (m, { conn, command, args, text, usedPrefix }) => { 
   
- if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] іᥒgrᥱsᥱ ᥱᥣ ᥒ᥆mᑲrᥱ ძᥱ ᥙᥒᥲ ᥴᥲᥒᥴі᥆ᥒ*\n\ᥒ [ 💡 ] ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix + command}* Another love` 
+ if (!text) throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 іᥒgrᥱsᥱ ᥱᥣ ᥒ᥆mᑲrᥱ ძᥱ ᥙᥒᥲ ᥴᥲᥒᥴі᥆ᥒ*\n\ᥒ [ 💡 ] ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix + command}* Another love` 
  m.react(done) 
  try { 
  const yt_play = await search(args.join(" ")) 
