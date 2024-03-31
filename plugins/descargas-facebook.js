@@ -47,9 +47,9 @@ const handler = async (m, {conn, args, command, usedPrefix}) => {
             } catch (err5) {
               try {
                 const {result} = await facebookdl(args[0]).catch(async (_) => await facebookdlv2(args[0])).catch(async (_) => await savefrom(args[0]));
-                for (const {url, isVideo} of result.reverse()) await conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, '*[ 📥 ] Descargas - Facebook*\n_---> The Mystic Bot._', m);
+                for (const {url, isVideo} of result.reverse()) await conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, '*[ 📥 ] 𝐃𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐬 - 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤*\n_---> 𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃._', m);
               } catch (err6) {
-                throw `_*< DESCARGAS - FACEBOOK />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+                throw `_*< 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 - 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
               }
             }
           }
