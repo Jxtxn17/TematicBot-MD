@@ -7,8 +7,8 @@ var limit
 if((isOwner || isPrems)) limit = 1000
 else limit = 600
 
-if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀*\n\n❕ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix}mediafire* https://www.mediafire.com/file/941xczxhn27qbby/GBWA_V12.25FF-By.SamMods-.apk`
-if (!args[0].match(/mediafire/gi)) throw `[❗𝐈𝐍𝐅𝐎❗] 𝙇𝙄𝙉𝙆 𝙄𝙉𝘾𝙊𝙍𝙍𝙀𝘾𝙏𝙊*`
+if (!args[0]) throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 іᥒgrᥱsᥱ ᥙᥒ ᥱᥒᥣᥲᥴᥱ ძᥱ mᥱძіᥲ𝖿іrᥱ*\n\[ 💡 ] ᥱȷᥱm⍴ᥣ᥆\n*${usedPrefix}mediafire* https://www.mediafire.com/file/941xczxhn27qbby/GBWA_V12.25FF-By.SamMods-.apk`
+if (!args[0].match(/mediafire/gi)) throw `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥣіᥒk іᥒᥴ᥆rrᥱᥴ𝗍᥆*`
 try {
 m.react(rwait)
 let full = /f$/i.test(command)
@@ -18,12 +18,12 @@ let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
 let isLimit = (isPrems || isOwner ? limit : limit) * 1012 < filesize
 
-await conn.reply(m.chat, `💌 *Nombre:* ${filename}\n📊 *Peso:*  ${filesizeH}\n🗂️ *Tipo:* ${ext}\n🗳️ *Subido:* ${aploud}`, fliveLoc, m)
+await conn.reply(m.chat, `💌 *ᥒ᥆mᑲrᥱ:* ${filename}\n📊 *⍴ᥱsᥱ:*  ${filesizeH}\n🗂️ *𝗍і⍴᥆:* ${ext}\n🗳️ *sᥙᑲіძ᥆:* ${aploud}`, fliveLoc, m)
     
 if(!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
 m.react(done)
 } catch (e) {
-m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍𝙇𝙊.𝘿𝙀𝘽𝙀 𝘿𝙀 𝙎𝙀𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀*`)
+m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥎ᥙᥱᥣ᥎ᥱ ᥲ іᥒ𝗍ᥱᥒ𝗍ᥲrᥣ᥆. ძᥱᑲᥱ sᥱr ᥙᥒ ᥱᥒᥣᥲᥴᥱ ᥎ᥲᥣіძ᥆ ძᥱ mᥱძіᥲ𝖿іrᥱ*`)
 console.log(e)}
 
 }
