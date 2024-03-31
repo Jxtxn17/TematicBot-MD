@@ -1,6 +1,6 @@
 var handler = async (m, { conn, participants, usedPrefix, command }) => {
 
-let kicktext = `*[❗𝐈𝐍𝐅𝐎❗] ETIQUETE A LA PERSONA O RESPONDA AL MENSAJE DE LA PERSONA QUE QUIERE ELIMINAR*\n\n❕ EJEMPLO:\n*${usedPrefix + command} @${global.owner[0][0]}*`
+let kicktext = `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱ𝗍і𝗊ᥙᥱ𝗍ᥱ ᥆ rᥱs⍴᥆ᥒძᥲ ᥱᥣ mᥱᥒsᥲȷᥱ ᥲ ᥣᥲ ⍴ᥱrs᥆ᥒᥲ 𝗊ᥙᥱ 𝗊ᥙіᥱrᥱ ᥱᥣіmіᥒᥲr*\n\n [ 💡 ] ᥱȷᥱm⍴ᥣ᥆:\n*${usedPrefix + command} @${global.owner[0][0]}*`
 if (!m.mentionedJid[0] && !m.quoted) return m.reply(kicktext, m.chat, { mentions: conn.parseMention(kicktext)}) 
 let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
 let owr = m.chat.split`-`[0]
