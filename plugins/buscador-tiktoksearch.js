@@ -3,7 +3,7 @@
 import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]*\n\ᥙs᥆ ძᥱᥣ ᥴ᥆mᥲᥒძ᥆ ᥴ᥆rrᥱᥴ𝗍᥆:\n\n${usedPrefix + command} edits de mia kalifa`;;
+  if (!text) throw `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫*\n\ᥙs᥆ ძᥱᥣ ᥴ᥆mᥲᥒძ᥆ ᥴ᥆rrᥱᥴ𝗍᥆:\n\n${usedPrefix + command} edits de mia kalifa`;;
   const res = await fetch(`https://api.ikyy.my.id/tiktoksearch?text=${text}`);        
   const data = await res.json();
   const json = data.result[0];
