@@ -8,8 +8,8 @@ var number = text.split`@`[1]
 var number = text
 }
 	
-if(!text && !m.quoted) return conn.reply(m.chat, `*⚠️ EJEMPLO DE USO:*\n\n*${usedPrefix}promote @tag*\n*${usedPrefix}promote responder a un mensaje*`, m)
-if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `*⚠️ EL NÚMERO ES INCORRECTO, INTENTE OTRA DE NUEVO*`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱȷᥱm⍴ᥣ᥆ ძᥱ ᥙs᥆:*\n\n*${usedPrefix}promote @tag*\n*${usedPrefix}promote responder a un mensaje*`, m)
+if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥣ ᥒᥙ́mᥱr᥆ ᥱs іᥒᥴ᥆rrᥱᥴ𝗍᥆, іᥒ𝗍ᥱᥒ𝗍ᥱ ძᥱ ᥒᥙᥱ᥎᥆*`, m)
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -21,7 +21,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-conn.reply(m.chat, `*✅ EXITO, AHORA TIENE PODER EN ESTE GRUPO*`, m)}
+conn.reply(m.chat, `*✅ ᥱ᥊і𝗍᥆, ᥲһ᥆rᥲ 𝗍іᥱᥒᥱ ⍴᥆ძᥱr ᥱᥒ ᥱs𝗍ᥱ grᥙ⍴᥆*`, m)}
 
 }
 handler.help = ['promote']
