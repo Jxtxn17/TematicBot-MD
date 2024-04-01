@@ -560,16 +560,16 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  global.dfail = (type, m, conn) => { 
   
  let msg = { 
- rowner: '[❗𝐈𝐍𝐅𝐎❗] *ESTE COMANDO SOLO MI DESAROLLADOR LO PUEDE USAR*', 
- owner: '[❗𝐈𝐍𝐅𝐎❗] *ESTE COMANDO SOLO MI PROPIETARIO LO PUEDE USAR*', 
- mods: '[❗𝐈𝐍𝐅𝐎❗] *ESTA FUNCIÓN SOLO ES PARA MIS MODERADORES*', 
- premium: '[❗𝐈𝐍𝐅𝐎❗] *ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*', 
- group:  '[❗𝐈𝐍𝐅𝐎❗] *LA FUNCIÓN SOLO PUEDE SER EJECUTADA EN GRUPOS*', 
- private: '[❗𝐈𝐍𝐅𝐎❗] *ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
- admin: ' [❗𝐈𝐍𝐅𝐎❗] *ESTE COMANDO SOLO PUEDE SER USADO POR ADMINS*', 
- botAdmin: '[❗𝐈𝐍𝐅𝐎❗] *PARA USAR ESTA FUNCIÓN DEBO SER ADMIN*', 
- unreg: '[❗𝐈𝐍𝐅𝐎❗] *HEY! ALTO AHI NO ESTAS REGISTRADO, REGÍSTRESE PARA USAR ESTA FUNCIÓN ESCRIBIENDO:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
- restrict: '[❗𝐈𝐍𝐅𝐎❗] *ESTA CARACTERÍSTICA ESTA DESACTIVADA*' 
+ rowner: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ s᥆ᥣ᥆ mі ძᥱsᥲrr᥆ᥣᥣᥲძ᥆r ᥣ᥆ ⍴ᥙᥱძᥱ ᥙsᥲr*', 
+ owner: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ s᥆ᥣ᥆ mі ⍴r᥆⍴іᥱ𝗍ᥲrі᥆ ᥣ᥆ ⍴ᥙᥱძᥱ ᥙsᥲr*', 
+ mods: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ s᥆ᥣ᥆ ᥱs ⍴ᥲrᥲ mіs m᥆ძᥱrᥲძ᥆rᥱs*', 
+ premium: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ s᥆ᥣ᥆ ES ⍴ᥲrᥲ ᥙsᥙᥲrі᥆s ⍴rᥱmіᥙm*', 
+ group:  '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥣᥲ 𝖿ᥙᥒᥴі᥆́ᥒ s᥆ᥣ᥆ ⍴ᥙᥱძᥱ sᥱr ᥱȷᥱᥴᥙ𝗍ᥲძᥲ ᥱᥒ grᥙ⍴᥆s*', 
+ private: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆ᥒᥴs᥆ᥣ᥆ ⍴ᥙᥱძᥱ sᥱr ᥙsᥲძᥲ ᥱᥒ ᥱᥣ ᥴһᥲ𝗍 ⍴rі᥎ᥲძ᥆*', 
+ admin: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ s᥆ᥣ᥆ ⍴ᥙᥱძᥱ sᥱr ᥙsᥲძ᥆ ⍴᥆r ADMINS*', 
+ botAdmin: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *⍴ᥲrᥲ ᥙsᥲr ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ ძᥱᑲ᥆ sᥱr ᥲძmіᥒ*', 
+ unreg: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *һᥱᥡ! ᥲᥣ𝗍᥆ ᥲһі ᥒ᥆ ᥱs𝗍ᥲs rᥱgіs𝗍rᥲძ᥆, rᥱgі́s𝗍rᥱsᥱ ⍴ᥲrᥲ ᥙsᥲr ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ ᥱsᥴrіᑲіᥱᥒძ᥆:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
+ restrict: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ ᥴᥲrᥲᥴ𝗍ᥱrі́s𝗍іᥴᥲ ᥱs𝗍ᥲ ძᥱsᥲᥴ𝗍і᥎ᥲძᥲ*' 
  }[type] 
  if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.channel, thumbnail: imagen2 }}}) 
   
