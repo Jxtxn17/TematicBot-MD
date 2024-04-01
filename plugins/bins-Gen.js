@@ -1,7 +1,7 @@
 import namso from "namso-cc-gen"
 let handler = async (m, { conn, text, command, usedPrefix, args }) => {
     let response = args.join(' ').split('|')
-    if (!response[0].includes(x)) throw Asegurese de que los digitos contengan una 'x' en los espacios faltantes
+    if (!response[0].includes(x)) throw Asegurese de que los digitos contengan una 'x' en los espacios faltantes\n
     //let split = '|'
     //if (!text.includes(split)) throw test
     //if (${response[1]}.length != 2) throw El codigo de mes debe tener 2 digitos
