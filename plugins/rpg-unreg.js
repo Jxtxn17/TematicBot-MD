@@ -1,11 +1,11 @@
 import { createHash } from 'crypto'
 let handler = async function (m, { args }) {
-if (!args[0]) throw `[❗𝐈𝐍𝐅𝐎❗] *INGRESE SU NÚMERO DR SÉRIE, SI NO SABE CUAL ES USE #myns*`
+if (!args[0]) throw `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *іᥒgrᥱsᥱ sᥙ ᥒᥙ́mᥱr᥆ ძᥱ sᥱ́rіᥱ, sі ᥒ᥆ sᥲᑲᥱ ᥴᥙᥲᥣ ᥱs ᥙsᥱ #myns*`
 let user = global.db.data.users[m.sender]
 let sn = createHash('md5').update(m.sender).digest('hex')
-if (args[0] !== sn) throw `[❗𝐈𝐍𝐅𝐎❗] *VERIFIQUE QUE SU NÚMERO DE SÉRIE SEA CORRECTO*`
+if (args[0] !== sn) throw `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *᥎ᥱrі𝖿і𝗊ᥙᥱ 𝗊ᥙᥱ sᥙ ᥒᥙ́mᥱr᥆ ძᥱ sᥱ́rіᥱ sᥱᥲ ᥴ᥆rrᥱᥴ𝗍᥆*`
 user.registered = false
-m.reply(`[❗𝐈𝐍𝐅𝐎❗] *USTED YA NO ESTÁ REGISTRADO*`)
+m.reply(`🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥙs𝗍ᥱძ ᥡᥲ ᥒ᥆ ᥱs𝗍ᥲ rᥱgіs𝗍rᥲძ᥆*`)
 }
 handler.help = ['', 'ister'].map(v => 'unreg' + v + ' <numero de serie>')
 handler.tags = ['rg']
