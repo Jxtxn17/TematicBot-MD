@@ -20,7 +20,7 @@ https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 > *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*`
 await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)}
 handler.tags = ['main']
-handler.command = /^donar|donate|donasi$/i
+handler.command = /^info|host|pagos$/i
 handler.exp = 35
 handler.register = true
 export default handler
