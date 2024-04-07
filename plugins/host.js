@@ -14,7 +14,7 @@ let str = `*`💫 Te presentamos un nuevo hosting: "Infinity-Wa Host"`*
 * 4GB, 175 CPU = 4Dolar
 * 5GB, 200 CPU = 5 Dólar. 
 
-*`Contactanos para más información o alquidir los servicios:`*
+*Contactanos para más información o alquidir los servicios:*
 https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 
 > *Tenemos varios métodos de pagos: PayPal, Mercado pago, Naranja x, Yape, Transferencia por banco.*`
