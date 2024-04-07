@@ -8,7 +8,7 @@ const handler = async (m, { conn, usedPrefix }) => {
     return conn.sendMessage(m.chat, {text: '*[❗] Utiliza este comando directamente en el número principal del Bot*'}, {quoted: m});
   }
   const chatId = m.isGroup ? [m.chat, m.sender] : [m.sender];
-  const sessionPath = './sessions/';
+  const sessionPath = './MysticSession/';
   try {
     const files = await fs.readdir(sessionPath);
     let filesDeleted = 0;
@@ -22,15 +22,15 @@ const handler = async (m, { conn, usedPrefix }) => {
       }
     }
     if (filesDeleted === 0) {
-      await conn.sendMessage(m.chat, {text: '*[❗𝐈𝐍𝐅𝐎❗] No se encontró ningún archivo que incluya la ID del chat*'}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: '*[❗] No se encontró ningún archivo que incluya la ID del chat*'}, {quoted: m});
     } else {
-      await conn.sendMessage(m.chat, {text: `*[❗𝐈𝐍𝐅𝐎❗] Se eliminaron ${filesDeleted} archivos de sesión*`}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: `*[❗] Se eliminaron ${filesDeleted} archivos de sesión*`}, {quoted: m});
     }
   } catch (err) {
     console.error('Error al leer la carpeta o los archivos de sesión:', err);
-    await conn.sendMessage(m.chat, {text: '*[❗𝐈𝐍𝐅𝐎❗] Ocurrió un error al eliminar los archivos de sesión*'}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: '*[❗] Ocurrió un error al eliminar los archivos de sesión*'}, {quoted: m});
   }
-  await conn.sendMessage(m.chat, {text: `𝗛𝗼𝗹𝗮👋, 𝗔𝗵𝗼𝗿𝗮 𝗲𝘀𝘁𝗼𝘆 𝗹𝗶𝘀𝘁𝗼\n\n*[❗𝐈𝐍𝐅𝐎❗] Si el Bot no le responde a sus comandos por favor haga un pequeño spam*\n\n*—◉ Ejemplo:*\n${usedPrefix}s\n${usedPrefix}s\n${usedPrefix}s`}, {quoted: m});
+  await conn.sendMessage(m.chat, {text: `𝗛𝗼𝗹𝗮👋, 𝗔𝗵𝗼𝗿𝗮 𝗲𝘀𝘁𝗼𝘆 𝗹𝗶𝘀𝘁𝗼\n\n*[❗] Si el Bot no le responde a sus comandos por favor haga un pequeño spam*\n\n*—◉ Ejemplo:*\n${usedPrefix}s\n${usedPrefix}s\n${usedPrefix}s`}, {quoted: m});
 };
 handler.help = ['fixmsgespera'];
 handler.tags = ['fix'];
