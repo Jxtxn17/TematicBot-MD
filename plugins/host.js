@@ -22,7 +22,7 @@ let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g
 
 let texto = `> INFINITY-WA HOSTING  X ${wm}\n
 
-🟢 \`\`\`USA IGNA • BOT EN INFINITY HOST\`\`\`
+🟢 \`\`\`USA BAILEY-BOT EN INFINITY HOST\`\`\`
 
 Que esperas para usar *BaileyBot-MD* en los mejores servidores de alto rendimiento y de bajo precio. El Staff de *IGNA • BOT* y *INFINITY HOST* hacen posible que puedas ejecutar las funciones que tanto te gusta usar de *BaileyBot-MD* sintiendo una experiencia fluida y de calidad.
 
