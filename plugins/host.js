@@ -20,11 +20,11 @@ let chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats
 let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
 
 
-let texto = `> INFINITY-WA HOSTING  X IGNA • BOT\n
+let texto = `> INFINITY-WA HOSTING  X ${wm}\n
 
 🟢 \`\`\`USA IGNA • BOT EN INFINITY HOST\`\`\`
 
-Que esperas para usar *IGNA • BOT* en los mejores servidores de alto rendimiento y de bajo precio. El Staff de *IGNA • BOT* y *INFINITY HOST* hacen posible que puedas ejecutar las funciones que tanto te gusta usar de *IGNA • BOT* sintiendo una experiencia fluida y de calidad.
+Que esperas para usar *BaileyBot-MD* en los mejores servidores de alto rendimiento y de bajo precio. El Staff de *IGNA • BOT* y *INFINITY HOST* hacen posible que puedas ejecutar las funciones que tanto te gusta usar de *BaileyBot-MD* sintiendo una experiencia fluida y de calidad.
 
 👇🏻 \`\`\`INFORMACION DEL HOST\`\`\`
 
