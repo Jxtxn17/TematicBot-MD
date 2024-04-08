@@ -50,6 +50,12 @@ https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV
 *• Cuenta Rut (🇨🇱)*
 *• Naranja x, alías*
 *• Yape (🇵🇪)*
+━━━━━━━━━━━━━
+*• PayPal :* paypal.me/OfcGB
+*• Payment market, aliases:* OfficialGB
+*• Orange x, alias:* OfficialGL
+*• Yape (Peru) :* 51948705559
+*• DolarApp:* $oficialgb
 
 🧑‍💻 *Contactos para mayor información*
 https://wa.me/51955918117
