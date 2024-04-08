@@ -28,7 +28,7 @@ import { watchFile, unwatchFile } from 'fs'
  global.confirmCode = ''
 
  global.animxscans = ['51929972576'] 
- global.suittag = ['51929972576']]
+ global.suittag = ['51929972576']];
  global.mods = [] 
  global.prems = []
 
