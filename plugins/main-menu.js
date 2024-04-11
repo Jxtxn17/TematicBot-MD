@@ -24,11 +24,11 @@ let tags = {
 const defaultMenu = {
   before: `*╭─ - ＵＳＵＡＲＩＯ ----- ✦ -----✦ --- 
 │╭─────────────────
-││◉ *Nombre:* ${taguser}
-││◉ *Limite:* ${diamond}
-││◉ *Nivel:* ${level}
-││◉ *Coins:* ${money}
-││◉ *Xp:* ${exp}
+││◉ *Nombre:* %name
+││◉ *Limite:* %diamond
+││◉ *Nivel:* %level
+││◉ *Rango* %rango
+││◉ *Xp:* %xp
 │╰─────────────────
 ╰─ -  ----- ✦ -----✦ ---  
 
