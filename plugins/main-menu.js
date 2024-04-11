@@ -27,7 +27,7 @@ const defaultMenu = {
 ││◉ *Nombre:* %name
 ││◉ *Limite:* %diamond
 ││◉ *Nivel:* %level
-││◉ *Rango* %rango
+││◉ *Rango* %role
 ││◉ *Xp:* %xp
 │╰─────────────────
 ╰─ -  ----- ✦ -----✦ ---  
