@@ -24,22 +24,22 @@ let tags = {
 const defaultMenu = {
   before: `*╭─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ --- 
 │╭─────────────────
-││ *Nombre:* ${taguser}
-││ *Limite:* ${diamond}
-││ *Nivel:* ${level}
-││ *Coins:* ${money}
-││ *Xp:* ${exp}
+││◉ *Nombre:* ${taguser}
+││◉ *Limite:* ${diamond}
+││◉ *Nivel:* ${level}
+││◉ *Coins:* ${money}
+││◉ *Xp:* ${exp}
 │╰─────────────────
 ╰─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ ---  
 
-*╭═━═━═━─ [ ＩＮＦＯＢＯＴ ] ─━═━═━═╮*
-*〣*╭──────────────
-*〣*├⫹⫺ *Creador :* Jxtxn17
-*〣*├⫹⫺ *Numero:* wa.me/51929972576
-*〣*├⫹⫺ *Tiempo Activo:* %uptime
-*〣*├⫹⫺ *Registrado :* %rtotalreg de %totalreg usuarios
-*〣*╰──────────────
-꒷︶꒷꒥꒷‧₊˚૮꒰˵•ᵜ•˵꒱ა‧₊˚꒷₊˚૮꒰˵•ᵜ•˵꒱ა‧₊˚꒷︶꒷꒥꒷
+*╭─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ --- 
+│╭─────────────────
+││◉ *Usuarios En Total:* ${rtotal}
+││◉ *Usuarios Registrados:* ${rtotalreg}
+││◉ *Fecha:* ${date}
+││◉ *Hora:* ${moment.tz('America/Mexico_City').format('HH:mm:ss')}
+│╰─────────────────
+╰─ - ✦⢄⢁✩*⢄⢁✧ ----- ✦ -----✦ --- 
 
 *╭═━═━═━─「 ＨＯＹ 」─━═━═━═╮*
 *〣* *Fecha :* %date
