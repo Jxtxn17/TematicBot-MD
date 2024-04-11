@@ -1,4 +1,4 @@
-/*Créditos a @AzamiJS
+*/Créditos a @AzamiJS
 
 
 import fetch from 'node-fetch'
