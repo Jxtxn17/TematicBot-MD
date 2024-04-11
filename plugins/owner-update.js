@@ -12,6 +12,6 @@ await m.reply(`${fg}`)
 }}
 handler.help = ['update']
 handler.tags = ['owner'] 
-handler.command = /^update|actualizar$/i
+handler.command = /^update|actualizar|update2$/i
 handler.rowner = true
 export default handler 
