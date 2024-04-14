@@ -10,8 +10,8 @@ let autor = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 
-if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫\n rᥱs⍴᥆ᥒძᥱ ᥲ ᥙᥒᥲ іmᥲgᥱᥒ ᥆ ᥎іძᥱ᥆ ᥴ᥆ᥒ ${usedPrefix + command}*`)
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*🚫 𝐄𝐑𝐑𝐎𝐑 🚫\n ᥱᥣ ᥎іძᥱ᥆ ᥒ᥆ ⍴ᥙᥱძᥱ ძᥙrᥲr mᥲ́s ძᥱ 7 sᥱgᥙᥒძ᥆s*')
+if (!/webp|image|video/g.test(mime) && !text) return m.reply(`*🚫 𝐄𝐑𝐑𝐎𝐑 🚫*\n *rᥱs⍴᥆ᥒძᥱ ᥲ ᥙᥒᥲ іmᥲgᥱᥒ ᥆ ᥎іძᥱ᥆ ᥴ᥆ᥒ ${usedPrefix + command}*`)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('*🚫 𝐄𝐑𝐑𝐎𝐑 🚫*\n *ᥱᥣ ᥎іძᥱ᥆ ᥒ᥆ ⍴ᥙᥱძᥱ ძᥙrᥲr mᥲ́s ძᥱ 7 sᥱgᥙᥒძ᥆s*')
 
 if (/webp|image|video/g.test(mime)) {
 let img = await q.download?.()
