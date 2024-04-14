@@ -36,7 +36,7 @@
  "@green-code/music-track-data": "^2.0.3", 
  "@shineiichijo/marika": "^2.0.6",     
  "@vitalets/google-translate-api": "^9.2.0", 
-"@xct007/frieren-scraper": "^0.0.2",
+ "@xct007/frieren-scraper": "^0.0.2",
  "@sasmeee/igdl": "npm:@sasmeee/igdl",
  "@tensorflow/tfjs": "^3.18.0", 
  "acrcloud": "^1.4.0", 
