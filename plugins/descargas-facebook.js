@@ -1,6 +1,3 @@
-/* Créditos a @AzamiJS */
-
-
 import fetch from 'node-fetch'
 import { facebook } from '@xct007/frieren-scraper'
 
@@ -10,34 +7,34 @@ let vid
 const isCommand7 = /^(facebook|fb|facebookdl|fbdl)$/i.test(command)
 
 async function reportError(e) {
-await conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *Ocurrió un 𝖿ᥲᥣᥣ᥆*`, m, fake, )
-console.log(`🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱrr᥆r ᥱᥒ: ${usedPrefix + command} ⚠️\n`)
+await conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fake, )
+console.log(`🚩 ERROR EN: ${usedPrefix + command} ⚠️\n`)
 console.log(e)
 }
-
+  
 switch (true) {   
 case isCommand7:
-if (!text) return conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *іᥒgrᥱsᥱ ᥙᥒ ᥱᥒᥣᥲᥴᥱ ძᥱ 𝖿ᥲᥴᥱᑲ᥆᥆k*\n\nᥱȷᥱm⍴ᥣ᥆, .fb https://fb.watch/kAOXy3wf2L/?mibextid=Nif5oz`, m, fake, )
-if (!args[0].match(/www.facebook.com|fb.watch|web.facebook.com|business.facebook.com|video.fb.com/g)) return conn.reply(m.chat, '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥒ᥆ ᥱs ᥙᥒ ᥱᥒᥣᥲᥴᥱ ᥎ᥲ́ᥣіძ᥆*', m, fake, )
-await conn.reply(m.chat, '🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 ᥱs⍴ᥱrᥱ ᥙᥒ moment᥆', m, fake, )
+if (!text) return conn.reply(m.chat, `🎌 *Ingrese un enlace de facebook*\n\nEjemplo, !fb https://fb.watch/kAOXy3wf2L/?mibextid=Nif5oz`, m, fake, )
+if (!args[0].match(/www.facebook.com|fb.watch|web.facebook.com|business.facebook.com|video.fb.com/g)) return conn.reply(m.chat, '🎌 *No es un enlace válido*', m, fake, )
+await conn.reply(m.chat, '⏰ Espere un momento', m, fake, )
 m.react(done)
 let messageType = checkMessageType(args[0])
 let message = ''
 switch (messageType) {
 case 'groups':
-message = '᥎і́ძᥱ᥆ ძᥱ grᥙ⍴᥆ de 𝖿ᥲᥴᥱᑲ᥆᥆k 🚀'
+message = 'Vídeo de grupo de facebook 🚀'
 break
 case 'reel':
-message = '᥎і́ძᥱ᥆ ძᥱ rᥱᥱᥣs de 𝖿ᥲᥴᥱᑲ᥆᥆k 🚀'
+message = 'Vídeo de reels de facebook 🚀'
 break
 case 'stories':
-message = '᥎і́ძᥱ᥆ ძᥱ һіs𝗍᥆rіᥲs de 𝖿ᥲᥴᥱᑲ᥆᥆k 🚀'
+message = 'Vídeo de historias de facebook 🚀'
 break
 case 'posts':
-message = '᥎і́ძᥱ᥆ de ⍴ᥙᑲᥣіᥴᥲᥴі᥆ᥒᥱs ძᥱ 𝖿ᥲᥴᥱᑲ᥆᥆k 🚀'
+message = 'Vídeo de publicaciones de facebook 🚀'
 break
 default:
-message = '᥎і́ძᥱ᥆ ძᥱ 𝖿ᥲᥴᥱᑲ᥆᥆k 🚀'
+message = 'Vídeo de facebook 🚀'
 break
 }
 try {
@@ -72,7 +69,7 @@ handler.register = true
 handler.diamond = true
 
 export default handler
-
+  
 function checkMessageType(url) {
 if (url.includes('www.facebook.com')) {
 if (url.includes('/groups/')) {
