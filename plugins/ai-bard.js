@@ -1,4 +1,4 @@
-/creditos @AzamiJs
+//creditos @AzamiJs
 
 import fetch from 'node-fetch'
 
