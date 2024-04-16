@@ -16,6 +16,8 @@
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
 </a>
 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 # `Características del bot`
 |  Funciones y comandos  |                                           Si |
 | :---------------------------------------------: | :-----------: |
