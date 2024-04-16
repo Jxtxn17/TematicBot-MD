@@ -108,6 +108,5 @@ global.enlaces = linkSity.getRandom()
  global.nombre = conn.getName(m.sender) 
  global.taguser = '@' + m.sender.split("@s.whatsapp.net")[0] 
  global.fake = { contextInfo: { externalAdReply: {title: saludo + ` ${m.name}`, body: dev, sourceUrl: enlaces, thumbnailUrl: fotos }}}
- } 
-  
+ }   
  export default handler
