@@ -158,8 +158,6 @@ let ppBot = await azami.profilePictureUrl(whoPP, 'image').catch((_) => 'https://
 await azami.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.ig, thumbnailUrl: ppBot }}})
 m.react('🚀') 
 
-azami.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen2, "mediaUrl": fkontak, "sourceUrl": group}}}, {quoted: fkontak});
-
 } catch (e) {
 azami.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 Ocurrió un fallo*`, m, fake, )
 throw e}
