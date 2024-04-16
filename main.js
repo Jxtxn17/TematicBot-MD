@@ -116,41 +116,47 @@ const methodCodeQR = process.argv.includes("qr")
 const methodCode = !!phoneNumber || process.argv.includes("code")
 const MethodMobile = process.argv.includes("mobile")
 
+const colores = chalk.bold.green
+const opcionQR = chalk.bgBlue.white
+const opcionTexto = chalk.bgMagenta.white
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const question = (texto) => new Promise((resolver) => rl.question(texto, resolver))
 
 let opcion
 if (!fs.existsSync(`./${authFile}/creds.json`) && !methodCodeQR && !methodCode) {
 while (true) {
-opcion = await question('Seleccione una opción:\n1. Con código QR\n2. Con código de texto de 8 dígitos\n--> ')
+opcion = await question(colores('Seleccione una opción:\n') + opcionQR('1. Con código QR\n') + opcionTexto('2. Con código de texto de 8 dígitos\n--> '))
 if (opcion === '1' || opcion === '2') {
 break
 } else {
-console.log('Por favor, seleccione solo 1 o 2.')
+console.log(chalk.bgYellow.black.bold('Por favor, seleccione solo 1 o 2.'))
 }}
 opcion = opcion
 }
 
+console.info = () => {}
+//console.warn = () => {}
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
-printQRInTerminal: opcion == '1' ? true : false,
+printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: ['Ubuntu', 'Chrome', '110.0.5585.95'],
+browser: ["Ubuntu", "Chrome", "20.0.04"],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
 },
 markOnlineOnConnect: true, 
 generateHighQualityLinkPreview: true, 
+syncFullHistory: true,
 getMessage: async (clave) => {
 let jid = jidNormalizedUser(clave.remoteJid)
 let msg = await store.loadMessage(jid, clave.id)
 return msg?.message || ""
 },
-msgRetryCounterCache,
-msgRetryCounterMap,
-defaultQueryTimeoutMs: undefined,   
-version
+msgRetryCounterCache, // Resolver mensajes en espera
+msgRetryCounterMap, // Determinar si se debe volver a intentar enviar un mensaje o no
+defaultQueryTimeoutMs: undefined,
+version,  
 }
 
 // Código adaptado para la compatibilidad de
@@ -165,7 +171,7 @@ if (MethodMobile) throw new Error('No se puede usar un código de emparejamiento
 let addNumber
 if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
-if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
+if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
 console.log(chalk.bgBlack(chalk.bold.redBright("Configure el archivo 'config.js' porque su número de WhatsApp no comienza con el código de país, Ejemplo: +593xxxx")))
 process.exit(0)
 }} else {
@@ -178,19 +184,24 @@ break
 } else {
 console.log(chalk.bgBlack(chalk.bold.redBright("Asegúrese de agregar el código de país.")))
 }}
-//rl.close()
+rl.close()
 }
 
 setTimeout(async () => {
+const codigoEmparejamiento = chalk.black.bgGreen
+const codigoBotResaltado = chalk.bold.white
+
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
-console.log(chalk.black(chalk.bgGreen(`Código de emparejamiento: `)), chalk.bold.white(chalk.white(codeBot)))
+console.log(codigoEmparejamiento('Código de emparejamiento: '), codigoBotResaltado(codeBot))
 rl.close()
 }, 3000)
 }}
 
+
 conn.isInit = false
 conn.well = false
+//conn.user.connect = true;
 conn.logger.info(`🔵 H E C H O\n`)
 
 if (!opts['test']) {
@@ -198,21 +209,27 @@ if (global.db) {
 setInterval(async () => {
 if (global.db.data) await global.db.write()
 if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', 'jadibts'], tmp.forEach((filename) => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
-}, 30 * 1000)
+}, 10 * 1000)
 }}
 
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
-function clearTmp() {
-const tmp = [tmpdir(), join(__dirname, './tmp')]
-const filename = []
-tmp.forEach((dirname) => readdirSync(dirname).forEach((file) => filename.push(join(dirname, file))))
-return filename.map((file) => {
-const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file); // 3 minutos
-return false
-})
+async function clearTmp() {
+  const tmp = [tmpdir(), join(__dirname, './tmp')]
+  const filename = []
+  tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
+
+  return filename.map(file => {
+    const stats = statSync(file)
+    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 1)) return unlinkSync(file) // 1 minuto
+    return false
+  })
 }
+
+setInterval(async () => {
+await clearTmp()
+console.log(chalk.cyan(`AUTOCLEAR │ BASURA ELIMINADA\n`))
+}, 30000) //1 munto
 
 function purgeSession() {
 let prekey = []
@@ -281,10 +298,10 @@ console.log(chalk.yellow('⚠️ㅤEscanea este codigo QR, el codigo QR expira e
  }}
 if (connection == 'open') {
 console.log(chalk.yellowBright('\n╭───────────────────────────◉\n│\n│Conectado correctamente al WhatsApp.\n│\n╰───────────────────────────◉\n'))}
-if (conn.user.connect) {
-conn.fakeReply('5217294888993@s.whatsapp.net', '😃', '0@s.whatsapp.net', '😅 Soy CuriosityBot\nRecientemente me e conectado', '0@s.whatsapp.net')
-conn.user.connect = true;
-}
+//if (conn.user.connect) {
+//conn.fakeReply('5217294888993@s.whatsapp.net', '😃', '0@s.whatsapp.net', '😅 Soy CuriosityBot\nRecientemente me e conectado', '0@s.whatsapp.net')
+//conn.user.connect = true;
+//}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (reason == 405) { 
 await fs.unlinkSync("./sessions/" + "creds.json")
@@ -375,13 +392,13 @@ conn.onCall = handler.callUpdate.bind(global.conn)
 conn.connectionUpdate = connectionUpdate.bind(global.conn)
 conn.credsUpdate = saveCreds.bind(global.conn, true)
 
-//const currentDateTime = new Date()
-//const messageDateTime = new Date(conn.ev)
-//if (currentDateTime >= messageDateTime) {
-//const chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
-//} else {
-//const chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
-//}
+const currentDateTime = new Date()
+const messageDateTime = new Date(conn.ev)
+if (currentDateTime >= messageDateTime) {
+const chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
+} else {
+const chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
+}
 
 conn.ev.on('messages.upsert', conn.handler)
 conn.ev.on('group-participants.update', conn.participantsUpdate)
