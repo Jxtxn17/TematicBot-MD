@@ -1,4 +1,4 @@
-# `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗 🗿` 
+# `🗿 𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗 🗿` 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
@@ -21,7 +21,7 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-# `🍧 Características del bot 🍧`
+# `🍧 Características del bot`
 |  Funciones y comandos  |                                           Si |
 | :---------------------------------------------: | :-----------: |
 | Crea stickers|✓|
@@ -52,7 +52,7 @@ En caso de duda, antes de instalar BaileyBot-MD, pruebe el bot aquí
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
 
-#### `ACTIVA EN HEROKU`
+#### `🍭 ACTIVA EN HEROKU`
 para usuarios del heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Azami19/CuriosityBot-MD1)
@@ -65,7 +65,7 @@ para usuarios del heroku
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-### `ACTIVAR EN TERMUX`
+### `🍇 ACTIVAR EN TERMUX`
 > **Note** ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
@@ -92,7 +92,7 @@ npm start
 ```
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-### INSTALACIÓN AUTOMÁTICA POR TERMUX
+### `🍬 INSTALACIÓN AUTOMÁTICA POR TERMUX`
 
 > **Note** Comandos para instalar de forma automática en Termux  
 ```bash
@@ -106,7 +106,7 @@ wget -0 - https://raw.githubusercontent.com/Jxtxn17/BaileyBot-MD/main/bailey.sh 
 ```
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-### `OBTENER OTRO CODIGO QR`
+### `🍫 OBTENER OTRO CODIGO QR`
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
@@ -116,7 +116,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
- ### `DUDAS SOBRE EL BOT?, CONTACTAME`
+ ### `🍒 DUDAS SOBRE EL BOT?, CONTACTAME`
 
 <a href="https://wa.me/51929972576"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
