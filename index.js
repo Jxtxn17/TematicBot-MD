@@ -22,7 +22,7 @@ colors: ['azul', 'cyan']
 })
 say(`Bot: BaileyBot-MD Hecho por Jxtxn17 / Contact: 51929972576`, {
 font: 'console',
-gradient: ['azul', 'magenta']
+gradient: ['BlueBright', 'magenta']
 })
 
 var isRunning = false
@@ -37,7 +37,7 @@ let args = [join(__dirname, file), ...process.argv.slice(2)]
 say([process.argv[0], ...args].join(' '), {
 font: 'console',
 align: 'center',
-gradient: ['azul', 'magenta']
+gradient: ['BlueBrigth', 'magenta']
 })
 setupMaster({
 exec: args[0],
