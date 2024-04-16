@@ -122,7 +122,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-### EDITOR & PROPIETARIO DEL BOT
+### `🍐 EDITOR & PROPIETARIO DEL BOT`
 <a href="https://github.com/Jxtxn17 "><img src="https://github.com/Jxtxn17.png" width="250" height="250" alt="Jxtxn17"/></a>
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
