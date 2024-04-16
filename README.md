@@ -1,4 +1,7 @@
 # `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗` 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 <p align="center">
 <img src="https://telegra.ph/file/3baddb6a33e14e1b59e83.jpg" alt="BaileyBot-MD" width="900"/>
 </p>
@@ -140,3 +143,5 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
     <td align="center"><a 
  <td align="center"><a href="https://github.com/AzamiJS"><img src="https://github.com/AzamiJS.png?size=100" width="100px;" alt=""/><br /><sub><b>Alexis</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
     <td align="center"><a 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+By Jxtxn17
