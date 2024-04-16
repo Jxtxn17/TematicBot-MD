@@ -20,7 +20,7 @@ font: 'block',
 align: 'center',
 colors: ['BlueBright', 'cyan']
 })
-say(`Bot: BaileyBot-MD Hecho por Jxtxn17 / Contact: 51929972576`, {
+say(`BaileyBot-MD Hecho por Jxtxn17 / Contact: 51929972576`, {
 font: 'console',
 gradient: ['green', 'magenta']
 })
