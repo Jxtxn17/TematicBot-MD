@@ -18,7 +18,7 @@ const rl = createInterface(process.stdin, process.stdout)
 say('Bailey\nBot\nMD', {
 font: 'block',
 align: 'center',
-colors: ['BlueBrigth', 'cyan']
+colors: ['BlueBright', 'cyan']
 })
 say(`Bot: BaileyBot-MD Hecho por Jxtxn17 / Contact: 51929972576`, {
 font: 'console',
@@ -37,7 +37,7 @@ let args = [join(__dirname, file), ...process.argv.slice(2)]
 say([process.argv[0], ...args].join(' '), {
 font: 'console',
 align: 'center',
-gradient: ['BlueBrigth', 'magenta']
+gradient: ['BlueBright', 'magenta']
 })
 setupMaster({
 exec: args[0],
