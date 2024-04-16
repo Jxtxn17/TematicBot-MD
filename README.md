@@ -142,6 +142,4 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
        <td align="center"><a href="https://github.com/WOTCHITO"><img src="https://github.com/WOTCHITO.png?size=100" width="100px;" alt=""/><br /><sub><b>Eder</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
     <td align="center"><a 
  <td align="center"><a href="https://github.com/AzamiJS"><img src="https://github.com/AzamiJS.png?size=100" width="100px;" alt=""/><br /><sub><b>Alexis</b></sub></a><br /><sub><i>Desarrollador Oficial</i>
-    <td align="center"><a 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
-By Jxtxn17
+    <td align="center"><a
