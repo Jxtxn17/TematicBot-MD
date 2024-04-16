@@ -39,7 +39,7 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-### `⚙️ AJUSTES ⚙️`
+### `⚙️ AJUSTES ⚙️` 
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/config.js)
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/BaileyBot-MD/fork)
 - Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/package.json#L42)
