@@ -1,4 +1,4 @@
-# `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗` 
+# `𝘽𝘼𝙄𝙇𝙀𝙔-𝗕𝗢𝗧-𝗠𝗗 🗿` 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
@@ -21,7 +21,7 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-# `Características del bot`
+# `🍧 Características del bot 🍧`
 |  Funciones y comandos  |                                           Si |
 | :---------------------------------------------: | :-----------: |
 | Crea stickers|✓|
