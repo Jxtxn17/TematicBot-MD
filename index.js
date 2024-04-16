@@ -20,7 +20,7 @@ font: 'block',
 align: 'center',
 colors: ['azul', 'cyan']
 })
-say(`Bot: ${name}\nVersion: 1.0.5\nCreador: Jxtxn ~ Ax\nNumero: +51 929 972 576\nEmail: baileybotmd@gmail.com`, {
+say(`Bot: BaileyBot-MD Hecho por Jxtxn17 / Contac: 51929972576`, {
 font: 'console',
 gradient: ['azul', 'magenta']
 })
