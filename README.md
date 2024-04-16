@@ -21,7 +21,7 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-# `> 🍧 Características del bot`
+# `🍧 Características del bot`
 |  Funciones y comandos  |                                           Si |
 | :---------------------------------------------: | :-----------: |
 | Crea stickers|✓|
