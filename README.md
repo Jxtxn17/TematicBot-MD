@@ -34,6 +34,8 @@
 | ChatBot|✓|
 | Más funciones en adelante|⚡|
 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 ### `⚙️ AJUSTES ⚙️`
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/config.js)
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/BaileyBot-MD/fork)
@@ -44,7 +46,8 @@ En caso de duda, antes de instalar BaileyBot-MD, pruebe el bot aquí
 
 [![Grupos](https://img.shields.io/badge/BaileyBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO) 
 
-***
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 
 #### `ACTIVA EN HEROKU`
 para usuarios del heroku
@@ -57,7 +60,8 @@ para usuarios del heroku
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-***
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 ### `ACTIVAR EN TERMUX`
 > **Note** ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
