@@ -161,7 +161,7 @@ m.react('🚀')
 azami.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen2, "mediaUrl": group, "sourceUrl": group}}}, {quoted: fkontak});
 
 } catch (e) {
-azami.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
+azami.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 Ocurrió un fallo*`, m, fake, )
 throw e}
 
 }
