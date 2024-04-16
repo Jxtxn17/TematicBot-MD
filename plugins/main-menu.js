@@ -37,7 +37,7 @@ const defaultMenu = {
 ││◉ *Creador:* Jxtxn17 / Ax
 ││◉ *Usuarios En Total:* %rtotalreg
 ││◉ *Usuarios Registrados:* %totalreg
-││◉ *Tiempo activo: %muptime
+││◉ *Tiempo activo: %uptime
 │╰─────────────────
 ╰─ დ.•* 🦦 *””*.დ ----- დ.•* 🍭 *””*.დ ---
 
