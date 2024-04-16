@@ -87,6 +87,7 @@ ls
 ```bash
 npm start
 ```
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
 ### INSTALACIÓN AUTOMÁTICA POR TERMUX
 
@@ -100,6 +101,7 @@ apt update -y && yes | apt upgrade && pkg install yarn && pkg install -y
 ```bash
 wget -0 - https://raw.githubusercontent.com/Jxtxn17/BaileyBot-MD/main/bailey.sh | bash
 ```
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
 ### `OBTENER OTRO CODIGO QR`
 ```bash
@@ -109,13 +111,18 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > rm -rf sessions
 > npm start
 ```
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
  ### `DUDAS SOBRE EL BOT?, CONTACTAME`
 
 <a href="https://wa.me/51929972576"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/Jxtxn17 "><img src="https://github.com/Jxtxn17.png" width="250" height="250" alt="Jxtxn17"/></a>
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
 #### COLABORADORES 
 <!-- prettier-ignore-start -->
