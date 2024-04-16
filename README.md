@@ -10,7 +10,7 @@
 
 
 ## **Warning**
-> Se estan actualizando todos los archivos, muy pronto se subieran los nuevos archivos
+> El staff de BaileyBot-MD no se responsabiliza sobre el mal uso del Bot.
 
 <a href="https://www.youtube.com/@Azami_19">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
