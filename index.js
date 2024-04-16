@@ -22,7 +22,7 @@ colors: ['magenta', 'cyan']
 })
 say(`Bot: ${name}\nVersion: 1.0.5\nCreador: Jxtxn ~ Ax\nNumero: +51 929 972 576\nEmail: baileybotmd@gmail.com`, {
 font: 'console',
-gradient: ['blue', 'magenta']
+gradient: ['red']
 })
 
 var isRunning = false
