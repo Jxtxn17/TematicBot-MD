@@ -499,8 +499,6 @@ if (opts['autoread']) await this.readMessages([m.key])
 if (settingsREAD.autoread2) await this.readMessages([m.key])  
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 
-export async function participantsUpdate({ id, participants, action }) {
-
 if (opts['self'])
 return
 if (this.isInit)
