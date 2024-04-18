@@ -6,7 +6,7 @@ import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'
 import fs from 'fs'
-import moment from 'moment-timezone' Zam
+import moment from 'moment-timezone'
 
 const { proto } = (await import('@whiskeysockets/baileys')).default
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -575,8 +575,9 @@ for (let cs of callUpdate) {
 if (cs.isGroup == false) {
 if (cs.status == "offer") {
 let callmsg = await this.reply(nk.from, `Hola *@${cs.from.split('@')[0]}*, Las ${cs.isVideo ? 'videollamadas' : 'llamadas'} están prohibidas, seras bloqueado`, false, { mentions: [cs.from] })
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Azami 👑;;;\nFN:Azami\nORG:Azami 👑\nTITLE:\nitem1.TEL;waid=18134039996:+598 9999\nitem1.X-ABLabel:Azami 👑\nX-WA-BIZ-DESCRIPTION:Solo cosas del bot.\nX-WA-BIZ-NAME:Azami 👑\nEND:VCARD`
-await this.sendMessage(cs.from, { contacts: { displayName: 'Azami 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Jxtxn 👑;;;\nFN:Azami\nORG:Jxtxn 👑\nTITLE:\nitem1.TEL;waid=18134039996:+51
+9999\nitem1.X-ABLabel:Jxtxn 👑\nX-WA-BIZ-DESCRIPTION:Solo cosas del bot.\nX-WA-BIZ-NAME:Jxtxn 👑\nEND:VCARD`
+await this.sendMessage(cs.from, { contacts: { displayName: 'Jxtxn 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
 await this.updateBlockStatus(cs.from, 'block')
 }}}
 }
@@ -614,7 +615,7 @@ let msg = {
  unreg: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *һᥱᥡ! ᥲᥣ𝗍᥆ ᥲһі ᥒ᥆ ᥱs𝗍ᥲs rᥱgіs𝗍rᥲძ᥆, rᥱgі́s𝗍rᥱsᥱ ⍴ᥲrᥲ ᥙsᥲr ᥱs𝗍ᥲ 𝖿ᥙᥒᥴі᥆́ᥒ ᥱsᥴrіᑲіᥱᥒძ᥆:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
  restrict: '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥱs𝗍ᥲ ᥴᥲrᥲᥴ𝗍ᥱrі́s𝗍іᥴᥲ ᥱs𝗍ᥲ ძᥱsᥲᥴ𝗍і᥎ᥲძᥲ*' 
 }[type]
-if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: 'Hola!!', body: 'Ax 🏳️‍🌈', sourceUrl: global.channel, thumbnailUrl: sityImg.getRandom() }}})
+if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '📖'  + saludo + ' ' + nombre, body: dev, sourceUrl: global.channel, thumbnailUrl: ImgAll.getRandom() }}})
 
 }
 const file = global.__filename(import.meta.url, true);
