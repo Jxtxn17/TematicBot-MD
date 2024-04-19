@@ -1,4 +1,4 @@
-*\import db from '../lib/database.js'
+/*import db from '../lib/database.js'
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
