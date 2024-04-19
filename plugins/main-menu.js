@@ -49,9 +49,9 @@ const defaultMenu = {
 ╰─ დ.•* 🦦 *””*.დ ╴╴╴╴╴დ.•* 🍇 *””*.დ ---
 
 `.trimStart(),
-header: ' ╭─ - %category ----- .•♫•♬• •♬•♫•. --- ',
+header: '╭─ - %category ----- .•♫•♬• •♬•♫•. --- ',
 body: ' │○  %cmd',
-footer: ' ╰─ დ.•* 🦦 *””*.დ ╴╴╴╴╴დ.•* 🍇 *””*.დ ---\n',
+footer: '╰─ დ.•* 🦦 *””*.დ ╴╴╴╴╴დ.•* 🍇 *””*.დ ---\n',
 after: `
 `,
 }
@@ -153,7 +153,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
     let pp = './storage/logos/Menu2.jpg'
-     await conn.reply(m.chat, '*Enviando el menu . . .*', fkontak) 
+     await conn.reply(m.chat, '*𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌𝐞𝐧𝐮 . . .*', fkontak) 
     conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, nnn)
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
