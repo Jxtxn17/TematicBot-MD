@@ -20,7 +20,7 @@ let tags = {
   'anime': '𝙰𝙽𝙸𝙼𝙴', 
   'nsfw': '𝙽𝚂𝙵𝚆 +18', 
   'owner': '𝙾𝚆𝙽𝙴𝚁',*/
-//}
+}
 const defaultMenu = {
   before: `╭─ - ＵＳＵＡＲＩＯ ----- •♫•♬••♬•♫•
 │✰【𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃】✰
@@ -188,4 +188,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-}//
+}/*
