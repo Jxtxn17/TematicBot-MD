@@ -405,8 +405,7 @@ m.react('🚀')
 }
 handler.help = ['help']
 handler.tags = ['main']
-handler.command = ['help',
-'menucompleto', 'allmenu'] 
+handler.command = ['menu2']
 handler.register = true
 
 handler.exp = 3
