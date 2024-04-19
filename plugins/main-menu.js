@@ -1,4 +1,4 @@
-/*import db from '../lib/database.js'
+//import db from '../lib/database.js'
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
@@ -20,7 +20,7 @@ let tags = {
   'anime': '𝙰𝙽𝙸𝙼𝙴', 
   'nsfw': '𝙽𝚂𝙵𝚆 +18', 
   'owner': '𝙾𝚆𝙽𝙴𝚁',*/
-/*}
+}
 const defaultMenu = {
   before: `╭─ - ＵＳＵＡＲＩＯ ----- •♫•♬••♬•♫•
 │✰【𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃】✰
@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     ],m, rpl)*/
   
 
-/*m.react('🚀')
+m.react('🚀')
     
   } catch (e) {
     conn.reply(m.chat, '⚠️ Lo sentimos, el menú tiene un error', m)
@@ -189,4 +189,3 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
 }
-*\
