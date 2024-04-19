@@ -37,7 +37,7 @@ global.img5 = 'https://telegra.ph/file/a34ebad4c9b5963c82f1a.jpg'
 global.img6 = 'https://telegra.ph/file/4e69f6c48d99f6c1174a9.jpg'
 global.img7 = 'https://telegra.ph/file/951275803faa754aff010.jpg'
 
-global.sityImg = [img, img1, img2, img3, img4, img5, img6, img7]
+global.imgAll = [img, img1, img2, img3, img4, img5, img6, img7]
 
 //Enlaces
 global.yt = 'https://www.youtube.com/@Azami_Mods'
