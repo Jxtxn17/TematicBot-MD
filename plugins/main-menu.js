@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     ],m, rpl)*/
   
 
-m.react('🚀')
+/*m.react('🚀')
     
   } catch (e) {
     conn.reply(m.chat, '⚠️ Lo sentimos, el menú tiene un error', m)
