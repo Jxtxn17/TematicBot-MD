@@ -29,7 +29,7 @@ import pkg from '@whiskeysockets/baileys'
 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
 let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1861aab98389b13db8588.jpg')
-global.fotos = imgAll.getRandom()
+global.fotos = ImgAll.getRandom()
 global.enlaces = linkSity.getRandom()
   
  /*  
