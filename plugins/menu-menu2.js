@@ -72,7 +72,7 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
   let pp = 'storage/logos/Menu2.jpg'
 //let pp = gataVidMenu.getRandom()
 await conn.sendMessage(m.chat, {
-        text: `*Hey @${m.sender.split`@`[0]} ✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌𝐞𝐧𝐮】✰ . . .*`,
+        text: `✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌𝐞𝐧𝐮】✰ . . .*`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
@@ -346,7 +346,7 @@ let menu = `╭─ - ＵＳＵＡＲＩＯ ----- •♫•♬••♬•♫•
 │○ 💻 .restart
 ╰─ დ.•* 🦦 *””*.დ ╴╴╴╴╴დ.•* 🍇 *””*.დ ---`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/b9768737c2e193587ad45.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/7981c55ad62c4344530e2.jpg`)).buffer()  
 await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
