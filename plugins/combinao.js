@@ -5,6 +5,11 @@ _${usedPrefix}ytmp4_`.trim();
 
     m.reply(mp4);
   }
+if (command == "chambear4") {
+    var play = `*CHAMBEANDO..*\n\n*Estabas de regreso a casa cuando depronto salio un grupo de 5 y te violaron*..`.trim();
+    m.reply(play);
+}
+  
  if (command == "chambear3") {
     var play = `*CHAMBEANDO..*\n\n*Estuviste como regalona en el prostibulo con 10 neglos*..`.trim();
     m.reply(play);
@@ -25,6 +30,6 @@ _${usedPrefix}ytmp4_`.trim();
     m.reply(play);
   }
 };
-handler.command = ["chambear1", "chambear2", "chambearhub", "chambear3"];
+handler.command = ["chambear1", "chambear2", "chambearhub", "chambear3", "chambear4"];
 handler.tags = ["internet"];
 export default handler
