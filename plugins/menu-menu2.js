@@ -96,7 +96,7 @@ let menu = `╭─ - ＵＳＵＡＲＩＯ ----- •♫•♬••♬•♫•
 ││◉ *Creador:* Jxtxn17 / Ax
 ││◉ *Usuarios En Total:* 18
 ││◉ *Usuarios Registrados:* 321
-││◉ *Tiempo activo:* %muptimd
+││◉ *Tiempo activo:* %muptime
 │╰─────────────────
 ╰─ დ.•* 🦦 *””*.დ ----- დ.•* 🍭 *””*.დ ---
 
@@ -356,7 +356,7 @@ externalAdReply: {
 title: '✰【𝐁𝐚𝐢𝐥𝐞𝐲-𝐁𝐨𝐭-𝐌𝐃】✰',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33',
+sourceUrl: '${channel}',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
