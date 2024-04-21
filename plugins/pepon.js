@@ -6,7 +6,7 @@ import fs from "fs"
  let chat = global.db.data.chats[m.chat] 
  if (/^bot$/i.test(m.text) && !chat.isBanned) {  
  conn.sendPresenceUpdate('recording', m.chat)     
- conn.sendFile(m.chat, vn, 'bot.jpg', bot, m, true, { type: 'conversation', ptt: true, sendEphemeral: true, quoted: estilo })} 
+ conn.sendFile(m.chat, vn, 'bot.jpg', pepon, m, true, { type: 'conversation', ptt: true, sendEphemeral: true, quoted: estilo })} 
  return !0 
  } 
  export default handler
