@@ -30,8 +30,6 @@ global.isdev = [['51929972576']]
  global.botNumberCode = '' //Ejemplo: +59309090909 
  global.confirmCode = ''
 
-global.lenguajeGB = es  //Idioma de BaileyBot, Ejemplo: es | en | pt...
-
  global.animxscans = ['51929972576'] 
  global.suittag = ['51929972576']
  global.mods = [] 
