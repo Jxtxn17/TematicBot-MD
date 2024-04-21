@@ -356,7 +356,7 @@ externalAdReply: {
 title: '✰【𝐁𝐚𝐢𝐥𝐞𝐲-𝐁𝐨𝐭-𝐌𝐃】✰',
 //body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
 thumbnail: img,
-sourceUrl: '${channel}',
+sourceUrl: 'https://whatsapp.com/channel/0029VaDRDk2CBtxBVex2vB0Y',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
