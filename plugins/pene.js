@@ -6,7 +6,7 @@ _${usedPrefix}ytmp4_`.trim();
     m.reply(mp4);
   }
 
-  if (command == "chambearhub") {
+  if (command == "chamba") {
     var play = `${pickRandom(global.piropo)}*..`.trim();
     m.reply(play);
   }
