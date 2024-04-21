@@ -14,9 +14,9 @@ _${usedPrefix}ytmp4_`.trim();
 handler.command = ["chamba"];
 handler.tags = ["internet"];
 export default handler
-global.piropo = ["CHAMBEANDO..\n
+global.piropo = ["CHAMBEANDO..\n\n
 
 Estuviste chambeando y 5 negros se corrieron en tu boca..,
-CHAMBEANDO..\n
+CHAMBEANDO..\n\n
 
 Estuviste chambeando y llegaron 3 negros a violarte..,"
