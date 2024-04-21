@@ -36,9 +36,9 @@ global.img4 = 'https://telegra.ph/file/4f023f918af2bde72c839.jpg'
 global.img5 = 'https://telegra.ph/file/a34ebad4c9b5963c82f1a.jpg'
 global.img6 = 'https://telegra.ph/file/4e69f6c48d99f6c1174a9.jpg'
 global.img7 = 'https://telegra.ph/file/951275803faa754aff010.jpg'
-global.img8 =
+global.img8 = 'https://telegra.ph/file/9f765ea386a9dd1a5f8e5.jpg'
 
-global.ImgAll = [img, img1, img2, img3, img4, img5, img6, img7]
+global.ImgAll = [img, img1, img2, img3, img4, img5, img6, img7, img8]
 
 //Enlaces
 global.yt = 'https://www.youtube.com/@Azami_Mods'
