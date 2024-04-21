@@ -21,7 +21,7 @@ let tags = {
   'nsfw': '𝙽𝚂𝙵𝚆 +18', 
   'owner': '𝙾𝚆𝙽𝙴𝚁',*/
 }
-const defaultMenu = {
+/*const defaultMenu = {
   before: `╭─ - ＵＳＵＡＲＩＯ ----- •♫•♬••♬•♫•
 │✰【𝐁𝐚𝐢𝐥𝐞𝐲𝐁𝐨𝐭-𝐌𝐃】✰
 │╭─────────────────
@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     ],m, rpl)*/
   
 
-m.react('🚀')
+/*m.react('🚀')
     
   } catch (e) {
     conn.reply(m.chat, '⚠️ Lo sentimos, el menú tiene un error', m)
