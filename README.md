@@ -21,12 +21,7 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-### `⚙️ AJUSTES ⚙️` 
-- CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/config.js)
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/BaileyBot-MD/fork)
-- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/package.json#L42)
-
-### Ejemplo 
+### Prueba BaileyBot-MD
 En caso de duda, antes de instalar BaileyBot-MD, pruebe el bot aquí
 
 [![Grupos](https://img.shields.io/badge/BaileyBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/F5gQwucOrx9DxOTOtur0TO) 
