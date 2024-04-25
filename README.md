@@ -21,24 +21,6 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-# `🍧 Características del bot`
-|  Funciones y comandos  |                                           Si |
-| :---------------------------------------------: | :-----------: |
-| Crea stickers|✓|
-| Bienvenida automática|✓|
-| Anti-Link|✓|
-| Anti-Fakes|✓|
-| Jadibot |✓|
-| Anti-Llamadas|✓|
-| Anti-Privados|✓|
-| Modo Publico/Privado|✓|
-| Juegos|✓|
-| Descarga de música/videos|✓|
-| ChatBot|✓|
-| Más funciones en adelante|⚡|
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
-
 ### `⚙️ AJUSTES ⚙️` 
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/Jxtxn17/BaileyBot-MD/blob/main/config.js)
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/Jxtxn17/BaileyBot-MD/fork)
