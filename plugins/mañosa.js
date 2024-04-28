@@ -5,7 +5,7 @@ let str = `conn.relayMessage(from, { viewOnceMessage: { message: { interactiveMe
 break`
 await conn.sendFile(m.chat, media, 'Curiosity.jpg', str, fkontak)}
 handler.tags = ['main']
-handler.command = /^plist22|Plist|plis$/i
+handler.command = /^plist22|Plist|plist$/i
 handler.exp = 35
 handler.register = true
 export default handler
