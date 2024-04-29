@@ -5,6 +5,8 @@ import fs from "fs"
  let vn = [imagen1, imagen2, imagen3, imagen4, img1].getRandom() 
  let chat = global.db.data.chats[m.chat] 
  if (/^bot$/i.test(m.text) && !chat.isBanned) {  
- conn.sendPresenceUpdate('composing', m.chat)     
+ conn.sendPresenceUpdate('composing', m.chat)
+ m.reply(bot)
+ return 0!
  } 
  export default handler
