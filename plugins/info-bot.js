@@ -7,6 +7,6 @@ import fs from "fs"
  if (/^bot$/i.test(m.text) && !chat.isBanned) {  
  conn.sendPresenceUpdate('composing', m.chat)
  m.reply(bot)
- return 0!
+ return !0
  } 
  export default handler
