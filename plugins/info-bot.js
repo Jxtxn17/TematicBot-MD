@@ -1,4 +1,4 @@
-import fs from "fs" 
+/*import fs from "fs" 
  let handler = m => m 
  handler.all = async function (m) {
  let bot = `*🚀 Hola soy Bot*\nEn que te puedo ayudar?` 
@@ -9,4 +9,4 @@ import fs from "fs"
  m.reply(bot)
  return !0}
  }
- export default handler
+ export default handler*/
